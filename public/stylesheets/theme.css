@@ -1,0 +1,269 @@
+/* - - - Custom Theme - - - */
+
+/* Logo */
+h1 a {
+	background-image:url('/images/wflogo.png'); 
+	min-height:0;
+	height:40px;
+}
+* html h1 a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/wflogo.png", sizingMethod="crop");
+}
+
+/* Backgrounds */
+body{
+	background-image:none;
+	background-color:#90ad4b;
+}
+h1{
+	background-image:none;
+	background-color:#c9d787;
+}
+#container, body.embed{
+	background-color:#FFFFFF;
+}
+.wufoo input.text, .wufoo textarea.textarea{
+	background:#FFFFFF url(/images/fieldbg.gif) repeat-x top;
+}
+.wufoo .focused{
+	background-color:#ffcc5c;
+}
+.wufoo .instruct{
+	background-color:#ff844b;
+}
+
+/* Borders */
+#container{
+	border:0 solid #cccccc;
+}
+.wufoo .info{
+	border-bottom:1px dotted #CCCCCC;
+}
+.wufoo .section{
+	border-top:1px dotted #CCCCCC;
+}
+.wufoo input.text, .wufoo textarea.textarea{
+	border:;
+}
+.wufoo .instruct{
+	border:0 solid #e6e6e6;
+}
+
+/* Typography */
+.wufoo .info h2{
+	font-size:160%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#000000;
+}
+.wufoo .info div{
+	font-size:95%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#444444;
+}
+.wufoo .section h3{
+	font-size:110%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#000000;
+}
+.wufoo .section div{
+	font-size:85%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#444444;
+}
+
+.wufoo .graph h3{
+	color:#000000;
+}
+.wufoo .footer h4{
+	color:#000000;
+}
+.wufoo .footer span{
+	color:#444444;
+}
+
+
+.wufoo label.desc{
+	font-size:95%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#444444;
+}
+.wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label{
+	font-family:inherit;
+	color:#444444;
+}
+.wufoo label.choice{
+	font-size:100%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#444444;
+}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select{
+	font-size:100%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#333333;
+}
+.wufoo .instruct{
+	font-size:80%;
+	font-family:inherit;
+	font-weight:;
+	font-style:;
+	color:#ffffff;
+}
+.altInstruct .instruct, .wufoo li.leftHalf .instruct, .wufoo li.rightHalf .instruct{
+	font-size:9px;
+	color:#444444;
+	background:none;
+	border:none;
+}
+.wufoo input.btTxt{
+	font-size:;
+	font-family:;
+	font-weight:;
+	font-style:;
+	color:;
+}
+.wufoo li.focused label.desc{
+	font-size:;
+	font-family:;
+	font-weight:;
+	font-style:;
+	color:#000000;
+}
+.wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label{
+	font-family:;
+	color:#000000;
+}
+
+.confirm h2{
+	font-family:inherit;
+	color:#444444;
+}
+
+/* Likert Backgrounds */
+
+.likert table{
+	background-color:#FFFFFF;
+}
+.likert thead td, .likert thead th{
+	background-color:#e6e6e6;
+}
+.likert tbody tr.alt td, .likert tbody tr.alt th{
+	background-color:#f5f5f5;
+}
+
+/* Likert Borders */
+
+.likert table, .likert th, .likert td{
+	border-color:#dedede;
+}
+.likert td{
+	border-left:1px solid #cccccc;
+}
+
+/* Likert Typography */
+
+.likert caption, .likert thead td, .likert tbody th{
+	color:#444444;
+	font-family:inherit;
+}
+.likert label{
+	color:#565656;
+	font-family:inherit;
+}
+.likert caption, .likert tbody th{
+	font-size:95%;
+}
+
+/* Likert Hover */
+
+.likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
+	background-color:#ffcc5c;
+	color:#000000;
+}
+.likert tbody tr:hover td{
+	border-left:1px solid #cca34a;
+}
+
+/* Big Number */
+
+.number{
+	background-color:#f5f5f5;
+	border-color:#e6e6e6;
+}
+.number strong, .number em{
+	color:#000000;
+}
+
+/* ----- Field Chart Border and Background Colors ----- */
+
+.fc table{
+	border-left:1px solid #dedede;	
+}
+.fc thead th{
+	background-color:#cccccc;
+	border-right:1px solid #e6e6e6;
+}
+.fc tbody td, .fc tbody th, .fc tfoot th, .fc tfoot td{
+	background-color:#FFFFFF;
+	border-right:1px solid #dedede;
+	border-bottom:1px solid #e6e6e6;
+}
+.fc tbody tr.alt td, .fc tbody tr.alt th{
+	background-color:#f5f5f5;
+}
+
+/* ----- Field Chart Typography Colors ----- */
+
+.fc caption, .fc tfoot{
+	color:#000000;
+}
+.fc thead th{
+	color:#000000;
+}
+.fc tbody th div, 
+.fc tbody td.count, .fc .grid tbody td a, .fc td.percent var, 
+.fc .timestamp b, .fc .timestamp span{
+	color:#444444;
+}
+.fc .indent .count{
+	color:#4b4b4b;
+}
+.fc .grid tbody td a span{
+	color:#565656;
+}
+.fc tbody .timestamp{
+	color:#5c5c5c;
+}
+
+/* ----- Field Chart Hover ----- */
+
+.fc .choices tbody tr:hover td, .fc .choices tbody tr:hover th,
+.fc .data tbody tr:hover td, .fc .data tbody tr:hover th,
+.fc .grid tbody td:hover{
+	background-color:#ffcc5c;
+}
+.fc tbody tr:hover th div,
+.fc tbody tr:hover td,
+.fc tbody tr:hover var{
+	color:#000000;
+}
+
+
+/* Drop Shadows */
+#top, #bottom{
+	visibility:visible;
+}

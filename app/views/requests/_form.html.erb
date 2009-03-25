@@ -1,0 +1,1841 @@
+<%
+# HTML for indicating in a label that a field is required
+req_f = '<span class="req">*</span>'
+%>
+
+<div class="info">
+<h2>Assembly Request Form</h2>
+
+<div>Please take your time with this form...</div>
+</div>
+
+<ul>
+
+<li id="fo1li17" class="first section     ">
+	<h3 id="title17">General School Information</h3>
+	<div id="instruct17">Tell us about your school and what kind of assembly you'd like.</div>
+</li>
+
+
+<li id="fo1li11" class="    ">
+	<%= f.label :school, "School Name #{req_f}", :class => "desc" %>
+	<div><%= f.text_field :school, :class => "field text", :size => 50 %></div>
+	<p class="instruct" id="instruct11"><small>The name of your school!</small></p>
+</li>
+
+<li id="fo1li12" class="    ">
+	<%= f.label :assembly_type, "Assembly Type #{req_f}", :class => "desc" %>
+	<div class="col">	
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Public School requesting FREE assembly(ies) for ALL students.  </label>
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Public School requesting FEE-based assembly(ies) for select groups/grades.  </label>		
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Private School requesting FEE-based assembly(ies) for ALL students.  </label>	
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Private School requesting FEE-based assembly(ies) for select groups/grades.  </label>
+	</div>
+
+	<p class="instruct" id="instruct12">
+		<small>Assemblies/Book Signings are for everyone (K and up), never exclude grade levels or classes!  <br /><br />
+			A $1,800. fee applies for visits to less than the entire school!</small>
+	</p>
+</li>		
+
+
+<li id="fo1li13" class="leftHalf     ">
+	<%= f.label :starting_grade, "Starting grade at your school #{req_f}", :class => "desc" %>
+	<div>
+		<%= f.select :starting_grade, GRADES %>
+	</div>
+	<p class="instruct" id="instruct13"><small>Note: Pre-K is not encouraged to attend.</small></p>
+</li>
+
+<li id="fo1li14" class="rightHalf     ">
+	<%= f.label :ending_grade, "Ending grade at your school #{req_f}", :class => "desc" %>
+	<div>
+		<%= f.select :ending_grade, GRADES %>
+	</div>
+	<p class="instruct" id="instruct14"><small>This should be the total range of grades at your school.</small></p>
+</li>
+
+
+
+<li id="fo1li15" class="    ">
+		<%= f.label :num_students, "Total number of students at your school #{req_f}", :class => "desc" %>
+			<div><%= f.text_field :num_students, :class => "field text", :size => 8 %></div>
+		<p class="instruct" id="instruct15"><small>This is your total enrollment for ALL grades.  
+			If a portion of your school is 'off session', then you can just indicate the number of students 
+			that will be present/'in session' for Mr. Mike's visit.</small></p>
+</li>
+
+
+<li id="fo1li23" class="    ">
+	<%= f.label :author_hosted?, "Has your school ever hosted an author?", :class => "desc" %>
+	<div class="col">	
+	<%= f.radio_button :author_hosted?, 1 %>
+		<label class="choice">Yes</label>
+	<%= f.radio_button :author_hosted?, 2 %>
+		<label class="choice">No</label>
+	<%= f.radio_button :author_hosted?, 3 %>
+		<label class="choice">I don't know</label>
+	</div>
+	<p class="instruct" id="instruct23"><small>It's good for us to know if author visits are something your school 
+		is used to - or only does once in while - or maybe this is the first time!</small></p>
+</li>
+
+<li id="fo1li105" class="    ">
+	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc" %>
+	<div class="col">	
+	<%= f.radio_button :mike_hosted, 1 %>
+		<label class="choice">Yes</label>
+	<%= f.radio_button :mike_hosted, 2 %>
+		<label class="choice">I don't know</label>
+	<%= f.radio_button :mike_hosted, 3 %>
+		<label class="choice">Yes, but I can't remember the date.</label>
+	<%= f.radio_button :mike_hosted, 3 %>
+		<label class="choice">Yes, the year of the visit was:</label>
+	<%= f.text_field :mike_hosted, :class => "field text", :size => 8 %>
+	</div>
+	<p class="instruct" id="instruct105"><small>If Mr. Mike has been to your school before, we usually have about 
+		a 3 year wait between visits.  <br /><br />
+		If you're not sure, you can make a request anyway and we'll check to see the last time he was there.</small></p>
+</li>
+
+
+<li id="fo1li19" class="section     ">
+	<h3 id="title19">Contact Information</h3>
+	<div id="instruct19">How we'll get in touch with you!</div>
+</li>
+
+
+<li id="fo1li0" class="leftHalf    ">
+	<label class="desc">Primary Contact Person</label>
+	<span>
+		<%= f.text_field :contact1_first, :class => "field text", :size => 8 %>
+		<%= f.label :contact1_first, "First" %>
+	</span>
+	<span>
+		<%= f.text_field :contact1_last, :class => "field text", :size => 14 %>
+		<%= f.label :contact1_last, "Last" %>
+	</span>
+	<p class="instruct" id="instruct0"><small>You will be responsible for staying in touch with us, 
+		receiving the Preparation Packet and ensuring that preparations are underway at least a month
+		 before the event!<br /></small></p>
+</li>
+
+
+<li id="fo1li29" class="rightHalf    ">
+	<%= f.label :contact1_position, "Your Position", :class => "desc" %>
+	<div><%= f.text_field :contact1_position, :class => "field text medium" %></div>
+	<p class="instruct" id="instruct29"><small>Are you a librarian, teacher, PTA/O person, Principal,
+		A.P/V.P., 	etc...?</small></p>
+</li>
+
+<li id="fo1li32" class="leftHalf    ">
+	<%= f.label :contact1_phone, "Your Phone Number at School", :class => "desc" %>
+	<div><%= f.text_field :contact1_phone, :class => "field text", :size => 12 %>
+	<p class="instruct" id="instruct32"><small>(xxx)-xxx-xxxx. Don't forget to include your extension, if applicable!</small></p>
+</li>
+
+<li id="fo1li33" class="rightHalf    ">
+	<%= f.label :contact1_altphone, "Alternate Phone Number", :class => "desc" %>
+	<div><%= f.text_field :contact1_altphone, :class => "field text", :size => 12 %>
+	<p class="instruct" id="instruct33"><small>(xxx)-xxx-xxxx. Don't forget to include your extension, if applicable!</small></p>
+</li>
+
+<li id="fo1li34" class="    ">
+	<%= f.label :contact1_fax, "School Fax Number", :class => "desc" %>
+	<div><%= f.text_field :contact1_fax, :class => "field text", :size => 12 %></div>
+	<p class="instruct" id="instruct34"><small>(xxx)-xxx-xxxx</small></p>
+</li>
+
+<li id="fo1li35" class="leftHalf    ">
+	<%= f.label :contact1_email, "Your E-mail", :class => "desc" %>
+	<div><%= f.text_field :contact1_fax, :class => "field text medium" %></div>
+	<p class="instruct" id="instruct35"><small>This is how we get back to you! Make sure it's exactly right!  <br />
+	NOTE: Do not input websites or anything other than an email addy! </small></p>
+</li>
+
+
+<li id="fo1li36" class="rightHalf    ">
+	<%= f.label :contact1_email_confirm, "Confirm E-mail", :class => "desc" %>
+	<div><%= f.text_field :contact1_email_confirm, :class => "field text medium" %></div>
+	<p class="instruct" id="instruct36"><small>Enter it twice for verification!</small></p>	
+</li>
+
+<!-- End Primary -->
+
+<li id="fo1li39" class="section     ">
+	<h3 id="title39">Secondary Contact</h3>
+	<div id="instruct39">The Secondary Contact Person must be someone other than yourself!<br />
+		<br />
+		If you are a librarian, teacher, PTA/O parent, etc., then please provide contact info. 
+		for an additional person who will know what's going on and/or be helping you out with the event.<br />
+		<br />
+		If you are a Principal, V.P., or Assistant Principal, then you must provide the contact info. 
+		for the person who will actually be responsible for coordinating all preparations.<br />
+	</div>
+</li>
+
+<!-- Secondary Contact -->
+
+<li id="fo1li37" class="leftHalf    ">
+	<label class="desc">Primary Contact Person</label>
+	<span>
+		<%= f.text_field :contact2_first, :class => "field text", :size => 8 %>
+		<%= f.label :contact2_first, "First" %>
+	</span>
+	<span>
+		<%= f.text_field :contact2_last, :class => "field text", :size => 14 %>
+		<%= f.label :contact2_last, "Last" %>
+	</span>
+	<p class="instruct" id="instruct37"><small><b>Do Not list same person as Primary Contact! </b><br />
+	This is the person who will working with you to coordinate the event.<br />
+</li>
+
+
+<li id="fo1li40" class="rightHalf    ">
+	<%= f.label :contact2_position, "Their Position", :class => "desc" %>
+	<div><%= f.text_field :contact2_position, :class => "field text medium" %></div>
+	<p class="instruct" id="instruct40"><small>Are you a librarian, teacher, PTA/O person, Principal,
+		A.P/V.P., 	etc...?</small></p>
+</li>
+
+<li id="fo1li41" class="leftHalf    ">
+	<%= f.label :contact2_phone, "Their Phone Number at School", :class => "desc" %>
+	<div><%= f.text_field :contact2_phone, :class => "field text", :size => 12 %>
+	<p class="instruct" id="instruct41"><small>(xxx)-xxx-xxxx. Don't forget to include your extension, if applicable!</small></p>
+</li>
+
+<li id="fo1li42" class="rightHalf    ">
+	<%= f.label :contact2_altphone, "Alternate Phone Number", :class => "desc" %>
+	<div><%= f.text_field :contact2_altphone, :class => "field text", :size => 12 %>
+	<p class="instruct" id="instruct42"><small>(xxx)-xxx-xxxx. Don't forget to include your extension, if applicable!</small></p>
+</li>
+
+
+<li id="fo1li43" class="leftHalf    ">
+	<%= f.label :contact2_email, "E-mail", :class => "desc" %>
+	<div><%= f.text_field :contact2_fax, :class => "field text medium" %></div>
+	<p class="instruct" id="instruct43"><small>This is how we get back to you! Make sure it's exactly right!  <br />
+	NOTE: Do not input websites or anything other than an email addy! </small></p>
+</li>
+
+
+<li id="fo1li44" class="rightHalf    ">
+	<%= f.label :contact2_email_confirm, "E-mail", :class => "desc" %>
+	<div><%= f.text_field :contact2_email_confirm, :class => "field text medium" %></div>
+	<p class="instruct" id="instruct44"><small>Enter it twice for verification!</small></p>	
+</li>
+
+
+<!-- End Secondary -->
+
+
+<li id="fo1li45" class="section     ">
+<h3 id="title45">School's Address</h3>
+<div id="instruct45">The preparation packet will be mailed here and it's the address used for directions to the school.</div>
+</li>
+
+
+<li id="fo1li46" class="    ">
+	<label class="desc" id="title46">Mailing Address</label>
+	<div class="block">
+		<span class="full">
+			<%= f.text_field :school_mail_address1, :class => "field text addr" %>
+			<%= f.label :school_mail_address1, "Street Address" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_mail_address2, :class => "field text addr" %>
+			<%= f.label :school_mail_address2, "Street Address Continued" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_mail_city, :class => "field text addr" %>
+			<%= f.label :school_mail_city, "City" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_mail_state, :class => "field text addr" %>
+			<%= f.label :school_mail_state, "State / Province / Region" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_mail_zipcode, :class => "field text addr", :size => 15 %>
+			<%= f.label :school_mail_zipcode, "Postal / Zip Code" %>
+		</span>
+		<span class="full">
+			<%= f.select :school_mail_country, COUNTRIES %>
+			<%= f.label :school_mail_country, "Country" %>
+		</span>
+	</div>
+	<p class="instruct" id="instruct46"><small>Where all your mail goes!  If your school is in a different location, then also complete the 'Physical Address' below!</small></p>
+</li>
+
+
+<li id="fo1li52" class="    ">
+	<label class="desc" id="title52">Physical Address <small>(if different from mailing address)</small></label>
+	<div class="block">
+		<span class="full">
+			<%= f.text_field :school_phys_address1, :class => "field text addr" %>
+			<%= f.label :school_phys_address1, "Street Address" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_phys_address2, :class => "field text addr" %>
+			<%= f.label :school_phys_address2, "Street Address Continued" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_phys_city, :class => "field text addr" %>
+			<%= f.label :school_phys_city, "City" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_phys_state, :class => "field text addr" %>
+			<%= f.label :school_phys_state, "State / Province / Region" %>
+		</span>
+		<span class="full">
+			<%= f.text_field :school_phys_zipcode, :class => "field text addr", :size => 15 %>
+			<%= f.label :school_phys_zipcode, "Postal / Zip Code" %>
+		</span>
+		<span class="full">
+			<%= f.select :school_phys_country, COUNTRIES %>
+			<%= f.label :school_phys_country, "Country" %>
+		</span>
+	</div>
+	<p class="instruct" id="instruct52"><small>How we find your school on a GPS and map!</small></p>
+</li>
+
+
+<li id="fo1li106" class="    ">
+<label class="desc" id="title106" for="Field106">
+What state COUNTY (not countRy) is your school in?
+<span id="req_106" class="req">*</span>
+
+</label>
+<div>
+<input id="Field106" name="Field106" type="text" class="field text large" value="" maxlength="255" tabindex="54" />
+</div>
+<p class="instruct" id="instruct106"><small>This helps us keep requests organized!</small></p>
+</li>
+
+
+<li id="fo1li59" class="    ">
+<label class="desc" id="title59" for="Field59">
+What is the name of your school district?
+<span id="req_59" class="req">*</span>
+</label>
+<div>
+<input id="Field59" name="Field59" type="text" class="field text large" value="" maxlength="255" tabindex="55" />
+
+</div>
+<p class="instruct" id="instruct59"><small>This helps us keep requests organized!</small></p>
+</li>
+
+<li id="fo1li60" class="section     ">
+<h3 id="title60">Event Information</h3>
+<div id="instruct60">Check your district &amp; school calendars and our blackout dates in the <a href="/schools/dates-available/" target="_blank">'School Visit Dates Available'</a> section. MONDAYS and FRIDAYS ARE AVAILABLE for schools arranging multi-school visits!<br />
+<br />
+Please select 'Preferred Dates' and 'Additional Dates' from the  <a href="/schools/dates-available/" target="_blank">'School Visit Dates Available'</a> page. <br />
+
+Your school must be in session 2 weeks before and at least 1 week after Mr. Mike's visit. </div>
+</li>
+
+
+<li id="fo1li142" class="leftHalf    ">
+<label class="desc" id="title142" for="Field142">
+When is your Winter Break? <br />
+School is out on:
+<span id="req_142" class="req">*</span>
+</label>
+<span>
+<input id="Field142-1" name="Field142-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="56" /> /
+<label for="Field142-1">MM</label>
+
+</span>
+<span>
+<input id="Field142-2" name="Field142-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="57" /> /
+<label for="Field142-2">DD</label>
+</span>
+<span>
+ <input id="Field142" name="Field142" type="text" class="field text" value="" size="4" maxlength="4" tabindex="58" />
+<label for="Field142">YYYY</label>
+</span>
+<span id="cal142">
+<img id="pick142" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field142",
+displayArea  : "cal142",
+button : "pick142",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+
+</script>
+<p class="instruct" id="instruct142"><small>Mr. Mike cannot visit during the week just before you leave for Winter Break.</small></p>
+</li>
+
+
+<li id="fo1li141" class="rightHalf    ">
+<label class="desc" id="title141" for="Field141">
+When is your Winter Break? <br />
+School is back in session on:
+<span id="req_141" class="req">*</span>
+</label>
+<span>
+<input id="Field141-1" name="Field141-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="59" /> /
+
+<label for="Field141-1">MM</label>
+</span>
+<span>
+<input id="Field141-2" name="Field141-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="60" /> /
+<label for="Field141-2">DD</label>
+</span>
+<span>
+ <input id="Field141" name="Field141" type="text" class="field text" value="" size="4" maxlength="4" tabindex="61" />
+<label for="Field141">YYYY</label>
+</span>
+<span id="cal141">
+<img id="pick141" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field141",
+displayArea  : "cal141",
+button : "pick141",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+<p class="instruct" id="instruct141"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
+</li>
+
+
+<li id="fo1li143" class="leftHalf    ">
+<label class="desc" id="title143" for="Field143">
+When is your Spring Break? <br />
+School is out on:
+<span id="req_143" class="req">*</span>
+</label>
+<span>
+
+<input id="Field143-1" name="Field143-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="62" /> /
+<label for="Field143-1">MM</label>
+</span>
+<span>
+<input id="Field143-2" name="Field143-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="63" /> /
+<label for="Field143-2">DD</label>
+</span>
+<span>
+ <input id="Field143" name="Field143" type="text" class="field text" value="" size="4" maxlength="4" tabindex="64" />
+<label for="Field143">YYYY</label>
+</span>
+
+<span id="cal143">
+<img id="pick143" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field143",
+displayArea  : "cal143",
+button : "pick143",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+<p class="instruct" id="instruct143"><small>Mr. Mike cannot visit during the week just before you leave for Spring Break.</small></p>
+</li>
+
+
+<li id="fo1li144" class="rightHalf    ">
+<label class="desc" id="title144" for="Field144">
+When is your Spring Break? <br />
+School is back in session on:
+<span id="req_144" class="req">*</span>
+
+</label>
+<span>
+<input id="Field144-1" name="Field144-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="65" /> /
+<label for="Field144-1">MM</label>
+</span>
+<span>
+<input id="Field144-2" name="Field144-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="66" /> /
+<label for="Field144-2">DD</label>
+</span>
+<span>
+ <input id="Field144" name="Field144" type="text" class="field text" value="" size="4" maxlength="4" tabindex="67" />
+<label for="Field144">YYYY</label>
+
+</span>
+<span id="cal144">
+<img id="pick144" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field144",
+displayArea  : "cal144",
+button : "pick144",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+<p class="instruct" id="instruct144"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
+</li>
+
+
+<li id="fo1li145" class="    ">
+<label class="desc" id="title145" for="Field145">
+When is your last day of school?
+<span id="req_145" class="req">*</span>
+</label>
+
+<span>
+<input id="Field145-1" name="Field145-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="68" /> /
+<label for="Field145-1">MM</label>
+</span>
+<span>
+<input id="Field145-2" name="Field145-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="69" /> /
+<label for="Field145-2">DD</label>
+</span>
+<span>
+ <input id="Field145" name="Field145" type="text" class="field text" value="" size="4" maxlength="4" tabindex="70" />
+<label for="Field145">YYYY</label>
+
+</span>
+<span id="cal145">
+<img id="pick145" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field145",
+displayArea  : "cal145",
+button : "pick145",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+<p class="instruct" id="instruct145"><small>The last 3 weeks of the school year are not a good time for Mr. Mike's visit.</small></p>
+</li>
+
+
+<li id="fo1li64" class="leftHalf    ">
+<label class="desc" id="title64" for="Field64">
+Preferred Date #1
+<span id="req_64" class="req">*</span>
+</label>
+
+<span>
+<input id="Field64-1" name="Field64-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="71" /> /
+<label for="Field64-1">MM</label>
+</span>
+<span>
+<input id="Field64-2" name="Field64-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="72" /> /
+<label for="Field64-2">DD</label>
+</span>
+<span>
+ <input id="Field64" name="Field64" type="text" class="field text" value="" size="4" maxlength="4" tabindex="73" />
+<label for="Field64">YYYY</label>
+
+</span>
+<span id="cal64">
+<img id="pick64" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field64",
+displayArea  : "cal64",
+button : "pick64",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+<p class="instruct" id="instruct64"><small>We try to work with your Preferred Dates, however your school has a better chance of getting a visit if you also indicate Additional Dates. If you're flexible, you can list even more dates in the text box at the end of this form.</small></p>
+</li>
+
+
+<li id="fo1li62" class="rightHalf    ">
+<label class="desc" id="title62" for="Field62">
+Preferred Date #2
+<span id="req_62" class="req">*</span>
+</label>
+
+<span>
+<input id="Field62-1" name="Field62-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="74" /> /
+<label for="Field62-1">MM</label>
+</span>
+<span>
+<input id="Field62-2" name="Field62-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="75" /> /
+<label for="Field62-2">DD</label>
+</span>
+<span>
+ <input id="Field62" name="Field62" type="text" class="field text" value="" size="4" maxlength="4" tabindex="76" />
+<label for="Field62">YYYY</label>
+
+</span>
+<span id="cal62">
+<img id="pick62" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field62",
+displayArea  : "cal62",
+button : "pick62",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li63" class="leftHalf    ">
+<label class="desc" id="title63" for="Field63">
+Preferred Date #3
+<span id="req_63" class="req">*</span>
+</label>
+<span>
+<input id="Field63-1" name="Field63-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="77" /> /
+
+<label for="Field63-1">MM</label>
+</span>
+<span>
+<input id="Field63-2" name="Field63-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="78" /> /
+<label for="Field63-2">DD</label>
+</span>
+<span>
+ <input id="Field63" name="Field63" type="text" class="field text" value="" size="4" maxlength="4" tabindex="79" />
+<label for="Field63">YYYY</label>
+</span>
+<span id="cal63">
+<img id="pick63" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field63",
+displayArea  : "cal63",
+button : "pick63",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li109" class="rightHalf    ">
+<label class="desc" id="title109" for="Field109">
+Preferred Date #4
+<span id="req_109" class="req">*</span>
+</label>
+<span>
+<input id="Field109-1" name="Field109-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="80" /> /
+<label for="Field109-1">MM</label>
+
+</span>
+<span>
+<input id="Field109-2" name="Field109-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="81" /> /
+<label for="Field109-2">DD</label>
+</span>
+<span>
+ <input id="Field109" name="Field109" type="text" class="field text" value="" size="4" maxlength="4" tabindex="82" />
+<label for="Field109">YYYY</label>
+</span>
+<span id="cal109">
+<img id="pick109" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field109",
+displayArea  : "cal109",
+button : "pick109",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+
+</script>
+</li>
+
+
+<li id="fo1li61" class="leftHalf    ">
+<label class="desc" id="title61" for="Field61">
+Additional Date #1
+</label>
+<span>
+<input id="Field61-1" name="Field61-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="83" /> /
+<label for="Field61-1">MM</label>
+</span>
+<span>
+<input id="Field61-2" name="Field61-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="84" /> /
+
+<label for="Field61-2">DD</label>
+</span>
+<span>
+ <input id="Field61" name="Field61" type="text" class="field text" value="" size="4" maxlength="4" tabindex="85" />
+<label for="Field61">YYYY</label>
+</span>
+<span id="cal61">
+<img id="pick61" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field61",
+displayArea  : "cal61",
+button : "pick61",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li65" class="rightHalf    ">
+<label class="desc" id="title65" for="Field65">
+Additional Date #2
+</label>
+<span>
+<input id="Field65-1" name="Field65-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="86" /> /
+<label for="Field65-1">MM</label>
+</span>
+<span>
+<input id="Field65-2" name="Field65-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="87" /> /
+<label for="Field65-2">DD</label>
+</span>
+<span>
+
+ <input id="Field65" name="Field65" type="text" class="field text" value="" size="4" maxlength="4" tabindex="88" />
+<label for="Field65">YYYY</label>
+</span>
+<span id="cal65">
+<img id="pick65" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field65",
+displayArea  : "cal65",
+button : "pick65",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li66" class="leftHalf    ">
+<label class="desc" id="title66" for="Field66">
+Additional Date #3
+</label>
+
+<span>
+<input id="Field66-1" name="Field66-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="89" /> /
+<label for="Field66-1">MM</label>
+</span>
+<span>
+<input id="Field66-2" name="Field66-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="90" /> /
+<label for="Field66-2">DD</label>
+</span>
+<span>
+ <input id="Field66" name="Field66" type="text" class="field text" value="" size="4" maxlength="4" tabindex="91" />
+<label for="Field66">YYYY</label>
+
+</span>
+<span id="cal66">
+<img id="pick66" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field66",
+displayArea  : "cal66",
+button : "pick66",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li110" class="rightHalf    ">
+<label class="desc" id="title110" for="Field110">
+Additional Date #4
+</label>
+<span>
+<input id="Field110-1" name="Field110-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="92" /> /
+<label for="Field110-1">MM</label>
+
+</span>
+<span>
+<input id="Field110-2" name="Field110-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="93" /> /
+<label for="Field110-2">DD</label>
+</span>
+<span>
+ <input id="Field110" name="Field110" type="text" class="field text" value="" size="4" maxlength="4" tabindex="94" />
+<label for="Field110">YYYY</label>
+</span>
+<span id="cal110">
+<img id="pick110" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field110",
+displayArea  : "cal110",
+button : "pick110",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+
+</script>
+</li>
+
+
+<li id="fo1li111" class="leftHalf    ">
+<label class="desc" id="title111" for="Field111">
+Backup Date #1
+</label>
+<span>
+<input id="Field111-1" name="Field111-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="95" /> /
+<label for="Field111-1">MM</label>
+</span>
+<span>
+<input id="Field111-2" name="Field111-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="96" /> /
+
+<label for="Field111-2">DD</label>
+</span>
+<span>
+ <input id="Field111" name="Field111" type="text" class="field text" value="" size="4" maxlength="4" tabindex="97" />
+<label for="Field111">YYYY</label>
+</span>
+<span id="cal111">
+<img id="pick111" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field111",
+displayArea  : "cal111",
+button : "pick111",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li114" class="rightHalf    ">
+<label class="desc" id="title114" for="Field114">
+Backup Date #2
+</label>
+<span>
+<input id="Field114-1" name="Field114-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="98" /> /
+<label for="Field114-1">MM</label>
+</span>
+<span>
+<input id="Field114-2" name="Field114-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="99" /> /
+<label for="Field114-2">DD</label>
+</span>
+<span>
+
+ <input id="Field114" name="Field114" type="text" class="field text" value="" size="4" maxlength="4" tabindex="100" />
+<label for="Field114">YYYY</label>
+</span>
+<span id="cal114">
+<img id="pick114" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field114",
+displayArea  : "cal114",
+button : "pick114",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li113" class="leftHalf    ">
+<label class="desc" id="title113" for="Field113">
+Backup Date #3
+</label>
+
+<span>
+<input id="Field113-1" name="Field113-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="101" /> /
+<label for="Field113-1">MM</label>
+</span>
+<span>
+<input id="Field113-2" name="Field113-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="102" /> /
+<label for="Field113-2">DD</label>
+</span>
+<span>
+ <input id="Field113" name="Field113" type="text" class="field text" value="" size="4" maxlength="4" tabindex="103" />
+<label for="Field113">YYYY</label>
+
+</span>
+<span id="cal113">
+<img id="pick113" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field113",
+displayArea  : "cal113",
+button : "pick113",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li112" class="rightHalf    ">
+<label class="desc" id="title112" for="Field112">
+Backup Date #4
+</label>
+<span>
+<input id="Field112-1" name="Field112-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="104" /> /
+<label for="Field112-1">MM</label>
+
+</span>
+<span>
+<input id="Field112-2" name="Field112-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="105" /> /
+<label for="Field112-2">DD</label>
+</span>
+<span>
+ <input id="Field112" name="Field112" type="text" class="field text" value="" size="4" maxlength="4" tabindex="106" />
+<label for="Field112">YYYY</label>
+</span>
+<span id="cal112">
+<img id="pick112" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field112",
+displayArea  : "cal112",
+button : "pick112",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+
+</script>
+</li>
+
+
+<li id="fo1li116" 
+class="    ">
+
+
+<label class="desc" id="title116" for="Field116">
+Date Comments
+</label>
+
+<div>
+<textarea id="Field116" 
+name="Field116" 
+class="field textarea small" 
+rows="10" cols="50"
+tabindex="107"
+ ></textarea>
+
+</div>
+
+<p class="instruct" id="instruct116"><small>Is there anything you'd like us to know about the dates you've indicated, like special situations, special events, etc...?</small></p>
+
+
+</li>
+
+<li id="fo1li95" class="section     ">
+<h3 id="title95">Assembly Start Times</h3>
+<div id="instruct95">If your school is small and all students can fit into one room, then Mr. Mike will do 1 assembly. <br />
+Larger schools should schedule 2 assemblies.<br />
+3 assemblies are only for very large schools and will only be considered based on very high enrollment.</div>
+</li>
+
+<li id="fo1li70" class="    ">
+<label class="desc" id="title70" for="Field70">
+Assembly #1
+<span id="req_70" class="req">*</span>
+</label>
+<span>
+<input id="Field70" name="Field70" type="text" class="field text" value="" size="2" maxlength="2" tabindex="108" /> : 
+<label for="Field70">HH</label>
+</span>
+<span>
+<input id="Field70-1" name="Field70-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="109" /> : 
+<label for="Field70-1">MM</label>
+
+</span>
+<span>
+ <input id="Field70-2" name="Field70-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="110" />
+<label for="Field70-2">SS</label>
+</span>
+<span>
+<select id="Field70-3" name="Field70-3" class="field select" style="width:4em" tabindex="111" >
+<option value="AM" >AM</option>
+<option value="PM" >PM</option>
+</select>
+<label for="Field70-3">AM/PM</label>
+</span>
+
+<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break in between if there are 2 or more assemblies. <br />
+<br />
+9:30 a.m. or later is the earliest start time for single school visits. If your school is part of a multi-school tour, then assemblies CAN sometimes start as earlier.<br />
+<br />
+<b>Examples</b><br />
+This works: 10:00 a.m. and 11:15 a.m. because it allows 1 hour per assembly (10:00 to 11:00 and 11:15 to 12:15) AND a 15 minute break (11:00 - 11:15) <br />
+<br />
+This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each assembly and no breaks are scheduled and 9:30 a.m. is earliest start time.</small></p>
+</li>
+
+
+<li id="fo1li72" class="    ">
+
+<label class="desc" id="title72" for="Field72">
+Assembly #2
+</label>
+<span>
+<input id="Field72" name="Field72" type="text" class="field text" value="" size="2" maxlength="2" tabindex="112" /> : 
+<label for="Field72">HH</label>
+</span>
+<span>
+<input id="Field72-1" name="Field72-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="113" /> : 
+<label for="Field72-1">MM</label>
+</span>
+<span>
+ <input id="Field72-2" name="Field72-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="114" />
+
+<label for="Field72-2">SS</label>
+</span>
+<span>
+<select id="Field72-3" name="Field72-3" class="field select" style="width:4em" tabindex="115" >
+<option value="AM" >AM</option>
+<option value="PM" >PM</option>
+</select>
+<label for="Field72-3">AM/PM</label>
+</span>
+<p class="instruct" id="instruct72"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break in between if there are 2 or more assemblies. <br />
+<br />
+9:30 a.m. or later is the earliest start time for single school visits. If you school is part of a multi-school tour, then assemblies CAN start earlier, if you need them to!<br />
+
+<br />
+<b>Examples</b><br />
+This works: 10:00 a.m. and 11:15 a.m. because it allows 1 hour per assembly (10:00 to 11:00 and 11:15 to 12:15) AND a 15 minute break (11:00 - 11:15) <br />
+<br />
+This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each assembly and no breaks are scheduled and 9:30 a.m. is earliest start time.</small></p>
+</li>
+
+
+<li id="fo1li71" class="    ">
+<label class="desc" id="title71" for="Field71">
+Assembly #3 <small>(Only for very large schools)</small>
+</label>
+
+<span>
+<input id="Field71" name="Field71" type="text" class="field text" value="" size="2" maxlength="2" tabindex="116" /> : 
+<label for="Field71">HH</label>
+</span>
+<span>
+<input id="Field71-1" name="Field71-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="117" /> : 
+<label for="Field71-1">MM</label>
+</span>
+<span>
+ <input id="Field71-2" name="Field71-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="118" />
+<label for="Field71-2">SS</label>
+
+</span>
+<span>
+<select id="Field71-3" name="Field71-3" class="field select" style="width:4em" tabindex="119" >
+<option value="AM" >AM</option>
+<option value="PM" >PM</option>
+</select>
+<label for="Field71-3">AM/PM</label>
+</span>
+<p class="instruct" id="instruct71"><small>Assembly #3 option is available only for very large schools that can't fit all students into 2 assemblies OR for schools that have a very small assembly area. Sorry, Mr. Mike is not available for more than 3 assemblies.</small></p>
+</li>
+
+
+<li id="fo1li80" class="    ">
+
+<label class="desc" id="title80" for="Field80">
+The indoors only assembly(ies) will be in the
+<span id="req_80" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_80" name="Field80" type="hidden" value="" />
+<span>
+<input id="Field80_0" name="Field80" type="radio" class="field radio" value="Auditorium" tabindex="120"  checked="checked" />
+<label class="choice" for="Field80_0" >
+Auditorium</label>
+</span>
+<span>
+<input id="Field80_1" name="Field80" type="radio" class="field radio" value="Multi-Purpose Room" tabindex="121" />
+<label class="choice" for="Field80_1" >
+Multi-Purpose Room</label>
+
+</span>
+<span>
+<input id="Field80_2" name="Field80" type="radio" class="field radio" value="Other" tabindex="122"  onmouseup="document.getElementById('Field80_other').focus();" />
+<label class="choice" for="Field80_2"  onmouseup="document.getElementById('Field80_other').focus();">
+Other</label>
+<input id="Field80_other" name="Field80_other_Other" type="text" class="field text other" value="" onclick="document.getElementById('Field80_2').checked = 'checked';" tabindex="123" />
+</span>
+</div>
+<p class="instruct" id="instruct80"><small>The last 20 minutes or so of the assembly hour is a book signing, so most students won't be seated at that time;   If the custodian needs to set up the room for something - it shouldn't be a problem - we'll all be right up front at the table. </small></p>
+</li>
+
+<li id="fo1li97" class="section     ">
+<h3 id="title97">Inclement Weather Plan - RAIN or FOG - The Show Must Go On!</h3>
+<div id="instruct97">This is an important consideration since Mr. Mike will probably be in your area for a tour and you'll want to have a back up plan just in case the weather isn't as happy to see him as you are!<br />
+
+You can find more information about bad weather options in the Schools section.</div>
+</li>
+
+
+<li id="fo1li98" class="    ">
+<label class="desc" id="title98" for="Field98">
+Is the room Mr. Mike will be in also used for lunch or other activities during inclement weather?
+<span id="req_98" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_98" name="Field98" type="hidden" value="" />
+<span>
+<input id="Field98_0" name="Field98" type="radio" class="field radio" value="Yes" tabindex="124"  checked="checked" />
+<label class="choice" for="Field98_0" >
+Yes</label>
+
+</span>
+<span>
+<input id="Field98_1" name="Field98" type="radio" class="field radio" value="No" tabindex="125" />
+<label class="choice" for="Field98_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct98"><small>Mr. Mike's 'stuff' is all set up at the front of the room.  In most cases, lunch tables can be brought down without having to move anything.</small></p>
+</li>
+
+
+<li id="fo1li101" 
+class="    ">
+
+
+<label class="desc" id="title101" for="Field101">
+
+If yes, what's your plan for inclement weather?
+<span id="req_101" class="req">*</span>
+</label>
+
+<div>
+<textarea id="Field101" 
+name="Field101" 
+class="field textarea small" 
+rows="10" cols="50"
+tabindex="126"
+ ></textarea>
+
+</div>
+
+<p class="instruct" id="instruct101"><small>Usually, we can make minor schedule adjustments and still be able to have the assemblies.  In extreme situations, the book signing table will be set up in the library and we 'make the best' of whatever the weather dictates... but this is rare.</small></p>
+
+
+</li>
+
+<li id="fo1li103" class="    ">
+<label class="desc" id="title103" for="Field103">
+Is your school prone to schedule changes due to fog or other weather during the time of Mr. Mike's visit?
+<span id="req_103" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_103" name="Field103" type="hidden" value="" />
+<span>
+<input id="Field103_0" name="Field103" type="radio" class="field radio" value="Yes" tabindex="127"  checked="checked" />
+<label class="choice" for="Field103_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field103_1" name="Field103" type="radio" class="field radio" value="No" tabindex="128" />
+
+<label class="choice" for="Field103_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct103"><small>If Mr. Mike will be visiting during a time of year when school buses are often delayed - let us know!  <br />
+It's better to figure this out now than later.</small></p>
+</li>
+
+
+<li id="fo1li102" 
+class="    ">
+
+
+<label class="desc" id="title102" for="Field102">
+If yes, what's your plan in the event of delays?
+
+<span id="req_102" class="req">*</span>
+</label>
+
+<div>
+<textarea id="Field102" 
+name="Field102" 
+class="field textarea small" 
+rows="10" cols="50"
+tabindex="129"
+ ></textarea>
+
+</div>
+
+<p class="instruct" id="instruct102"><small>In these situations where there just aren't any students at the school until a delayed time, we can set up the book signing table in the library and Mr. Mike can visit a few classes... again, we make the best of it!</small></p>
+
+
+</li>
+
+<li id="fo1li73" class="section     ">
+
+<h3 id="title73">Lunch with Mr. Mike</h3>
+<div id="instruct73">An informal lunch for students.  See the <a href="/schools/lunch-with-mr-mike/" target="_blank">'Lunch with Mr. Mike'</a> page for more info.</div>
+</li>
+
+
+<li id="fo1li74" class="    ">
+<label class="desc" id="title74" for="Field74">
+Are you requesting 'Lunch With Mr. Mike' for a group of about 25 STUDENTS?
+<span id="req_74" class="req">*</span>
+</label>
+<div class="col">
+
+<input id="radioDefault_74" name="Field74" type="hidden" value="" />
+<span>
+<input id="Field74_0" name="Field74" type="radio" class="field radio" value="Yes" tabindex="130"  checked="checked" />
+<label class="choice" for="Field74_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field74_1" name="Field74" type="radio" class="field radio" value="No" tabindex="131" />
+<label class="choice" for="Field74_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct74"><small>Please Note: This event is for STUDENTS </small></p>
+</li>
+
+
+<li id="fo1li78" class="leftHalf    ">
+<label class="desc" id="title78" for="Field78">
+If YES, what time will it start?
+<span id="req_78" class="req">*</span>
+</label>
+<span>
+<input id="Field78" name="Field78" type="text" class="field text" value="" size="2" maxlength="2" tabindex="132" /> : 
+<label for="Field78">HH</label>
+</span>
+<span>
+<input id="Field78-1" name="Field78-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="133" /> : 
+
+<label for="Field78-1">MM</label>
+</span>
+<span>
+ <input id="Field78-2" name="Field78-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="134" />
+<label for="Field78-2">SS</label>
+</span>
+<span>
+<select id="Field78-3" name="Field78-3" class="field select" style="width:4em" tabindex="135" >
+<option value="AM" >AM</option>
+<option value="PM" >PM</option>
+</select>
+<label for="Field78-3">AM/PM</label>
+
+</span>
+<p class="instruct" id="instruct78"><small>Allow a minimum 15 min.  break after the end of the assembly.</small></p>
+</li>
+
+
+<li id="fo1li77" class="rightHalf    ">
+<label class="desc" id="title77" for="Field77">
+What time will it end?
+<span id="req_77" class="req">*</span>
+</label>
+<span>
+<input id="Field77" name="Field77" type="text" class="field text" value="" size="2" maxlength="2" tabindex="136" /> : 
+<label for="Field77">HH</label>
+
+</span>
+<span>
+<input id="Field77-1" name="Field77-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="137" /> : 
+<label for="Field77-1">MM</label>
+</span>
+<span>
+ <input id="Field77-2" name="Field77-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="138" />
+<label for="Field77-2">SS</label>
+</span>
+<span>
+<select id="Field77-3" name="Field77-3" class="field select" style="width:4em" tabindex="139" >
+<option value="AM" >AM</option>
+
+<option value="PM" >PM</option>
+</select>
+<label for="Field77-3">AM/PM</label>
+</span>
+<p class="instruct" id="instruct77"><small>About 45 minutes is good.</small></p>
+</li>
+
+
+<li id="fo1li79" class="    ">
+<label class="desc" id="title79" for="Field79">
+What room in your school will the lunch be held?
+<span id="req_79" class="req">*</span>
+</label>
+
+<div>
+<input id="Field79" name="Field79" type="text" class="field text medium" value="" maxlength="255" tabindex="140" />
+</div>
+<p class="instruct" id="instruct79"><small>Choose a quite place like a library or other room away from all the hussle and bustle.</small></p>
+</li>
+
+<li id="fo1li82" class="section     ">
+<h3 id="title82">Important Questions</h3>
+<div id="instruct82">Please answer 'Yes' or 'No' to the following questions.</div>
+</li>
+
+
+<li id="fo1li83" class="    ">
+<label class="desc" id="title83" for="Field83">
+
+Are you having a book fair within one month BEFORE or DURING Mr. Mike’s visit? <small>(Mr. Mike can visit before a book fair, but NOT within 1 month after.)</small>
+<span id="req_83" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_83" name="Field83" type="hidden" value="" />
+<span>
+<input id="Field83_0" name="Field83" type="radio" class="field radio" value="Yes" tabindex="141"  checked="checked" />
+<label class="choice" for="Field83_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field83_1" name="Field83" type="radio" class="field radio" value="No" tabindex="142" />
+<label class="choice" for="Field83_1" >
+
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct83"><small>This is important because book sales during Mr. Mike's visit are affected if you have just recently had a book fair. This is especially important if you are requesting a FREE event where book sales are supplementing the regular fee, travel &amp; accomodations!<br />
+</small></p>
+</li>
+
+
+<li id="fo1li84" class="    ">
+<label class="desc" id="title84" for="Field84">
+Have you read all the info. in the <a href="/schools/" target="_blank">Schools</a> section?<br />
+
+<small>(If 'no' then please read all the info. before submitting.)</small>
+<span id="req_84" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_84" name="Field84" type="hidden" value="" />
+<span>
+<input id="Field84_0" name="Field84" type="radio" class="field radio" value="Yes" tabindex="143"  checked="checked" />
+<label class="choice" for="Field84_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field84_1" name="Field84" type="radio" class="field radio" value="No" tabindex="144" />
+<label class="choice" for="Field84_1" >
+No</label>
+
+</span>
+</div>
+<p class="instruct" id="instruct84"><small>This is important because we want to ensure that you are fully informed before you make a request. Sometimes people come straight to this form and don't bother to read the important stuff. The more you know now, the easier it will be to secure a date and prepare for Mr. Mike's visit!<br />
+</small></p>
+</li>
+
+
+<li id="fo1li86" class="    ">
+<label class="desc" id="title86" for="Field86">
+Are the dates o.k.'d with your Principal and everyone who needs to know? Or, if you are the Principal, V.P., or Assistant Principal, have you provided the 'Secondary Contact Person' information for the person who will be organizing the event?<br />
+<small>(If 'no' then please wait on submitting this form until you've cleared the dates and provided the 'Secondary Contact Person' information.)</small>
+<span id="req_86" class="req">*</span>
+</label>
+
+<div class="col">
+<input id="radioDefault_86" name="Field86" type="hidden" value="" />
+<span>
+<input id="Field86_0" name="Field86" type="radio" class="field radio" value="Yes" tabindex="145"  checked="checked" />
+<label class="choice" for="Field86_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field86_1" name="Field86" type="radio" class="field radio" value="No" tabindex="146" />
+<label class="choice" for="Field86_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct86"><small>This is important because there have been times when administrators were not informed of a request.<br />
+
+<br />
+There have also been times when administrators didn't enroll the help of others and were not able to prepare adequately... so, things did not go well. <br />
+</small></p>
+</li>
+
+
+<li id="fo1li87" class="    ">
+<label class="desc" id="title87" for="Field87">
+Have you confirmed that ALL GRADE LEVELS and ALL CLASSES will attend and that your school IS IN SESSION two weeks BEFORE AND the week AFTER Mr. Mike's visit? <small>(If 'no' then change the dates to when ALL students will be there and when your school will be in session 2 weeks before and 1 week after Mr. Mike's visit.)</small>
+<span id="req_87" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_87" name="Field87" type="hidden" value="" />
+
+<span>
+<input id="Field87_0" name="Field87" type="radio" class="field radio" value="Yes" tabindex="147"  checked="checked" />
+<label class="choice" for="Field87_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field87_1" name="Field87" type="radio" class="field radio" value="No" tabindex="148" />
+<label class="choice" for="Field87_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct87"><small>This is important because Mr. Mike has arrived at schools ready to meet everyone only to be told that entire grade levels were out on a field trip or that it was decided at the last minute that certain classes wouldn't attend!  Yikes!</small></p>
+</li>
+
+<li id="fo1li88" class="    ">
+<label class="desc" id="title88" for="Field88">
+Will you, your school and PTA/O follow through with all preparations necessary to put on a great event and be ready for Mr. Mike when he arrives? Cross your heart!<br />
+<small>(If 'no' then please wait on submitting a request until you have checked in with your PTA/O and feel comfortable with your school's ability to prepare for a visiting author.)</small>
+<span id="req_88" class="req">*</span>
+</label>
+<div class="col">
+<input id="radioDefault_88" name="Field88" type="hidden" value="" />
+<span>
+<input id="Field88_0" name="Field88" type="radio" class="field radio" value="Yes" tabindex="149"  checked="checked" />
+<label class="choice" for="Field88_0" >
+Yes</label>
+
+</span>
+<span>
+<input id="Field88_1" name="Field88" type="radio" class="field radio" value="No" tabindex="150" />
+<label class="choice" for="Field88_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct88"><small>This is important because Mr. Mike travels long distances to visit schools and wants/needs! to feel appreciated - just like everybody else!!! Your absolute guarantee to be really, really prepared is required!!!</small></p>
+</li>
+
+
+<li id="fo1li108" class="    ">
+<label class="desc" id="title108" for="Field108">
+Have your students ever participated in a school-wide writing program such as poetry writing, publishing their own books, etc.?
+<span id="req_108" class="req">*</span>
+
+</label>
+<div class="col">
+<input id="radioDefault_108" name="Field108" type="hidden" value="" />
+<span>
+<input id="Field108_0" name="Field108" type="radio" class="field radio" value="Yes" tabindex="151"  checked="checked" />
+<label class="choice" for="Field108_0" >
+Yes</label>
+</span>
+<span>
+<input id="Field108_1" name="Field108" type="radio" class="field radio" value="No" tabindex="152" />
+<label class="choice" for="Field108_1" >
+No</label>
+</span>
+</div>
+<p class="instruct" id="instruct108"><small>It's helpful for us to know what your school's experience with writing has been!</small></p>
+
+</li>
+
+<li id="fo1li90" class="section     ">
+<h3 id="title90">For Schools Coordinating with Other Schools
+</h3>
+<div id="instruct90">If your school is not in O.C., S.D., L.A., Riverside, Imperial, San Bern. counties in California, then you must indicate all the schools you're coordinating with. <br />
+(Note: outlying areas of L.A., R., Imp., SanB., counties may require 2 schools - we'll let you know.) <br />
+<br />
+Here's the minimum # schools breakdown for California:<br />
+<br />
+<b>Southern Desert Areas: 2 schools<br />
+Most of Central Valley: 4 schools<br />
+
+Southern Coastal: 3 schools<br />
+ALL Northern: 5 schools</b><br />
+<br />
+Dates will be scheduled once we have forms from ALL the schools you're coordinating with. It is not unusual for the minimum # of schools to be exceeded quickly and we end up booking an entire week in an area that might only have a minimum of 2 schools required, which is fine. Once schools start coordinating, other schools often want to get on board. All schools interested should submit and this Assembly Request Form, as we may be able to start working on filling a second week for your area - if it gets to that point.<br />
+<br />
+Indicate DATE, NAME OF SCHOOL, CONTACT PERSON that you are coordinating with. This helps us know who we should be keeping an eye out for. It does not mean that we will initiate contacting them - they need will be responsible for initiating the request.  If you need to check back with us, we'll be able to tell you who got their forms in and who hasn't.<br />
+<br />
+EXAMPLE:<br />
+Mon, March 4 - Lotsafun Elmentary - Ima Goodreader - Library - email@school.edu<br />
+Tue, March 5 - Lakewood Elementary - Jenny SoAndSo - PTA - email@school.edu<br />
+
+Wed, March 6 - Sunrise Elementary - Bill CoolGuy - Principal - email@school.edu<br />
+Thur, March 7 - Railroad Elementary - Doris ILikeBooks - Library - email@school.edu<br />
+Fri, March 8 - Surfsup Elementary - Mrs. SurferGal - Teacher  - email@school.edu<br />
+</div>
+</li>
+
+
+<li id="fo1li127" class="    ">
+<label class="desc" id="title127" for="Field127">
+Monday Visit Date
+</label>
+<span>
+<input id="Field127-1" name="Field127-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="153" /> /
+
+<label for="Field127-1">MM</label>
+</span>
+<span>
+<input id="Field127-2" name="Field127-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="154" /> /
+<label for="Field127-2">DD</label>
+</span>
+<span>
+ <input id="Field127" name="Field127" type="text" class="field text" value="" size="4" maxlength="4" tabindex="155" />
+<label for="Field127">YYYY</label>
+</span>
+<span id="cal127">
+<img id="pick127" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field127",
+displayArea  : "cal127",
+button : "pick127",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li133" class="leftHalf    ">
+<label class="desc" id="title133" for="Field133">
+Monday School Name
+</label>
+<div>
+<input id="Field133" name="Field133" type="text" class="field text medium" value="" maxlength="255" tabindex="156" />
+</div>
+</li>
+
+
+<li id="fo1li131" class="rightHalf    ">
+
+<label class="desc" id="title131" for="Field131">
+Monday School Contact's Name
+</label>
+<span>
+<input id="Field131" name="Field131" type="text" class="field text" value="" size="8" tabindex="157" />
+<label for="Field131">First</label>
+</span>
+<span>
+<input id="Field132" name="Field132" type="text" class="field text" value="" size="14" tabindex="158" />
+<label for="Field132">Last</label>
+</span>
+</li>
+
+
+<li id="fo1li151" class="leftHalf    ">
+
+<label class="desc" id="title151" for="Field151">
+Monday School Contact's Title
+</label>
+<div>
+<input id="Field151" name="Field151" type="text" class="field text medium" value="" maxlength="255" tabindex="159" />
+</div>
+</li>
+
+
+<li id="fo1li138" class="rightHalf    ">
+<label class="desc" id="title138" for="Field138">
+Monday School Contact's Email
+</label>
+<div>
+<input id="Field138" name="Field138" type="text" class="field text medium" value="" maxlength="255" tabindex="160" /> 
+</div>
+</li>
+
+
+<li id="fo1li147" class="    ">
+<label class="desc" id="title147" for="Field147">
+Tuesday Visit Date
+</label>
+<span>
+<input id="Field147-1" name="Field147-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="161" /> /
+<label for="Field147-1">MM</label>
+</span>
+<span>
+<input id="Field147-2" name="Field147-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="162" /> /
+<label for="Field147-2">DD</label>
+
+</span>
+<span>
+ <input id="Field147" name="Field147" type="text" class="field text" value="" size="4" maxlength="4" tabindex="163" />
+<label for="Field147">YYYY</label>
+</span>
+<span id="cal147">
+<img id="pick147" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field147",
+displayArea  : "cal147",
+button : "pick147",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li148" class="leftHalf    ">
+<label class="desc" id="title148" for="Field148">
+
+Tuesday School Name
+</label>
+<div>
+<input id="Field148" name="Field148" type="text" class="field text medium" value="" maxlength="255" tabindex="164" />
+</div>
+</li>
+
+
+<li id="fo1li149" class="rightHalf    ">
+<label class="desc" id="title149" for="Field149">
+Tuesday School Contact's Name
+</label>
+<span>
+<input id="Field149" name="Field149" type="text" class="field text" value="" size="8" tabindex="165" />
+<label for="Field149">First</label>
+</span>
+
+<span>
+<input id="Field150" name="Field150" type="text" class="field text" value="" size="14" tabindex="166" />
+<label for="Field150">Last</label>
+</span>
+</li>
+
+
+<li id="fo1li136" class="leftHalf    ">
+<label class="desc" id="title136" for="Field136">
+Tuesday School Contact's Title
+</label>
+<div>
+<input id="Field136" name="Field136" type="text" class="field text medium" value="" maxlength="255" tabindex="167" />
+</div>
+</li>
+
+<li id="fo1li152" class="rightHalf    ">
+<label class="desc" id="title152" for="Field152">
+Tuesday School Contact's Email
+</label>
+<div>
+<input id="Field152" name="Field152" type="text" class="field text medium" value="" maxlength="255" tabindex="168" /> 
+</div>
+</li>
+
+
+<li id="fo1li153" class="    ">
+<label class="desc" id="title153" for="Field153">
+Wednesday Visit Date
+</label>
+<span>
+<input id="Field153-1" name="Field153-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="169" /> /
+
+<label for="Field153-1">MM</label>
+</span>
+<span>
+<input id="Field153-2" name="Field153-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="170" /> /
+<label for="Field153-2">DD</label>
+</span>
+<span>
+ <input id="Field153" name="Field153" type="text" class="field text" value="" size="4" maxlength="4" tabindex="171" />
+<label for="Field153">YYYY</label>
+</span>
+<span id="cal153">
+<img id="pick153" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field153",
+displayArea  : "cal153",
+button : "pick153",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li154" class="leftHalf    ">
+<label class="desc" id="title154" for="Field154">
+Wednesday School Name
+</label>
+<div>
+<input id="Field154" name="Field154" type="text" class="field text medium" value="" maxlength="255" tabindex="172" />
+</div>
+</li>
+
+
+<li id="fo1li155" class="rightHalf    ">
+
+<label class="desc" id="title155" for="Field155">
+Wednesday School Contact's Name
+</label>
+<span>
+<input id="Field155" name="Field155" type="text" class="field text" value="" size="8" tabindex="173" />
+<label for="Field155">First</label>
+</span>
+<span>
+<input id="Field156" name="Field156" type="text" class="field text" value="" size="14" tabindex="174" />
+<label for="Field156">Last</label>
+</span>
+</li>
+
+
+<li id="fo1li162" class="leftHalf    ">
+
+<label class="desc" id="title162" for="Field162">
+Wednesday School Contact's Title
+</label>
+<div>
+<input id="Field162" name="Field162" type="text" class="field text medium" value="" maxlength="255" tabindex="175" />
+</div>
+</li>
+
+
+<li id="fo1li161" class="rightHalf    ">
+<label class="desc" id="title161" for="Field161">
+Wednesday School Contact's Email
+</label>
+<div>
+<input id="Field161" name="Field161" type="text" class="field text medium" value="" maxlength="255" tabindex="176" /> 
+</div>
+</li>
+
+
+<li id="fo1li163" class="    ">
+<label class="desc" id="title163" for="Field163">
+Thursday Visit Date
+</label>
+<span>
+<input id="Field163-1" name="Field163-1" type="text" class="field text" value="" size="2" maxlength="2" tabindex="177" /> /
+<label for="Field163-1">MM</label>
+</span>
+<span>
+<input id="Field163-2" name="Field163-2" type="text" class="field text" value="" size="2" maxlength="2" tabindex="178" /> /
+<label for="Field163-2">DD</label>
+
+</span>
+<span>
+ <input id="Field163" name="Field163" type="text" class="field text" value="" size="4" maxlength="4" tabindex="179" />
+<label for="Field163">YYYY</label>
+</span>
+<span id="cal163">
+<img id="pick163" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
+</span>
+<script type="text/javascript">
+Calendar.setup({
+inputField : "Field163",
+displayArea  : "cal163",
+button : "pick163",
+ifFormat : "%B %e, %Y",
+onSelect : selectDate
+});
+</script>
+</li>
+
+
+<li id="fo1li164" class="leftHalf    ">
+<label class="desc" id="title164" for="Field164">
+
+Thursday School Name
+</label>
+<div>
+<input id="Field164" name="Field164" type="text" class="field text medium" value="" maxlength="255" tabindex="180" />
+</div>
+</li>
+
+
+<li id="fo1li159" class="rightHalf    ">
+<label class="desc" id="title159" for="Field159">
+Thursday School Contact's Name
+</label>
+<span>
+<input id="Field159" name="Field159" type="text" class="field text" value="" size="8" tabindex="181" />
+<label for="Field159">First</label>
+</span>
+
+<span>
+<input id="Field160" name="Field160" type="text" class="field text" value="" size="14" tabindex="182" />
+<label for="Field160">Last</label>
+</span>
+</li>
+
+
+<li id="fo1li165" class="leftHalf    ">
+<label class="desc" id="title165" for="Field165">
+Thursday School Contact's Title
+</label>
+<div>
+<input id="Field165" name="Field165" type="text" class="field text medium" value="" maxlength="255" tabindex="183" />
+</div>
+</li>
+
+<li id="fo1li166" class="rightHalf    ">
+<label class="desc" id="title166" for="Field166">
+Thursday School Contact's Email
+</label>
+<div>
+<input id="Field166" name="Field166" type="text" class="field text medium" value="" maxlength="255" tabindex="184" /> 
+</div>
+</li>
+
+<li id="fo1li92" class="section     ">
+<h3 id="title92">Almost Done!...</h3>
+<div id="instruct92">We receive lots of requests for visits from Mr. Mike!  <br />
+We'll pay close attention to your responses to ALL of the questions below.  <br />
+
+Please be as detailed as possible!<br />
+</div>
+</li>
+
+<!-- Big questions -->
+
+<li id="fo1li93" class="    ">
+	<%= f.label :essay_visit_reason, "Why is your school requesting a visit from Mr. Mike?" %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+<li id="fo1li94" class="    ">
+	<%= f.label :essay_visit_reason, "What do you hope to get out of it?" %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+<li id="fo1li95" class="    ">
+	<%= f.label :essay_visit_reason, "What is your school's approach to writing?", :class => 'field textarea small' %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+<li id="fo1li122" class="    ">
+	<%= f.label :essay_visit_reason, "How you feel about hosting Mr. Mike?", :class => 'field textarea small' %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+<li id="fo1li121" class="    ">
+	<%= f.label :essay_visit_reason, "What are your plans for preparation?", :class => 'field textarea small' %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+<li id="fo1li120" class="    ">
+	<%= f.label :essay_visit_reason, "How will your PTA/O be involved?", :class => 'field textarea small' %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+<li id="fo1li119" class="    ">
+	<%= f.label :essay_visit_reason, "Is there anything else you'd like us to know?", :class => 'field textarea small' %>
+	<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 10 %></div>
+</li>
+
+
+<li class="buttons">
+<!-- Submit Button? -->
+</li>
+
+<li style="display:none">
+<label for="comment">Do Not Fill This Out</label>
+<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+
+</li>
+</ul>
+

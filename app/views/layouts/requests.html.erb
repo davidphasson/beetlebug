@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <title>Assembly Request</title>
+    
+	<!-- Wufoo CSS/JS -->
+	<%= stylesheet_link_tag "dynamic.1233758974.css" %>
+	<%= stylesheet_link_tag "theme" %>	
+	<%= javascript_include_tag "dynamic.1226508100" %>
+
+   	<%= stylesheet_link_tag "global" %>
+    <%= javascript_include_tag :defaults %>
+
+
+</head>
+
+<body id="public" >
+<img id="top" src="/images/top.png" alt="" />
+<div id="container">
+
+	<h1 id="logo"><a>Wufoo</a></h1>
+
+    <% if flash %>
+    <div id="flash">
+      <% if flash[:notice] %>
+          <span class="notice"><%= flash[:notice] %></span>
+      <% elsif flash[:warning] %>
+          <span class="warning"><%= flash[:warning] %></span>
+      <% end %>
+    </div>
+    <% end %>
+    
+    <!-- <div id="body"> -->
+        <%= yield %>
+    <!-- </div> -->
+    
+    <div id="footer">
+
+    </div>
+</div>
+
+
+</body>
+</html>
