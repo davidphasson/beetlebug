@@ -19083,3 +19083,2800 @@ ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:me
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRequests (20090325135128)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "school" varchar(255), "assembly_type" integer, "starting_grade" integer, "ending_grade" integer, "num_students" integer, "author_hosted" integer, "mike_hosted" varchar(255), "contact1_first" varchar(255), "contact1_last" varchar(255), "contact1_position" varchar(255), "contact1_phone" varchar(255), "contact1_altphone" varchar(255), "contact1_fax" varchar(255), "contact1_email" varchar(255), "contact2_first" varchar(255), "contact2_last" varchar(255), "contact2_position" varchar(255), "contact2_phone" varchar(255), "contact2_altphone" varchar(255), "contact2_email" varchar(255), "school_mail_address1" varchar(255), "school_mail_address2" varchar(255), "school_mail_city" varchar(255), "school_mail_state" varchar(255), "school_mail_country" varchar(255), "school_mail_zipcode" varchar(255), "school_phys_address1" varchar(255), "school_phys_address2" varchar(255), "school_phys_city" varchar(255), "school_phys_state" varchar(255), "school_phys_zipcode" varchar(255), "school_phys_country" varchar(255), "school_county" varchar(255), "school_district" varchar(255), "winter_break_start" date, "winter_break_end" date, "spring_break_start" date, "spring_break_end" date, "last_school_date" date, "first_school_date" date, "preferred_date1" date, "preferred_date2" date, "preferred_date3" date, "preferred_date4" date, "alternate_date1" date, "alternate_date2" date, "alternate_date3" date, "alternate_date4" date, "backup_date1" date, "backup_date2" date, "backup_date3" date, "backup_date4" date, "date_comments" text, "assembly_time1" time, "assembly_time2" time, "assembly_time3" time, "assembly_location" varchar(255), "inclement_lunchroom" varchar(255), "inclement_plan" text, "school_prone_weather_delays?" boolean, "weather_delay_plan" varchar(255), "lunch_with_mike?" boolean, "lunch_start" time, "lunch_end" time, "lunch_room" varchar(255), "had_writing_program?" boolean, "monday_date" date, "tuesday_date" date, "wednesday_date" date, "thursday_date" date, "monday_school" varchar(255), "monday_contact_first" varchar(255), "monday_contact_last" varchar(255), "monday_contact_title" varchar(255), "monday_contact_email" varchar(255), "tuesday_school" varchar(255), "tuesday_contact_first" varchar(255), "tuesday_contact_last" varchar(255), "tuesday_contact_title" varchar(255), "tuesday_contact_email" varchar(255), "wednesday_school" varchar(255), "wednesday_contact_first" varchar(255), "wednesday_contact_last" varchar(255), "wednesday_contact_title" varchar(255), "wednesday_contact_email" varchar(255), "thursday_school" varchar(255), "thursday_contact_first" varchar(255), "thursday_contact_last" varchar(255), "thursday_contact_title" varchar(255), "thursday_contact_email" varchar(255), "essay_visit_reason" text, "essay_hope_receive" text, "essay_writing_approach" text, "essay_feel_about_mike" text, "essay_prep_plans" text, "essay_pta_involvement" text, "essay_other" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090325135128')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("requests")[0m
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-27 09:13:52) [POST]
+  Parameters: {"commit"=>"Submit", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"2010", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"3", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"2006", "assembly_time1(4i)"=>"00", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"2010", "thursday_date(3i)"=>"26", "alternate_date4(2i)"=>"5", "contact1_position"=>"Chief Bloviation Specialist", "assembly_time2(5i)"=>"00", "spring_break_end(3i)"=>"23", "preferred_date1(2i)"=>"3", "winter_break_end(3i)"=>"3", "wednesday_date(3i)"=>"26", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"jd@trout.com", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"28", "contact2_altphone"=>"", "spring_break_start(2i)"=>"3", "alternate_date3(3i)"=>"3", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"2007", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"Our lady of lost hope", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"2", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"5", "contact2_position"=>"Librarian", "tuesday_school"=>"", "lunch_start(2i)"=>"3", "school_phys_city"=>"", "winter_break_start(1i)"=>"2009", "contact2_first"=>"David", "school_mail_zipcode"=>"90024", "lunch_end(2i)"=>"3", "alternate_date2(1i)"=>"2007", "monday_contact_last"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"2", "contact2_phone"=>"858-761-8201", "winter_break_start(3i)"=>"18", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"2009", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"4", "assembly_time2(2i)"=>"3", "school_mail_address1"=>"1234 Candy Cane Lane", "thursday_school"=>"", "school_district"=>"Our lady of bloviation", "school_mail_city"=>"Los Angeles", "school_mail_address2"=>"", "school_county"=>"Los Angeles", "assembly_time1(3i)"=>"26", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"2005", "contact2_last"=>"Hasson", "assembly_time2(4i)"=>"00", "wednesday_contact_last"=>"", "spring_break_end(2i)"=>"3", "preferred_date1(1i)"=>"2009", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"1", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"00", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"3", "spring_break_start(1i)"=>"2010", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"2", "alternate_date4(3i)"=>"4", "monday_contact_first"=>"", "preferred_date1(3i)"=>"5", "tuesday_date(3i)"=>"26", "wednesday_contact_title"=>"", "school_mail_state"=>"CA", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"17", "contact1_first"=>"JD", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"2007", "essay_visit_reason"=>"", "contact1_phone"=>"310-983-1091", "contact1_last"=>"Trout", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"3", "monday_date(3i)"=>"26", "contact2_email_confirmation"=>"dph@funtaff.com", "lunch_start(1i)"=>"2009", "contact2_email"=>"dph@funtaff.com", "wednesday_contact_email"=>"", "thursday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "tuesday_contact_first"=>"", "preferred_date3(3i)"=>"8", "lunch_end(1i)"=>"2009", "thursday_contact_last"=>"", "lunch_start(3i)"=>"26", "alternate_date1(1i)"=>"2007", "winter_break_start(2i)"=>"12", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"2", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"2009", "contact1_email_confirmation"=>"jd@trout.com", "lunch_end(3i)"=>"26", "alternate_date1(3i)"=>"2", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"3", "assembly_time2(3i)"=>"26", "spring_break_end(1i)"=>"2010"}, "comment"=>""}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+
+ActionView::TemplateError (undefined local variable or method `req_f' for #<ActionView::Base:0x2492f30>) on line #12 of app/views/requests/_form_general.erb.html:
+9: 
+10: 
+11: <li id="fo1li11" class="    ">
+12: 	<%= f.label :school, "School Name #{req_f}", :class => "desc" %>
+13: 	<div><%= f.text_field :school, :class => "field text", :size => 50 %></div>
+14: 	<p class="instruct" id="instruct11"><small>The name of your school!</small></p>
+15: </li>
+
+    app/views/requests/_form_general.erb.html:12
+    app/views/requests/_form.html.erb:46
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+    app/controllers/requests_controller.rb:25:in `create'
+
+Rendered rescues/_trace (51.3ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:15:43) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+
+ActionView::TemplateError (undefined local variable or method `req_f' for #<ActionView::Base:0x25725e0>) on line #12 of app/views/requests/_form_general.erb.html:
+9: 
+10: 
+11: <li id="fo1li11" class="    ">
+12: 	<%= f.label :school, "School Name #{req_f}", :class => "desc" %>
+13: 	<div><%= f.text_field :school, :class => "field text", :size => 50 %></div>
+14: 	<p class="instruct" id="instruct11"><small>The name of your school!</small></p>
+15: </li>
+
+    app/views/requests/_form_general.erb.html:12
+    app/views/requests/_form.html.erb:46
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+
+Rendered rescues/_trace (103.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:16:24) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (5.9ms)
+
+ActionView::TemplateError (undefined method `checkbox' for #<ActionView::Helpers::FormBuilder:0x2475a34>) on line #171 of app/views/requests/_form_contact.erb.html:
+168: </li>
+169: 
+170: <li id="a123" class="    ">
+171: 	<%= f.checkbox "phys_addr", :onclick => "$('fo1li52').show();" %>
+172: 	<%= f.label "phys_addr", "Our physical address is different than the mailing address" %>
+173: </li>
+174: 
+
+    app/views/requests/_form_contact.erb.html:171
+    app/views/requests/_form.html.erb:54
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:25:52) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.6ms)
+
+ActionView::TemplateError (undefined method `phys_addr' for #<Request:0x23b5018>) on line #171 of app/views/requests/_form_contact.erb.html:
+168: </li>
+169: 
+170: <li id="a123" class="    ">
+171: 	<%= f.check_box "phys_addr", :onclick => "$('fo1li52').show();" %>
+172: 	<%= f.label "phys_addr", "Our physical address is different than the mailing address" %>
+173: </li>
+174: 
+
+    app/views/requests/_form_contact.erb.html:171
+    app/views/requests/_form.html.erb:60
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+
+Rendered rescues/_trace (54.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:26:09) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (13.8ms)
+Rendered requests/_form_times (16.5ms)
+Rendered requests/_form_questions (6.3ms)
+Rendered requests/_form_multisite (15.5ms)
+Rendered requests/_form_comments (3.2ms)
+Rendered requests/_form (76.4ms)
+Completed in 110ms (View: 97, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:26:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:26:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:26:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:26:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:36:04) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (13.6ms)
+Rendered requests/_form_times (16.1ms)
+Rendered requests/_form_questions (57.1ms)
+Rendered requests/_form_multisite (15.7ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (131.1ms)
+Completed in 166ms (View: 151, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:04) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:04) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:36:44) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.2ms)
+Rendered requests/_form_contact (14.3ms)
+Rendered requests/_form_times (16.8ms)
+Rendered requests/_form_questions (6.0ms)
+Rendered requests/_form_multisite (15.8ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (134.8ms)
+Completed in 168ms (View: 155, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:36:45) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:36:59) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (13.6ms)
+Rendered requests/_form_times (16.3ms)
+Rendered requests/_form_questions (6.1ms)
+Rendered requests/_form_multisite (67.4ms)
+Rendered requests/_form_comments (3.5ms)
+Rendered requests/_form (131.6ms)
+Completed in 167ms (View: 152, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:37:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:43:34) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (67.7ms)
+Rendered requests/_form_times (16.9ms)
+Rendered requests/_form_questions (5.6ms)
+Rendered requests/_form_multisite (16.4ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (130.9ms)
+Completed in 162ms (View: 149, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:43:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:43:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:43:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:43:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:44:39) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.2ms)
+Rendered requests/_form_contact (15.0ms)
+Rendered requests/_form_times (16.6ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (15.7ms)
+Rendered requests/_form_comments (3.2ms)
+Rendered requests/_form (78.2ms)
+Completed in 110ms (View: 97, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:44:51) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (13.7ms)
+Rendered requests/_form_times (16.2ms)
+Rendered requests/_form_questions (56.5ms)
+Rendered requests/_form_multisite (16.2ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (127.4ms)
+Completed in 159ms (View: 145, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:44:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:45:14) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (65.2ms)
+Rendered requests/_form_contact (25.8ms)
+Rendered requests/_form_times (18.5ms)
+Rendered requests/_form_questions (5.9ms)
+Rendered requests/_form_multisite (17.0ms)
+Rendered requests/_form_comments (3.3ms)
+Rendered requests/_form (150.7ms)
+Completed in 183ms (View: 170, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:45:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:45:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:45:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:45:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:48:57) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (14.2ms)
+Rendered requests/_form_dates (7.6ms)
+Rendered requests/_form_times (17.1ms)
+Rendered requests/_form_questions (6.2ms)
+Rendered requests/_form_multisite (16.3ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (142.3ms)
+Completed in 177ms (View: 163, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:48:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:48:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:48:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:48:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:49:12) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (67.6ms)
+Rendered requests/_form_dates (7.6ms)
+Rendered requests/_form_times (16.8ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (15.3ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (140.0ms)
+Completed in 172ms (View: 158, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:49:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:49:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:49:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:49:13) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:50:09) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (13.8ms)
+Rendered requests/_form_dates (7.3ms)
+Rendered requests/_form_times (16.0ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (67.0ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (136.7ms)
+Completed in 169ms (View: 155, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:50:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:50:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:50:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:50:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:52:55) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.3ms)
+Rendered requests/_form_contact (13.6ms)
+Rendered requests/_form_dates (7.8ms)
+Rendered requests/_form_times (17.4ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (15.5ms)
+Rendered requests/_form_comments (3.3ms)
+Rendered requests/_form (140.8ms)
+Completed in 172ms (View: 159, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:52:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:53:24) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (7.0ms)
+Rendered requests/_form_contact (15.2ms)
+Rendered requests/_form_dates (8.6ms)
+Rendered requests/_form_times (18.1ms)
+Rendered requests/_form_questions (6.6ms)
+Rendered requests/_form_multisite (17.6ms)
+Rendered requests/_form_comments (3.3ms)
+Rendered requests/_form (148.3ms)
+Completed in 183ms (View: 168, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:53:24) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (7.0ms)
+Rendered requests/_form_contact (14.0ms)
+Rendered requests/_form_dates (8.7ms)
+Rendered requests/_form_times (16.3ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.6ms)
+Rendered requests/_form_comments (57.1ms)
+Rendered requests/_form (143.0ms)
+Completed in 177ms (View: 162, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:53:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:53:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:53:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:53:25) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:54:36) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (13.9ms)
+Rendered requests/_form_dates (61.5ms)
+Rendered requests/_form_times (16.8ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.7ms)
+Rendered requests/_form_comments (3.6ms)
+Rendered requests/_form (140.4ms)
+Completed in 172ms (View: 159, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:54:36) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:54:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:55:21) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (13.8ms)
+Rendered requests/_form_dates (7.6ms)
+Rendered requests/_form_times (16.5ms)
+Rendered requests/_form_questions (5.9ms)
+Rendered requests/_form_multisite (15.4ms)
+Rendered requests/_form_comments (3.3ms)
+Rendered requests/_form (86.8ms)
+Completed in 119ms (View: 106, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:55:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:55:21) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:55:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:55:22) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 09:56:05) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (13.5ms)
+Rendered requests/_form_dates (59.2ms)
+Rendered requests/_form_times (16.9ms)
+Rendered requests/_form_questions (5.9ms)
+Rendered requests/_form_multisite (15.5ms)
+Rendered requests/_form_comments (3.3ms)
+Rendered requests/_form (142.4ms)
+Completed in 177ms (View: 164, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:56:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:56:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:56:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 09:56:06) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:00:27) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.7ms)
+Rendered requests/_form_contact (14.0ms)
+Rendered requests/_form_dates (7.4ms)
+Rendered requests/_form_times (16.7ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (15.2ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (143.3ms)
+Completed in 178ms (View: 165, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:00:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:00:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:00:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:00:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:01:10) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (5.9ms)
+Rendered requests/_form_contact (13.7ms)
+Rendered requests/_form_dates (7.8ms)
+Rendered requests/_form_times (16.6ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (16.3ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (139.4ms)
+Completed in 171ms (View: 158, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:01:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:01:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:04:37) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (13.7ms)
+Rendered requests/_form_dates (7.8ms)
+Rendered requests/_form_times (16.6ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.6ms)
+Rendered requests/_form_comments (3.2ms)
+Rendered requests/_form (86.8ms)
+Completed in 171ms (View: 156, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:38) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:04:48) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.2ms)
+Rendered requests/_form_contact (13.8ms)
+Rendered requests/_form_dates (7.4ms)
+Rendered requests/_form_times (17.1ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.9ms)
+Rendered requests/_form_comments (3.5ms)
+Rendered requests/_form (140.6ms)
+Completed in 172ms (View: 159, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:04:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:05:43) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.6ms)
+Rendered requests/_form_contact (13.9ms)
+Rendered requests/_form_dates (7.5ms)
+Rendered requests/_form_times (16.6ms)
+Rendered requests/_form_questions (5.9ms)
+Rendered requests/_form_multisite (15.3ms)
+Rendered requests/_form_comments (3.3ms)
+Rendered requests/_form (87.2ms)
+Completed in 120ms (View: 106, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:05:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:05:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:05:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:05:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:06:47) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.2ms)
+Rendered requests/_form_contact (13.8ms)
+Rendered requests/_form_dates (7.4ms)
+Rendered requests/_form_times (69.3ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.8ms)
+Rendered requests/_form_comments (3.5ms)
+Rendered requests/_form (139.2ms)
+Completed in 172ms (View: 159, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:06:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:06:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:06:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:06:48) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:09:23) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.9ms)
+Rendered requests/_form_contact (14.2ms)
+Rendered requests/_form_dates (7.9ms)
+Rendered requests/_form_times (16.7ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.7ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (88.5ms)
+Completed in 173ms (View: 160, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:09:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:09:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:09:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:09:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-27 10:10:49) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (13.7ms)
+Rendered requests/_form_dates (7.9ms)
+Rendered requests/_form_times (16.5ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (15.8ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (138.6ms)
+Completed in 171ms (View: 157, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:10:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:10:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:10:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-27 10:10:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

@@ -6,10 +6,7 @@
 	
      <%= f.error_messages %>
 
-	 <div class="wufoo">
-     <%= render :partial => 'form', :locals => { :f => f } %>
-     <p>
-         <%= f.submit "Submit" %>
-     </p>
- 	</div>
+	<div class="wufoo">
+		<%= render :partial => 'form', :locals => { :f => f } %>
+	</div>
 <% end %>

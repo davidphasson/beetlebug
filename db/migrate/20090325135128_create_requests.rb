@@ -40,6 +40,7 @@ class CreateRequests < ActiveRecord::Migration
       t.date :spring_break_start
       t.date :spring_break_end
       t.date :last_school_date
+      t.date :first_school_date
       t.date :preferred_date1
       t.date :preferred_date2
       t.date :preferred_date3
