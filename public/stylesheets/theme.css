@@ -1,4 +1,6 @@
-/* - - - Custom Theme - - - */
+
+
+/* Wufoo - - - Custom Theme - - - */
 
 /* Logo */
 h1 a {
@@ -267,3 +269,12 @@ h1{
 #top, #bottom{
 	visibility:visible;
 }
+
+div.fieldWithErrors label {
+	color: #ff3333;
+}
+
+.fieldWithErrors {
+	background-color: #ff9999;
+}
+	

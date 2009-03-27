@@ -6,7 +6,7 @@ class CreateRequests < ActiveRecord::Migration
       t.integer :starting_grade
       t.integer :ending_grade
       t.integer :num_students
-      t.boolean :author_hosted?
+      t.integer :author_hosted
       t.string :mike_hosted
       t.string :contact1_first
       t.string :contact1_last
@@ -33,6 +33,7 @@ class CreateRequests < ActiveRecord::Migration
       t.string :school_phys_state
       t.string :school_phys_zipcode
       t.string :school_phys_country
+      t.string :school_county
       t.string :school_district
       t.date :winter_break_start
       t.date :winter_break_end
@@ -56,7 +57,7 @@ class CreateRequests < ActiveRecord::Migration
       t.time :assembly_time2
       t.time :assembly_time3
       t.string :assembly_location
-      t.boolean :inclement_lunchroom?
+      t.string :inclement_lunchroom
       t.text :inclement_plan
       t.boolean :school_prone_weather_delays?
       t.string :weather_delay_plan
@@ -64,8 +65,12 @@ class CreateRequests < ActiveRecord::Migration
       t.time :lunch_start
       t.time :lunch_end
       t.string :lunch_room
+      t.boolean :had_writing_program?
 # Schools coordinating with other schools
       t.date :monday_date
+      t.date :tuesday_date
+      t.date :wednesday_date
+      t.date :thursday_date
       t.string :monday_school
       t.string :monday_contact_first
       t.string :monday_contact_last
