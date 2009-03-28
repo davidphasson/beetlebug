@@ -277,4 +277,8 @@ div.fieldWithErrors label {
 .fieldWithErrors {
 	background-color: #ff9999;
 }
+
+.form_tab {
+	padding: 10px;
+}
 	
