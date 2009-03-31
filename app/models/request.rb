@@ -1,12 +1,14 @@
 class Request < ActiveRecord::Base
   
   # Page 1
-  validates_presence_of :school, :assembly_type, :starting_grade, :ending_grade, :num_students, :author_hosted, :mike_hosted
+  validates_presence_of :school, :num_students
+  validates_presence_of :assembly_type, :starting_grade, :ending_grade, :mike_hosted, :author_hosted, :message => "must be answered"
   validates_numericality_of :num_students, :message => "is not a valid number"
+  # Current hacked validation - 1..4 are radio options, otherwise look for a date
   validates_inclusion_of :mike_hosted, :in => (1950..(Date.today.year)).to_a + (1..4).to_a, :message => "is an invalid date"
-   # :unless => Proc.new { |r| r.mike_hosted > 2 })
+   # :unless => Proc.new { |r| r.varable <test> })
+
     
-  
   
   # E-mail validations
   validates_format_of :contact1_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i

@@ -46,6 +46,20 @@ end
 	<%= link_to_function "Comments", "switch_tab('page_comments');" %>	
 </div>
 
+<div id="errors">
+	<br/>
+	<% if @request.errors.count > 0 %>
+	<ul>
+	<li id="errorLi">
+	<h3 id="errorMsgLbl">There was a problem with your submission.</h3>
+	<p id="errorMsg">
+	Errors have been <strong>highlighted</strong> below.
+	</p>
+	</li>
+	</ul>
+	<% end %>
+</div>
+
 <!-- <div id="mpform_container" style="postion: relative;"> -->
 <div id="mpform_container" style="postion: relative;">
 

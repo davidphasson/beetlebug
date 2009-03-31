@@ -8,61 +8,70 @@
 </li>
 
 
-<li id="fo1li11" class="    ">
-	<!-- <li id="fo1li14" class="rightHalf     error"> -->
-	<%= f.label :school, "School Name", :class => "desc", :required_field = true %>
+<%= f.group_start( [:school], { :position => "full" } ) %>
+	<%= f.label :school, "School Name", :class => "desc", :required_field => true %>
 	<div><%= f.text_field :school, :class => "field text", :size => 45 %></div>
 	<p class="instruct" id="instruct11"><small>The name of your school!</small></p>
-	<p class="error"><%= f.error_message_on :school_name, :prepend_text => 'This field' %></p>
-</li>
+	<%= f.error_message_on :school, :prepend_text => 'This field ' %>
+<%= f.group_end() %>
 
-<li id="fo1li12" class="    ">
-	<%= f.label :assembly_type, "Assembly Type", :class => "desc", :required_field = true %>
-	<div class="col">	
-	<%= f.radio_button :assembly_type, 1 %>
+<%= f.group_start( [:assembly_type], { :position => "full" } ) %>
+	<%= f.label :assembly_type, "Assembly Type", :class => "desc", :required_field => true %>
+	
+	<div class="col">
+	<%= f.radio_button :assembly_type, 1  %>
 		<label class="choice"> Public School requesting FREE assembly(ies) for ALL students.  </label>
-	<%= f.radio_button :assembly_type, 1 %>
-		<label class="choice"> Public School requesting FEE-based assembly(ies) for select groups/grades.  </label>		
-	<%= f.radio_button :assembly_type, 1 %>
+	<%= f.radio_button :assembly_type, 2, :class => "field radio"  %>
+		<label class="choice"> Public School requesting FEE-based assembly(ies) for select groups/grades.  </label>	
+	<%= f.radio_button :assembly_type, 3, :class => "field radio"  %>
 		<label class="choice"> Private School requesting FEE-based assembly(ies) for ALL students.  </label>	
-	<%= f.radio_button :assembly_type, 1 %>
+	<%= f.radio_button :assembly_type, 4, :class => "field radio"  %>
 		<label class="choice"> Private School requesting FEE-based assembly(ies) for select groups/grades.  </label>
+
 	</div>
 
 	<p class="instruct" id="instruct12">
 		<small>Assemblies/Book Signings are for everyone (K and up), never exclude grade levels or classes!  <br /><br />
 			A $1,800. fee applies for visits to less than the entire school!</small>
 	</p>
-</li>		
+	<%= f.error_message_on :assembly_type, :prepend_text => 'This question ' %>
+<%= f.group_end() %>
 
-
-<li id="fo1li13" class="leftHalf     ">
-	<%= f.label :starting_grade, "Starting grade at your school #{req_f}", :class => "desc" %>
+<%= f.group_start( [:starting_grade], { :position => "left" } ) %>
+	<%= f.label :starting_grade, "Starting grade at your school", :class => "desc", :required_field => true  %>
 	<div>
 		<%= f.select :starting_grade, GRADES %>
 	</div>
 	<p class="instruct" id="instruct13"><small>Note: Pre-K is not encouraged to attend.</small></p>
-</li>
+	<%= f.error_message_on :ending_grade, :prepend_text => 'This field ' %>
+	
+<%= f.group_end() %>
 
-<li id="fo1li14" class="rightHalf     ">
-	<%= f.label :ending_grade, "Ending grade at your school #{req_f}", :class => "desc" %>
+
+<%= f.group_start( [:ending_grade], { :position => "right" } ) %>	
+	<%= f.label :ending_grade, "Ending grade at your school", :class => "desc", :required_field => true  %>
 	<div>
 		<%= f.select :ending_grade, GRADES %>
 	</div>
 	<p class="instruct" id="instruct14"><small>This should be the total range of grades at your school.</small></p>
-</li>
+	<%= f.error_message_on :ending_grade, :prepend_text => 'This field ' %>
+	
+<%= f.group_end() %>
 
-<li id="fo1li15" class="    ">
-		<%= f.label :num_students, "Total number of students at your school #{req_f}", :class => "desc" %>
+
+<%= f.group_start( [:num_students], { :position => "full" } ) %>	
+		<%= f.label :num_students, "Total number of students at your school", :class => "desc", :required_field => true  %>
 			<div><%= f.text_field :num_students, :class => "field text", :size => 8 %></div>
 		<p class="instruct" id="instruct15"><small>This is your total enrollment for ALL grades.  
 			If a portion of your school is 'off session', then you can just indicate the number of students 
 			that will be present/'in session' for Mr. Mike's visit.</small></p>
-</li>
+		<%= f.error_message_on :num_students, :prepend_text => 'This field ' %>
+<%= f.group_end() %>
 
 
-<li id="fo1li23" class="    ">
-	<%= f.label :author_hosted, "Has your school ever hosted an author?", :class => "desc" %>
+
+<%= f.group_start( [:author_hosted], { :position => "full" } ) %>	
+	<%= f.label :author_hosted, "Has your school ever hosted an author?", :class => "desc", :required_field => true  %>
 	<div class="col">	
 	<%= f.radio_button :author_hosted, 1 %>
 		<label class="choice">Yes</label>
@@ -73,11 +82,11 @@
 	</div>
 	<p class="instruct" id="instruct23"><small>It's good for us to know if author visits are something your school 
 		is used to - or only does once in while - or maybe this is the first time!</small></p>
-		
-</li>
+	<%= f.error_message_on :author_hosted, :prepend_text => 'This question ' %>	
+<%= f.group_end() %>
 
-<li id="fo1li105" class="    ">
-	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc" %>
+<%= f.group_start( [:mike_hosted], { :position => "full" } ) %>	
+	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc", :required_field => true  %>
 	<div class="col">	
 	<%= f.radio_button :mike_hosted, 1 %>
 		<label class="choice">No</label>
@@ -94,6 +103,7 @@
 	<p class="instruct" id="instruct105"><small>If Mr. Mike has been to your school before, we usually have about 
 		a 3 year wait between visits.  <br /><br />
 		If you're not sure, you can make a request anyway and we'll check to see the last time he was there.</small></p>
-</li>
+	<%= f.error_message_on :mike_hosted, :prepend_text => 'This field ' %>
+<%= f.group_end() %>
 
 </ul>

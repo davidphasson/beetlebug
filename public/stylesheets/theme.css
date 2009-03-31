@@ -282,4 +282,12 @@ h1{
 div.fieldWithErrors label.desc {
 	color: red;
 }
+
+div.formError {
+	color: red;
+	font-size: 0.9em;
+}
+
+.fieldWithErrors {
+}
 	
