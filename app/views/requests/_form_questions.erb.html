@@ -1,0 +1,113 @@
+<!-- Questions -->
+
+<ul>
+	
+	<!-- Important questions -->
+	<li id="fo1li82" class="section     ">
+		<h3 id="title82">Important Questions</h3>
+		<div id="instruct82">Please answer 'Yes' or 'No' to the following questions.</div>
+	</li>
+
+
+	<li id="fo1li83" class="    ">
+	<label class="desc" id="title83" for="Field83">
+		<%= f.label :book_fair_too_soon, "Are you having a book fair within one month BEFORE or DURING Mr. Mike’s visit?
+		 <small>(Mr. Mike can visit before a book fair, but NOT within 1 month after.)</small>", :class => "desc" %>
+		<div class="col">
+			<%= f.radio_button :book_fair_too_soon, "yes" %>
+			<label class="choice">Yes</label>	
+			<%= f.radio_button :book_fair_too_soon, "no" %>
+			<label class="choice">No</label>
+		</div>
+		<p class="instruct" id="instruct83"><small>This is important because book sales during Mr. Mike's visit are
+			affected if you have just recently had a book fair. This is especially important if you are requesting
+			a FREE event where book sales are supplementing the regular fee, travel &amp; 
+			accommodations!<br/></small></p>
+	</li>
+
+	<li id="fo1li84" class="    ">
+		<%= f.label :read_school_info, 'Have you read all the info. in the 
+			<a href="/schools/" target="_blank">Schools</a> section?<br />
+			<small>(If \'no\' then please read all the info. before submitting.)</small>', :class => "desc" %>
+			<div class="col">
+				<%= f.radio_button :read_school_info, "yes" %>
+				<label class="choice">Yes</label>	
+				<%= f.radio_button :read_school_info, "no" %>
+				<label class="choice">No</label>
+			</div>
+			<p class="instruct" id="instruct84"><small>This is important because we want to ensure that you are fully
+				informed before you make a request. Sometimes people come straight to this form and don't bother 
+				to read the important stuff. The more you know now, the easier it will be to secure a date and 
+				prepare for Mr. Mike's visit!<br />
+			</small></p>
+	</li>
+
+
+	<li id="fo1li86" class="    ">
+		<%= f.label :dates_okay, "Are the dates o.k.'d with your Principal and everyone who needs to know? 
+			Or, if you are the Principal, V.P., or Assistant Principal, have you provided the 
+			'Secondary Contact Person' information for the person who will be organizing the event?<br />
+			<small>(If 'no' then please wait on submitting this form until you've cleared the dates and 
+			provided the 'Secondary Contact Person' information.)</small>", :class => "desc" %>
+			<div class="col">
+				<%= f.radio_button :dates_okay, "yes" %>
+				<label class="choice">Yes</label>	
+				<%= f.radio_button :dates_okay, "no" %>
+				<label class="choice">No</label>
+			</div>
+			<p class="instruct" id="instruct86"><small>This is important because there have been times when
+				administrators were not informed of a request.<br />
+				<br />
+				There have also been times when administrators didn't enroll the help of others and were not 
+				able to prepare adequately... so, things did not go well. <br /></small></p>
+	</li>
+
+
+	<li id="fo1li87" class="    ">
+		<%= f.label :students_will_show, "Have you confirmed that ALL GRADE LEVELS and ALL CLASSES will attend and that 
+			your school IS IN SESSION two weeks BEFORE AND the week AFTER Mr. Mike's visit? 
+			<small>(If 'no' then change the dates to when ALL students will be there and when your school will be
+			 in session 2 weeks before and 1 week after Mr. Mike's visit.)</small>", :class => "desc" %>
+			<div class="col">
+				<%= f.radio_button :students_will_show, "yes" %>
+				<label class="choice">Yes</label>	
+				<%= f.radio_button :students_will_show, "no" %>
+				<label class="choice">No</label>
+			</div>
+			<p class="instruct" id="instruct87"><small>This is important because Mr. Mike has arrived at schools 
+				ready to meet everyone only to be told that entire grade levels were out on a field trip or that 
+				it was decided at the last minute that certain classes wouldn't attend!  Yikes!</small></p>
+	</li>
+
+	<li id="fo1li88" class="    ">
+		<%= f.label :will_prep, "Will you, your school and PTA/O follow through with all preparations necessary 
+			to put on a great event and be ready for Mr. Mike when he arrives? Cross your heart!<br />
+			<small>(If 'no' then please wait on submitting a request until you have checked in with your PTA/O 
+			and feel comfortable with your school's ability to prepare for a visiting author.)</small>", 
+			:class => "desc" %>
+			<div class="col">
+				<%= f.radio_button :will_prep, "yes" %>
+				<label class="choice">Yes</label>	
+				<%= f.radio_button :will_prep, "no" %>
+				<label class="choice">No</label>
+			</div>	
+			<p class="instruct" id="instruct88"><small>This is important because Mr. Mike travels long distances to 
+				visit schools and wants/needs! to feel appreciated - just like everybody else!!! Your absolute 
+				guarantee to be really, really prepared is required!!!</small></p>
+	</li>
+
+
+	<li id="fo1li108" class="    ">
+		<%= f.label :had_writing_program?, "Have your students ever participated in a school-wide writing program 
+			such as poetry writing, publishing their own books, etc.?", :class => "desc" %>
+			<div class="col">
+				<%= f.radio_button :had_writing_program?, true %>
+				<label class="choice">Yes</label>	
+				<%= f.radio_button :had_writing_program?, false %>
+				<label class="choice">No</label>
+			</div>
+			<p class="instruct" id="instruct108"><small>It's helpful for us to know what your school's experience 
+				with writing has been!</small></p>
+	</li>
+	
+</ul>

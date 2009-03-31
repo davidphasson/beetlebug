@@ -270,15 +270,16 @@ h1{
 	visibility:visible;
 }
 
-div.fieldWithErrors label {
-	color: #ff3333;
-}
-
-.fieldWithErrors {
-	background-color: #ff9999;
-}
-
 .form_tab {
 	padding: 10px;
+}
+
+.error_label {
+	color: red;
+}
+
+/* If this doesn't work, put me out of my misery */
+div.fieldWithErrors label.desc {
+	color: red;
 }
 	

@@ -1,0 +1,70 @@
+class ErrorFormBuilder < ActionView::Helpers::FormBuilder
+  #Adds error message directly inline to a form label
+  #Accepts all the options normall passed to form.label as well as:
+  #  :hide_errors - true if you don't want errors displayed on this label
+  #  :additional_text - Will add additional text after the error message or after the label if no errors
+  def label(method, text = nil, options = {})
+    #Check to see if text for this label has been supplied and humanize the field name if not.
+    text = text || method.to_s.humanize
+    
+    # Add a star if required
+    text += ' <span class="req">*</span>' if options[:required_field]
+    
+    #Get a reference to the model object
+    object = @template.instance_variable_get("@#{@object_name}")
+
+    #Make sure we have an object and we're not told to hide errors for this label
+    unless object.nil? || options[:hide_errors]
+      #Check if there are any errors for this field in the model
+      errors = object.errors.on(method.to_sym)
+      if errors
+        #Generate the label using the text as well as the error message wrapped in a span with error class
+        #text += " <span class=\"error\">#{errors.is_a?(Array) ? errors.first : errors}</span>"
+      end
+    end
+    
+    #Add any additional text that might be needed on the label
+    text += " #{options[:additional_text]}" if options[:additional_text]
+    
+    #Finally hand off to super to deal with the display of the label
+    super(method, text, options)
+  end
+  
+  def date_picker(method, options = {})
+    #Get a reference to the model object
+    object = @template.instance_variable_get("@#{@object_name}")
+    
+    text = ""
+    
+    text += "
+    <span>
+  		<input id=\"#{ method.to_s }-1\" name=\"request[#{ method.to_s }(2i)]\" 
+  			type=\"text\" class=\"field text\" value=\"#{ object.send(method).nil? ? '' : object.send(method).month }\" size='2' maxlength='2' /> 
+  		<label for=\"#{ method.to_s }-1\">MM</label>
+  	</span>
+  	<span>
+  		<input id=\"#{ method.to_s }-2\" name=\"request[#{ method.to_s }(3i)]\" 
+  			type=\"text\" class=\"field text\" value=\"#{ object.send(method).nil? ? "" : object.send(method).day }\" size='2' maxlength='2' /> 
+  		<label for=\"#{ method.to_s }-2\">DD</label>
+  	</span>
+  	<span>
+  		<input id=\"#{ method.to_s }\" name=\"request[#{ method.to_s }(1i)]\" 
+  			type=\"text\" class=\"field text\" value=\"#{ object.send(method).nil? ? "" : object.send(method).year }\" size=\"4\" maxlength=\"4\" />
+  		<label for=\"#{ method.to_s }\">YYYY</label>
+  	</span>
+  	<span id=\"cal_#{ method.to_s }\">
+  		<img id=\"pick_#{ method.to_s }\" class=\"datepicker\" src=\"/images/icons/calendar.png\" alt=\"Pick a date.\" />
+  	</span>
+  	<script type=\"text/javascript\">
+  	Calendar.setup({
+  	inputField : \"#{ method.to_s }\",
+  	displayArea  : \"cal_#{ method.to_s }\",
+  	button : \"pick_#{ method.to_s }\",
+  	ifFormat : \"%B %e, %Y\",
+  	onSelect : selectDate
+  	});
+  	</script>'
+  	"
+  	return text
+  end
+end

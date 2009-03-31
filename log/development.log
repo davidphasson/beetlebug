@@ -22980,3 +22980,1805 @@ ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:me
   
 
 Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-30 17:45:38) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (9.4ms)
+Rendered requests/_form_contact (42.6ms)
+Rendered requests/_form_dates (29.1ms)
+Rendered requests/_form_times (58.1ms)
+Rendered requests/_form_questions (29.5ms)
+Rendered requests/_form_multisite (29.3ms)
+Rendered requests/_form_comments (6.2ms)
+Rendered requests/_form (247.0ms)
+Completed in 1357ms (View: 1202, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 17:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 17:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 17:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 17:45:40) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-30 20:50:28) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+ERROR: compiling _run_erb_app47views47requests47new46html46erb RAISED compile error
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/new.html.erb:1: syntax error, unexpected ':', expecting kEND
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for(@request) :builder => ErrorFormBuilder do |f| ; @output_buffer.concat "\n"
+                                                                                                                   ^
+Function body:           def _run_erb_app47views47requests47new46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for(@request) :builder => ErrorFormBuilder do |f| ; @output_buffer.concat "\n"
+@output_buffer.concat "\t<div class=\"info\">\n"
+@output_buffer.concat "\t\t<h2>Assembly Request Form</h2>\n"
+@output_buffer.concat "\t\t<div>Please take your time with this form...</div>\n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "\t\n"
+@output_buffer.concat "     <!-- "; @output_buffer.concat(( f.error_messages ).to_s); @output_buffer.concat " -->\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\t<div class=\"wufoo\">\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( render :partial => 'form', :locals => { :f => f } ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t</div>\n"
+ end ; @output_buffer.concat "\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/dhassonlocal/devel/beetlebug/app/views/requests/new.html.erb:16:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/new.html.erb:1: syntax error, unexpected ':', expecting kEND
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ;  form_for(@request) :builder => ErrorFormBuilder do |f| ; @output_buffer.concat "\n"
+                                                                                                                   ^) on line #1 of app/views/requests/new.html.erb:
+1: <% form_for(@request) :builder => ErrorFormBuilder do |f| %>
+2: 	<div class="info">
+3: 		<h2>Assembly Request Form</h2>
+4: 		<div>Please take your time with this form...</div>
+
+    app/views/requests/new.html.erb:16:in `compile!'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-30 20:51:00) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (14.2ms)
+Rendered requests/_form_dates (8.0ms)
+Rendered requests/_form_times (13.9ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (15.7ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (84.0ms)
+Completed in 177ms (View: 108, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 20:51:09) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"false", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.0ms)
+Rendered requests/_form_contact (14.4ms)
+Rendered requests/_form_dates (61.4ms)
+Rendered requests/_form_times (14.2ms)
+Rendered requests/_form_questions (5.6ms)
+Rendered requests/_form_multisite (27.2ms)
+Rendered requests/_form_comments (4.3ms)
+Rendered requests/_form (151.2ms)
+Completed in 209ms (View: 162, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 20:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 21:16:14) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.3ms)
+Rendered requests/_form_contact (15.0ms)
+Rendered requests/_form_dates (8.2ms)
+Rendered requests/_form_times (14.0ms)
+Rendered requests/_form_questions (6.6ms)
+Rendered requests/_form_multisite (15.9ms)
+Rendered requests/_form_comments (3.7ms)
+Rendered requests/_form (141.6ms)
+Completed in 207ms (View: 156, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:15) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 21:16:42) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "author_hosted"=>"1", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "assembly_time3(5i)"=>"", "contact1_phone"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (71.5ms)
+Rendered requests/_form_dates (8.3ms)
+Rendered requests/_form_times (14.0ms)
+Rendered requests/_form_questions (6.4ms)
+Rendered requests/_form_multisite (16.2ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (143.1ms)
+Completed in 205ms (View: 154, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:16:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 21:18:53) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "author_hosted"=>"1", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "assembly_time3(5i)"=>"", "contact1_phone"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.4ms)
+Rendered requests/_form_contact (14.4ms)
+Rendered requests/_form_dates (8.3ms)
+Rendered requests/_form_times (13.7ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (16.4ms)
+Rendered requests/_form_comments (4.6ms)
+Rendered requests/_form (144.9ms)
+Completed in 207ms (View: 156, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:18:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:18:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:18:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:18:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-30 21:50:44) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+ERROR: compiling _run_erb_app47views47requests47_form_general46erb46html_locals_f_form_general_object_req_f RAISED compile error
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/_form_general.erb.html:14: syntax error, unexpected '<'
+	<div><%= f.text_field :school, :class => "field text", :size => 45 ).to_s); @output_buffer.concat "</div>\n"
+	 ^
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/_form_general.erb.html:14: syntax error, unexpected ',', expecting ')'
+	<div><%= f.text_field :school, :class => "field text", :size => 45 ).to_s); @output_buffer.concat "</div>\n"
+	                                                      ^
+Function body:           def _run_erb_app47views47requests47_form_general46erb46html_locals_f_form_general_object_req_f(local_assigns)
+            old_output_buffer = output_buffer;form_general = local_assigns[:form_general];req_f = local_assigns[:req_f];object = local_assigns[:object];f = local_assigns[:f];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!-- General Information -->\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<ul>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li17\" class=\"section     \">\n"
+@output_buffer.concat "\t<h3 id=\"title17\">General School Information</h3>\n"
+@output_buffer.concat "\t<div id=\"instruct17\">Tell us about your school and what kind of assembly you'd like.</div>\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li11\" class=\"    \">\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.label :school, "School Name #{req_f}", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<div>"; @output_buffer.concat(( 
+	<div><%= f.text_field :school, :class => "field text", :size => 45 ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "\t<p class=\"instruct\" id=\"instruct11\"><small>The name of your school!</small></p>\n"
+@output_buffer.concat "\t<p class=\"error\">"; @output_buffer.concat(( error_message_on :request, :school_name, :prepend_text => 'This field' ).to_s); @output_buffer.concat "</p>\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li12\" class=\"    \">\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.label :assembly_type, "Assembly Type #{req_f}", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<div class=\"col\">\t\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :assembly_type, 1 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\"> Public School requesting FREE assembly(ies) for ALL students.  </label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :assembly_type, 1 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\"> Public School requesting FEE-based assembly(ies) for select groups/grades.  </label>\t\t\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :assembly_type, 1 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\"> Private School requesting FEE-based assembly(ies) for ALL students.  </label>\t\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :assembly_type, 1 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\"> Private School requesting FEE-based assembly(ies) for select groups/grades.  </label>\n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\t<p class=\"instruct\" id=\"instruct12\">\n"
+@output_buffer.concat "\t\t<small>Assemblies/Book Signings are for everyone (K and up), never exclude grade levels or classes!  <br /><br />\n"
+@output_buffer.concat "\t\t\tA $1,800. fee applies for visits to less than the entire school!</small>\n"
+@output_buffer.concat "\t</p>\n"
+@output_buffer.concat "</li>\t\t\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li13\" class=\"leftHalf     \">\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.label :starting_grade, "Starting grade at your school #{req_f}", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<div>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( f.select :starting_grade, GRADES ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "\t<p class=\"instruct\" id=\"instruct13\"><small>Note: Pre-K is not encouraged to attend.</small></p>\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li14\" class=\"rightHalf     \">\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.label :ending_grade, "Ending grade at your school #{req_f}", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<div>\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( f.select :ending_grade, GRADES ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "\t<p class=\"instruct\" id=\"instruct14\"><small>This should be the total range of grades at your school.</small></p>\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li15\" class=\"    \">\n"
+@output_buffer.concat "\t\t"; @output_buffer.concat(( f.label :num_students, "Total number of students at your school #{req_f}", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t\t<div>"; @output_buffer.concat(( f.text_field :num_students, :class => "field text", :size => 8 ).to_s); @output_buffer.concat "</div>\n"
+@output_buffer.concat "\t\t<p class=\"instruct\" id=\"instruct15\"><small>This is your total enrollment for ALL grades.  \n"
+@output_buffer.concat "\t\t\tIf a portion of your school is 'off session', then you can just indicate the number of students \n"
+@output_buffer.concat "\t\t\tthat will be present/'in session' for Mr. Mike's visit.</small></p>\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li23\" class=\"    \">\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.label :author_hosted, "Has your school ever hosted an author?", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<div class=\"col\">\t\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :author_hosted, 1 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">Yes</label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :author_hosted, 2 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">No</label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :author_hosted, 3 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">I don't know</label>\n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "\t<p class=\"instruct\" id=\"instruct23\"><small>It's good for us to know if author visits are something your school \n"
+@output_buffer.concat "\t\tis used to - or only does once in while - or maybe this is the first time!</small></p>\n"
+@output_buffer.concat "\t\t\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "<li id=\"fo1li105\" class=\"    \">\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t<div class=\"col\">\t\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :mike_hosted, 1 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">No</label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :mike_hosted, 2 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">I don't know</label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :mike_hosted, 3 ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">Yes, but I can't remember the date.</label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.radio_button :mike_hosted, 4,
+		:onmouseup => "document.getElementById('request_mike_hosted').focus();" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t\t<label class=\"choice\">Yes, the year of the visit was:</label>\n"
+@output_buffer.concat "\t"; @output_buffer.concat(( f.text_field :mike_hosted, :class => "field text", :size => 8,
+		:onclick => "document.getElementById('request_mike_hosted_4').checked = 'checked';" ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "\t</div>\n"
+@output_buffer.concat "\t<p class=\"instruct\" id=\"instruct105\"><small>If Mr. Mike has been to your school before, we usually have about \n"
+@output_buffer.concat "\t\ta 3 year wait between visits.  <br /><br />\n"
+@output_buffer.concat "\t\tIf you're not sure, you can make a request anyway and we'll check to see the last time he was there.</small></p>\n"
+@output_buffer.concat "</li>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "</ul>"; @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/dhassonlocal/devel/beetlebug/app/views/requests/_form_general.erb.html:102:in `compile!'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/_form.html.erb:55:in `_run_erb_app47views47requests47_form46html46erb_locals_f_form_object'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:20:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:19:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/partials.rb:184:in `render_partial'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:262:in `render'
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/new.html.erb:10:in `_run_erb_app47views47requests47new46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/helpers/form_helper.rb:490:in `fields_for'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/helpers/form_helper.rb:282:in `form_for'
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/new.html.erb:1:in `_run_erb_app47views47requests47new46html46erb'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:34:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:301:in `with_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:30:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:343:in `_render_with_layout'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1323:in `perform_action_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Library/Ruby/Gems/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Library/Ruby/Gems/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Library/Ruby/Gems/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/_form_general.erb.html:14: syntax error, unexpected '<'
+	<div><%= f.text_field :school, :class => "field text", :size => 45 ).to_s); @output_buffer.concat "</div>\n"
+	 ^
+/Users/dhassonlocal/devel/beetlebug/app/views/requests/_form_general.erb.html:14: syntax error, unexpected ',', expecting ')'
+	<div><%= f.text_field :school, :class => "field text", :size => 45 ).to_s); @output_buffer.concat "</div>\n"
+	                                                      ^) on line #14 of app/views/requests/_form_general.erb.html:
+11: <li id="fo1li11" class="    ">
+12: 	<%= f.label :school, "School Name #{req_f}", :class => "desc" %>
+13: 	<div><%= 
+14: 	<div><%= f.text_field :school, :class => "field text", :size => 45 %></div>
+15: 	<p class="instruct" id="instruct11"><small>The name of your school!</small></p>
+16: 	<p class="error"><%= error_message_on :request, :school_name, :prepend_text => 'This field' %></p>
+17: </li>
+
+    app/views/requests/_form_general.erb.html:102:in `compile!'
+    app/views/requests/_form.html.erb:55
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+
+Rendered rescues/_trace (49.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-03-30 21:51:00) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendered requests/_form_general (6.1ms)
+Rendered requests/_form_contact (13.7ms)
+Rendered requests/_form_dates (8.6ms)
+Rendered requests/_form_times (13.9ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (16.1ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (144.8ms)
+Completed in 179ms (View: 165, DB: 0) | 200 OK [http://localhost/requests/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 21:51:08) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"false", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.4ms)
+Rendered requests/_form_contact (14.8ms)
+Rendered requests/_form_dates (8.3ms)
+Rendered requests/_form_times (13.7ms)
+Rendered requests/_form_questions (5.8ms)
+Rendered requests/_form_multisite (16.3ms)
+Rendered requests/_form_comments (3.5ms)
+Rendered requests/_form (86.2ms)
+Completed in 149ms (View: 97, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 21:51:42) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.5ms)
+Rendered requests/_form_contact (15.0ms)
+Rendered requests/_form_dates (65.1ms)
+Rendered requests/_form_times (14.1ms)
+Rendered requests/_form_questions (6.4ms)
+Rendered requests/_form_multisite (16.2ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (143.7ms)
+Completed in 205ms (View: 155, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:51:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 21:52:13) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.3ms)
+Rendered requests/_form_contact (14.8ms)
+Rendered requests/_form_dates (8.0ms)
+Rendered requests/_form_times (14.2ms)
+Rendered requests/_form_questions (6.7ms)
+Rendered requests/_form_multisite (16.5ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (87.6ms)
+Completed in 203ms (View: 99, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:52:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:52:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:52:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 21:52:14) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 22:00:07) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.3ms)
+Rendered requests/_form_contact (14.9ms)
+Rendered requests/_form_dates (64.4ms)
+Rendered requests/_form_times (14.0ms)
+Rendered requests/_form_questions (6.5ms)
+Rendered requests/_form_multisite (17.1ms)
+Rendered requests/_form_comments (4.2ms)
+Rendered requests/_form (145.1ms)
+Completed in 207ms (View: 156, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 22:00:39) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.4ms)
+Rendered requests/_form_contact (14.7ms)
+Rendered requests/_form_dates (8.2ms)
+Rendered requests/_form_times (14.0ms)
+Rendered requests/_form_questions (6.4ms)
+Rendered requests/_form_multisite (16.1ms)
+Rendered requests/_form_comments (3.4ms)
+Rendered requests/_form (86.7ms)
+Completed in 203ms (View: 98, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:00:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 22:58:13) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+
+ActionView::TemplateError (/Users/dhassonlocal/devel/beetlebug/lib/error_form_builder.rb:39: syntax error, unexpected '='
+    text .= "
+           ^) on line #1 of app/views/requests/new.html.erb:
+1: <% form_for(@request, :builder => ErrorFormBuilder) do |f| %>
+2: 	<div class="info">
+3: 		<h2>Assembly Request Form</h2>
+4: 		<div>Please take your time with this form...</div>
+
+    app/views/requests/new.html.erb:1
+    app/controllers/requests_controller.rb:25:in `create'
+
+Rendered rescues/_trace (42.9ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-03-30 22:58:32) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"V1aOPd2jByPCyweDDLoS7wqpYcLcB22aC/m5mBDedsw=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"2009", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"31", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"31", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"3", "school_phys_address2"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"3", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "last_school_date(2i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"3", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"3", "tuesday_date(1i)"=>"2009", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"31", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"2009", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "monday_date(3i)"=>"31", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "lunch_end(3i)"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"2009", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "lunch_end(5i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>""}}
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                        ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program?=(new_value);write_attribute('had_writing_program?', new_value);end
+                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe had_writing_program? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                         ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def had_writing_program??; query_attribute('had_writing_program?'); end
+                                                                       ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                    ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike?=(new_value);write_attribute('lunch_with_mike?', new_value);end
+                                                                                   ^
+Exception occurred during reader method compilation.
+Maybe lunch_with_mike? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                     ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def lunch_with_mike??; query_attribute('lunch_with_mike?'); end
+                                                               ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays?=(new_value);write_attribute('school_prone_weather_delays?', new_value);end
+                                                                                                           ^
+Exception occurred during reader method compilation.
+Maybe school_prone_weather_delays? is not a valid Ruby identifier?
+compile error
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected '?', expecting '\n' or ';'
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                 ^
+/Library/Ruby/Gems/1.8/gems/activerecord-2.3.2/lib/active_record/attribute_methods.rb:211: syntax error, unexpected kEND, expecting $end
+def school_prone_weather_delays??; query_attribute('school_prone_weather_delays?'); end
+                                                                                       ^
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (6.2ms)
+Rendered requests/_form_contact (15.0ms)
+Rendered requests/_form_dates (8.4ms)
+Rendered requests/_form_times (14.2ms)
+Rendered requests/_form_questions (5.7ms)
+Rendered requests/_form_multisite (16.3ms)
+Rendered requests/_form_comments (3.5ms)
+Rendered requests/_form (150.1ms)
+Completed in 220ms (View: 162, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:58:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:58:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:58:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-03-30 22:58:33) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

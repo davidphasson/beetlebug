@@ -1,0 +1,99 @@
+<!-- General Information -->
+
+<ul>
+
+<li id="fo1li17" class="section     ">
+	<h3 id="title17">General School Information</h3>
+	<div id="instruct17">Tell us about your school and what kind of assembly you'd like.</div>
+</li>
+
+
+<li id="fo1li11" class="    ">
+	<!-- <li id="fo1li14" class="rightHalf     error"> -->
+	<%= f.label :school, "School Name", :class => "desc", :required_field = true %>
+	<div><%= f.text_field :school, :class => "field text", :size => 45 %></div>
+	<p class="instruct" id="instruct11"><small>The name of your school!</small></p>
+	<p class="error"><%= f.error_message_on :school_name, :prepend_text => 'This field' %></p>
+</li>
+
+<li id="fo1li12" class="    ">
+	<%= f.label :assembly_type, "Assembly Type", :class => "desc", :required_field = true %>
+	<div class="col">	
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Public School requesting FREE assembly(ies) for ALL students.  </label>
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Public School requesting FEE-based assembly(ies) for select groups/grades.  </label>		
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Private School requesting FEE-based assembly(ies) for ALL students.  </label>	
+	<%= f.radio_button :assembly_type, 1 %>
+		<label class="choice"> Private School requesting FEE-based assembly(ies) for select groups/grades.  </label>
+	</div>
+
+	<p class="instruct" id="instruct12">
+		<small>Assemblies/Book Signings are for everyone (K and up), never exclude grade levels or classes!  <br /><br />
+			A $1,800. fee applies for visits to less than the entire school!</small>
+	</p>
+</li>		
+
+
+<li id="fo1li13" class="leftHalf     ">
+	<%= f.label :starting_grade, "Starting grade at your school #{req_f}", :class => "desc" %>
+	<div>
+		<%= f.select :starting_grade, GRADES %>
+	</div>
+	<p class="instruct" id="instruct13"><small>Note: Pre-K is not encouraged to attend.</small></p>
+</li>
+
+<li id="fo1li14" class="rightHalf     ">
+	<%= f.label :ending_grade, "Ending grade at your school #{req_f}", :class => "desc" %>
+	<div>
+		<%= f.select :ending_grade, GRADES %>
+	</div>
+	<p class="instruct" id="instruct14"><small>This should be the total range of grades at your school.</small></p>
+</li>
+
+<li id="fo1li15" class="    ">
+		<%= f.label :num_students, "Total number of students at your school #{req_f}", :class => "desc" %>
+			<div><%= f.text_field :num_students, :class => "field text", :size => 8 %></div>
+		<p class="instruct" id="instruct15"><small>This is your total enrollment for ALL grades.  
+			If a portion of your school is 'off session', then you can just indicate the number of students 
+			that will be present/'in session' for Mr. Mike's visit.</small></p>
+</li>
+
+
+<li id="fo1li23" class="    ">
+	<%= f.label :author_hosted, "Has your school ever hosted an author?", :class => "desc" %>
+	<div class="col">	
+	<%= f.radio_button :author_hosted, 1 %>
+		<label class="choice">Yes</label>
+	<%= f.radio_button :author_hosted, 2 %>
+		<label class="choice">No</label>
+	<%= f.radio_button :author_hosted, 3 %>
+		<label class="choice">I don't know</label>
+	</div>
+	<p class="instruct" id="instruct23"><small>It's good for us to know if author visits are something your school 
+		is used to - or only does once in while - or maybe this is the first time!</small></p>
+		
+</li>
+
+<li id="fo1li105" class="    ">
+	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc" %>
+	<div class="col">	
+	<%= f.radio_button :mike_hosted, 1 %>
+		<label class="choice">No</label>
+	<%= f.radio_button :mike_hosted, 2 %>
+		<label class="choice">I don't know</label>
+	<%= f.radio_button :mike_hosted, 3 %>
+		<label class="choice">Yes, but I can't remember the date.</label>
+	<%= f.radio_button :mike_hosted, 4,
+		:onmouseup => "document.getElementById('request_mike_hosted').focus();" %>
+		<label class="choice">Yes, the year of the visit was:</label>
+	<%= f.text_field :mike_hosted, :class => "field text", :size => 8,
+		:onclick => "document.getElementById('request_mike_hosted_4').checked = 'checked';" %>
+	</div>
+	<p class="instruct" id="instruct105"><small>If Mr. Mike has been to your school before, we usually have about 
+		a 3 year wait between visits.  <br /><br />
+		If you're not sure, you can make a request anyway and we'll check to see the last time he was there.</small></p>
+</li>
+
+</ul>

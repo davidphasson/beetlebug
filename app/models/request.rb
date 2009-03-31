@@ -1,12 +1,21 @@
 class Request < ActiveRecord::Base
   
+  # Page 1
+  validates_presence_of :school, :assembly_type, :starting_grade, :ending_grade, :num_students, :author_hosted, :mike_hosted
+  validates_numericality_of :num_students, :message => "is not a valid number"
+  validates_inclusion_of :mike_hosted, :in => (1950..(Date.today.year)).to_a + (1..4).to_a, :message => "is an invalid date"
+   # :unless => Proc.new { |r| r.mike_hosted > 2 })
+    
+  
+  
   # E-mail validations
   validates_format_of :contact1_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
   validates_format_of :contact2_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
   validates_confirmation_of :contact1_email
   validates_confirmation_of :contact2_email
   
-  validates_presence_of :school
+  
+
   
   validates_presence_of :school_mail_address1, :school_mail_city, :school_mail_state, :school_mail_zipcode
   validates_presence_of :contact1_first, :contact1_last, :contact1_position, :contact1_phone, :contact1_email
