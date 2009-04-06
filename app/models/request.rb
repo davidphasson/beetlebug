@@ -17,7 +17,7 @@ class Request < ActiveRecord::Base
   validates_confirmation_of :contact2_email
   
   validates_format_of :monday_contact_email, :tuesday_contact_email, :wednesday_contact_email, :thursday_contact_email, 
-                      :friday_contact_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
+                      :friday_contact_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i, :allow_blank => true;
     
 
   
@@ -31,18 +31,25 @@ class Request < ActiveRecord::Base
   # Need 4 preferred and alternate dates
   validates_presence_of :preferred_date1, :preferred_date2, :preferred_date3, :preferred_date4
   validates_presence_of :alternate_date1, :alternate_date2, :alternate_date3, :alternate_date4
+  validates_presence_of :last_school_date, :first_school_date
   
   validates_presence_of :school_county, :school_district
   
-  validates_presence_of :book_fair_too_soon, :read_school_info, :dates_okay, :students_will_show, :will_prep, :had_writing_program,
+  validates_presence_of :book_fair_too_soon, :read_school_info, :dates_okay, :students_will_show, :will_prep,
                         :message => "must be answered"
+                        
+                    
+                        
   
   ### Times ###
   validates_presence_of :assembly_time1
   # Must have a second if there is a third
   validates_presence_of :assembly_time2, :if => Proc.new { |r| !r.assembly_time3.nil? },
       :message => "must be specified if Assembly #3 is specified"
-  validates_presence_of :school_prone_weather_delays, :lunch_with_mike, :inclement_lunchroom
+  validates_inclusion_of :school_prone_weather_delays, :lunch_with_mike, :inclement_lunchroom, :in => [true, false],
+      :message => "must be answered"
+  
+  
   # Explanation fields must be filled out if a question is true
   validates_presence_of :weather_delay_plan, :if => Proc.new { |r| r.school_prone_weather_delays? == true },
       :message => "must be answered if previous question is true"
@@ -69,11 +76,12 @@ class Request < ActiveRecord::Base
   end
   
   # Questions
-  validates_acceptance_of :book_fair_too_soon, :accept => "no"
-  validates_acceptance_of :read_school_info, :accept => "yes"
-  validates_acceptance_of :dates_okay, :accept => "yes"
-  validates_acceptance_of :students_will_show, :accept => "yes"
-  validates_acceptance_of :will_prep, :accept => "yes"
+  validates_acceptance_of :book_fair_too_soon, :accept => "no", 
+        :message => "must be answered 'no' to continue"
+  validates_acceptance_of :read_school_info, :dates_okay, :students_will_show, :will_prep, :accept => "yes",
+        :message => "must be answered 'yes' to continue"
+  validates_inclusion_of :had_writing_program, :in => [true, false],
+        :message => "must be answered"
   
   # All comment fields but "essay_other" need to be answered
   validates_presence_of :essay_visit_reason, :essay_hope_receive, :essay_writing_approach, :essay_feel_about_mike, :essay_prep_plans, 
@@ -122,7 +130,27 @@ class Request < ActiveRecord::Base
 
   end
   
+  #Lameness
   
+  def assembly_time1=(t)      
+       return if t.nil?
+       a = Date.today
+       b = DateTime.new(a.year, a.month, a.day, t.hour, t.min)
+       write_attribute(:assembly_time1, b)
+  end
+  def assembly_time2=(new_time)
+    if new_time.is_a? Hash
+      unless new_time["hour"].nil? || new_time["hour"] == "" 
+        write_attribute "assembly_time2", new_time["hour"] + ":" +
+          (new_time["minute"]||new_time["min"]||"00") + ":" +
+          (new_time["second"]||new_time["sec"]||"00")
+      else 
+        write_attribute "assembly_time2", nil
+      end
+    else
+      write_attribute "assembly_time2", new_time
+    end
+  end
   
   
   

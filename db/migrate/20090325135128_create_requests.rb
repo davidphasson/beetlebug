@@ -60,7 +60,7 @@ class CreateRequests < ActiveRecord::Migration
       t.date :backup_date4
       t.text :date_comments
       # Times Page
-      t.datetime :assembly_time1
+      t.time :assembly_time1
       t.datetime :assembly_time2
       t.datetime :assembly_time3
       t.string :assembly_location

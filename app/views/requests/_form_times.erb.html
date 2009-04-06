@@ -16,7 +16,8 @@
 
 <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc" %>
-	<%= f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
+	<%= f.datetime_select :assembly_time1, :minute_step => 15, :include_blank => true %>
+	 	 <% # :discard_day => true, :discard_month => true, :discard_year => true %>
 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
 		in between if there are 2 or more assemblies. <br />
 		<br />
@@ -166,7 +167,7 @@
 
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
-	<%= f.time_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
+	<%= f.datetime_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
 	<p class="instruct" id="instruct78"><small>Allow a minimum 15 min.  break after the end of the
 		assembly.</small></p>
 	<%= f.error_message_on :lunch_start, :prepend_text => 'This question ' %>	

@@ -33,6 +33,18 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
     super(method, text, options)
   end
   
+  def time_picker(method, options = {})
+    #Get a reference to the model object
+    object = @template.instance_variable_get("@#{@object_name}")
+    
+    text = ""
+    
+    text += select_hour(object.send(method), :field_name => 'stride')
+    text += select_minute(object.send(method), :field_name => 'asdf')
+    
+    return text
+  end
+  
   def date_picker(method, options = {})
     #Get a reference to the model object
     object = @template.instance_variable_get("@#{@object_name}")
@@ -126,3 +138,19 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
   end
   
 end
+
+#<input id="request_assembly_time1_1i" name="request[assembly_time1(1i)]" type="hidden" value="2009" />
+#<input id="request_assembly_time1_2i" name="request[assembly_time1(2i)]" type="hidden" value="4" />
+#<input id="request_assembly_time1_3i" name="request[assembly_time1(3i)]" type="hidden" value="6" />
+#<select id="request_assembly_time1_4i" name="request[assembly_time1(4i)]">
+#<option value="00">00</option>
+#<option value="01">01</option>
+#
+#</select>
+# : <select id="request_assembly_time1_5i" name="request[assembly_time1(5i)]">
+#<option selected="selected" value="00">00</option>
+#<option value="15">15</option>
+#<option value="30">30</option>
+#<option value="45">45</option>
+#</select>
+
