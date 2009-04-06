@@ -30,7 +30,7 @@
 		<br />
 		This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each assembly and no breaks are
 		scheduled and 9:30 a.m. is earliest start time.</small></p>
-	<%= f.error_message_on :assembly_time1, :prepend_text => 'This question ' %>	
+	<%= f.error_message_on :assembly_time1, :prepend_text => 'This time ' %>	
 <%= f.group_end() %>
 
 
@@ -52,7 +52,7 @@
 		<br />
 		This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each assembly and no breaks 
 		are scheduled and 9:30 a.m. is earliest start time.</small></p>
-	<%= f.error_message_on :assembly_time2, :prepend_text => 'This question ' %>		
+	<%= f.error_message_on :assembly_time2, :prepend_text => 'This time ' %>		
 <%= f.group_end() %>
 
 
@@ -64,7 +64,7 @@
 	<p class="instruct" id="instruct71"><small>Assembly #3 option is available only for very large schools 
 		that can't fit all students into 2 assemblies OR for schools that have a very small assembly area. 
 		Sorry, Mr. Mike is not available for more than 3 assemblies.</small></p>
-	<%= f.error_message_on :assembly_time3, :prepend_text => 'This question ' %>			
+	<%= f.error_message_on :assembly_time3, :prepend_text => 'This time ' %>			
 <%= f.group_end() %>
 
 
