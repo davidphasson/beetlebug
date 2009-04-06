@@ -7,8 +7,8 @@ class CreateRequests < ActiveRecord::Migration
       t.integer :starting_grade
       t.integer :ending_grade
       t.integer :num_students
-      t.boolean :author_hosted
-      t.boolean :mike_hosted
+      t.string :author_hosted
+      t.string :mike_hosted
       t.string :mike_hosted_year
       # Contacts Page
       t.string :contact1_first

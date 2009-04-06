@@ -73,11 +73,11 @@
 <%= f.group_start( [:author_hosted], { :position => "full" } ) %>	
 	<%= f.label :author_hosted, "Has your school ever hosted an author?", :class => "desc", :required_field => true  %>
 	<div class="col">	
-	<%= f.radio_button :author_hosted, 1 %>
+	<%= f.radio_button :author_hosted, "yes" %>
 		<label class="choice">Yes</label>
-	<%= f.radio_button :author_hosted, 2 %>
+	<%= f.radio_button :author_hosted, "no" %>
 		<label class="choice">No</label>
-	<%= f.radio_button :author_hosted, 3 %>
+	<%= f.radio_button :author_hosted, "unsure" %>
 		<label class="choice">I don't know</label>
 	</div>
 	<p class="instruct" id="instruct23"><small>It's good for us to know if author visits are something your school 
@@ -88,21 +88,19 @@
 <%= f.group_start( [:mike_hosted], { :position => "full" } ) %>	
 	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc", :required_field => true  %>
 	<div class="col">	
-	<%= f.radio_button :mike_hosted, 1 %>
+	<%= f.radio_button :mike_hosted, "no" %>
 		<label class="choice">No</label>
-	<%= f.radio_button :mike_hosted, 2 %>
+	<%= f.radio_button :mike_hosted, "unsure" %>
 		<label class="choice">I don't know</label>
-	<%= f.radio_button :mike_hosted, 3 %>
-		<label class="choice">Yes, but I can't remember the date.</label>
-	<%= f.radio_button :mike_hosted, 4,
+	<%= f.radio_button :mike_hosted, "yes",
 		:onmouseup => "document.getElementById('request_mike_hosted').focus();" %>
 		<label class="choice">Yes, the year of the visit was:</label>
-	<%= f.text_field :mike_hosted, :class => "field text", :size => 8,
-		:onclick => "document.getElementById('request_mike_hosted_4').checked = 'checked';" %>
+	<%= f.text_field :mike_hosted_year, :class => "field text", :size => 8,
+		:onclick => "document.getElementById('request_mike_hosted_yes').checked = 'checked';" %>
 	</div>
 	<p class="instruct" id="instruct105"><small>If Mr. Mike has been to your school before, we usually have about 
 		a 3 year wait between visits.  <br /><br />
-		If you're not sure, you can make a request anyway and we'll check to see the last time he was there.</small></p>
+		If you're not sure, leave the year blank and we'll check to see the last time he was there.</small></p>
 	<%= f.error_message_on :mike_hosted, :prepend_text => 'This field ' %>
 <%= f.group_end() %>
 

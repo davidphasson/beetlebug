@@ -48,3 +48,12 @@ ActionView::Base.field_error_proc = Proc.new { |html_tag, instance|
 # "<span class=\"fieldWithErrors\">#{html_tag}</span>" 
   "#{html_tag}"
 }
+
+#ActionMailer::Base.smtp_settings = {
+#  :address => "smtp.gmail.com",
+#  :tls => true,
+#  :port => "587",
+#  :user_name => "dph@funtaff.net",
+#  :password => "JovianIntEriors",
+#  :authentication => :plain
+#}

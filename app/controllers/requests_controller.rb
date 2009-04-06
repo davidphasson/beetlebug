@@ -72,6 +72,7 @@ class RequestsController < ApplicationController
     else
       if @request.save
         flash[:notice] = 'Request was successfully created.'
+        Mailman.deliver_request_notification(@request)
         redirect_to(@request)
       else
         flash.now[:warning] = 'There was a problem creating the request.'

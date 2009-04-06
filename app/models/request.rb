@@ -4,9 +4,11 @@ class Request < ActiveRecord::Base
   validates_presence_of :school, :num_students
   validates_presence_of :assembly_type, :starting_grade, :ending_grade, :mike_hosted, :author_hosted, :message => "must be answered"
   validates_numericality_of :num_students, :message => "is not a valid number"
-  # Current hacked validation - 1..4 are radio options, otherwise look for a date
-  validates_inclusion_of :mike_hosted, :in => (1950..(Date.today.year)).to_a + (1..4).to_a, :message => "is an invalid date"
-   # :unless => Proc.new { |r| r.varable <test> })
+  validates_inclusion_of :mike_hosted, :author_hosted, :in => ["yes", "no", "unsure"]
+  # Make sure it's a valid year.  No years before 1950
+  validates_inclusion_of :mike_hosted_year, :in => (1950..(Date.today.year)).to_a, :allow_blank => true,
+    :message => "is an invalid date"
+  
 
     
   
