@@ -16,8 +16,7 @@
 
 <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc" %>
-	<%= f.datetime_select :assembly_time1, :minute_step => 15, :include_blank => true %>
-	 	 <% # :discard_day => true, :discard_month => true, :discard_year => true %>
+	<%= f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
 		in between if there are 2 or more assemblies. <br />
 		<br />

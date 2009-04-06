@@ -132,25 +132,33 @@ class Request < ActiveRecord::Base
   
   #Lameness
   
-  def assembly_time1=(t)      
-       return if t.nil?
-       a = Date.today
-       b = DateTime.new(a.year, a.month, a.day, t.hour, t.min)
-       write_attribute(:assembly_time1, b)
-  end
-  def assembly_time2=(new_time)
-    if new_time.is_a? Hash
-      unless new_time["hour"].nil? || new_time["hour"] == "" 
-        write_attribute "assembly_time2", new_time["hour"] + ":" +
-          (new_time["minute"]||new_time["min"]||"00") + ":" +
-          (new_time["second"]||new_time["sec"]||"00")
-      else 
-        write_attribute "assembly_time2", nil
-      end
-    else
-      write_attribute "assembly_time2", new_time
-    end
-  end
+ # def assembly_time1=(t)      
+  #  if t.nil?
+  #    logger.error("assembly_time=: nil passed in")
+  #    #return
+  #  end
+  #  if t.is_a? Hash
+  #    logger.error("assembly_time=: it's a hash\n")
+  #  else
+  #     a = Date.today
+  #     #b = DateTime.new(a.year, a.month, a.day, t.hour, t.min)
+  #     write_attribute(:assembly_time1, DateTime.now)
+  #  end
+  #end
+  
+  #def assembly_time2=(new_time)
+  #  if new_time.is_a? Hash
+  #    unless new_time["hour"].nil? || new_time["hour"] == "" 
+  #      write_attribute "assembly_time2", new_time["hour"] + ":" +
+  #        (new_time["minute"]||new_time["min"]||"00") + ":" +
+  #        (new_time["second"]||new_time["sec"]||"00")
+  #    else 
+  #      write_attribute "assembly_time2", nil
+  #    end
+  #  else
+  #    write_attribute "assembly_time2", new_time
+  #  end
+  # end
   
   
   
