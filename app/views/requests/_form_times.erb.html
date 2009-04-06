@@ -16,7 +16,8 @@
 
 <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc" %>
-	<%= f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
+	<% #f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
+	<%= select_time @request.assembly_time1, { :prefix => "assembly_time1", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
 		in between if there are 2 or more assemblies. <br />
 		<br />
@@ -36,7 +37,8 @@
 <%= f.group_start( [:assembly_time2], { :position => "full" } ) %>
 	<label class="desc" id="title72" for="Field72">
 	<%= f.label :assembly_time2, 'Assembly #2', :class => "desc" %>
-	<%= f.time_select :assembly_time2, :minute_step => 15, :include_blank => true %>
+	<% # f.time_select :assembly_time2, :minute_step => 15, :include_blank => true %>
+	<%= select_time @request.assembly_time2, { :prefix => "assembly_time2", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct72">
 		<small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break in between if there are 2 
 		or more assemblies. <br />
@@ -57,7 +59,8 @@
 
 <%= f.group_start( [:assembly_time3], { :position => "full" } ) %>
 	<%= f.label :assembly_time3, 'Assembly #3 <small>(Only for very large schools)</small>', :class => "desc" %>
-	<%= f.time_select :assembly_time3, :minute_step => 15, :include_blank => true  %>
+	<% #f.time_select :assembly_time3, :minute_step => 15, :include_blank => true  %>
+	<%= select_time @request.assembly_time3, { :prefix => "assembly_time3", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct71"><small>Assembly #3 option is available only for very large schools 
 		that can't fit all students into 2 assemblies OR for schools that have a very small assembly area. 
 		Sorry, Mr. Mike is not available for more than 3 assemblies.</small></p>
@@ -166,7 +169,8 @@
 
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
-	<%= f.datetime_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
+	<% #f.datetime_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
+	<%= select_time @request.lunch_start, { :prefix => "lunch_start", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct78"><small>Allow a minimum 15 min.  break after the end of the
 		assembly.</small></p>
 	<%= f.error_message_on :lunch_start, :prepend_text => 'This question ' %>	
@@ -175,7 +179,8 @@
 
 <%= f.group_start( [:lunch_end], { :position => "right" } ) %>
 	<%= f.label :lunch_end, 'What time will it end?', :class => "desc" %>
-	<%= f.time_select :lunch_end, :minute_step => 15, :include_blank => true, :ignore_date => true   %>		
+	<% # f.time_select :lunch_end, :minute_step => 15, :include_blank => true, :ignore_date => true   %>
+	<%= select_time @request.lunch_end, { :prefix => "lunch_end", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>			
 	<p class="instruct" id="instruct77"><small>About 45 minutes is good.</small></p>
 	<%= f.error_message_on :lunch_end, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>
@@ -185,7 +190,7 @@
 	<%= f.label :lunch_room, 'What room in your school will the lunch be held?', :class => "desc" %>
 	<%= f.text_field :lunch_room, :class => "field text medium" %>
 	<p class="instruct" id="instruct79"><small>Choose a quiet place like a library or other room away from 
-		all the hussle and bustle.</small></p>
+		all the hustle and bustle.</small></p>
 	<%= f.error_message_on :lunch_room, :prepend_text => 'This question ' %>										
 <%= f.group_end() %>
 
