@@ -1,4 +1,7 @@
+require 'action_view/helpers/javascript_helper.rb'
+
 class ErrorFormBuilder < ActionView::Helpers::FormBuilder
+    
   #Adds error message directly inline to a form label
   #Accepts all the options normall passed to form.label as well as:
   #  :hide_errors - true if you don't want errors displayed on this label
@@ -63,9 +66,31 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
   	ifFormat : \"%B %e, %Y\",
   	onSelect : selectDate
   	});
-  	</script>'
+  	</script>
   	"
   	return text
+  end
+  
+  def tab_button(page, text, fields = [], options = {})
+    object = @template.instance_variable_get("@#{@object_name}")
+    
+    have_errors = false
+    
+    # Check for errors in any of the fields specified
+    unless object.nil? || options[:hide_errors]
+      fields.each do |field|        
+        errors = object.errors.on(field.to_sym)
+        if errors
+          have_errors = true
+        end
+      end
+    end
+    
+    # text = link_to_function page.humanize, "switch_tab('page_#{page}');"
+    text +=  '<span class="req">*</span>' if have_errors
+    text += " |\n"
+    return text
+    
   end
   
   def group_start(fields = [], options = {})
@@ -91,7 +116,7 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
     
     css_class += "error" if have_errors
         
-    return "<li class=\"#{css_class}\">"
+    return "<li class=\"#{css_class}\" id=\"#{ options[:id] }\" style=\"#{ options[:style] }\">"
         
   end
   

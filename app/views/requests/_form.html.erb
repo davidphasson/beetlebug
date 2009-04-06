@@ -2,6 +2,39 @@
 # HTML for indicating in a label that a field is required
 req_f = '<span class="req">*</span>'
 
+# Fields on each tab
+general_fields = [:school, :num_students, :assembly_type, :starting_grade, :ending_grade, :mike_hosted, :author_hosted]
+
+contact_fields = [:contact1_first, :contact1_last, :contact1_position, :contact1_phone, :contact1_altphone, :contact1_fax,
+					:contact1_email, :contact2_first, :contact2_last, :contact2_position, :contact2_phone, :contact2_altphone,
+					:contact2_email, :school_mail_address1, :school_mail_address2, :school_mail_city, :school_mail_state,
+					:school_mail_country, :school_mail_zipcode, :school_phys_address1, :school_phys_address2,
+ 					:school_phys_city, :school_phys_state, :school_phys_zipcode, :school_phys_country, :school_county,
+ 					:school_district]
+
+date_fields = [:winter_break_start, :winter_break_end, :spring_break_start, :spring_break_end,
+					:last_school_date, :first_school_date,
+					:preferred_date1, :preferred_date2, :preferred_date3, :preferred_date4,
+					:alternate_date1, :alternate_date2, :alternate_date3, :alternate_date4,
+					:backup_date1, :backup_date2, :backup_date3, :backup_date4,
+					:date_comments]
+					
+time_fields = [:assembly_time1, :assembly_time2, :assembly_time3, :assembly_location, :inclement_lunchroom, 
+					:inclement_plan, :school_prone_weather_delays?, :weather_delay_plan, :lunch_with_mike?,
+					:lunch_start, :lunch_end, :lunch_room, :had_writing_program?]
+					
+question_fields = [:book_fair_too_soon, :read_school_info, :dates_okay, :students_will_show, :will_prep, :had_writing_program?]
+
+multisite_fields = [:monday_date, :tuesday_date, :wednesday_date,
+					:thursday_date, :monday_school, :monday_contact_first, :monday_contact_last, :monday_contact_title,
+					:monday_contact_email, :tuesday_school, :tuesday_contact_first, :tuesday_contact_last,
+					:tuesday_contact_title, :tuesday_contact_email, :wednesday_school, :wednesday_contact_first,
+					:wednesday_contact_last, :wednesday_contact_title, :wednesday_contact_email, :thursday_school,
+					:thursday_contact_first, :thursday_contact_last, :thursday_contact_title, :thursday_contact_email]
+					
+comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_approach, :essay_feel_about_mike, :essay_prep_plans, 
+					:essay_pta_involvement, :essay_other]
+
 # pre: f => form_for variable, field => ruby symbol corresponding to 
 def my_date(f, field)
 %>
@@ -37,13 +70,14 @@ end
 %>
 
 <div id="navbar" style="background-color: #eee; padding: 5px;">
-	<%= link_to_function "General", "switch_tab('page_general');" %> |
-	<%= link_to_function "Contact", "switch_tab('page_contact');" %> |
-	<%= link_to_function "Dates", "switch_tab('page_dates');" %> |
-	<%= link_to_function "Times", "switch_tab('page_times');" %> |
-	<%= link_to_function "Questions", "switch_tab('page_questions');" %> |
-	<%= link_to_function "Multi-School Visits", "switch_tab('page_multisite');" %> |
-	<%= link_to_function "Comments", "switch_tab('page_comments');" %>	
+	<%= f.tab_button "general", link_to_function("General", "switch_tab('page_general');"), general_fields %>
+	<%= f.tab_button "contact", link_to_function("Contact", "switch_tab('page_contact');"), contact_fields %>
+	<%= f.tab_button "dates", link_to_function("Dates", "switch_tab('page_dates');"), date_fields %>
+	<%= f.tab_button "times", link_to_function("Times", "switch_tab('page_times');"), time_fields %>
+	<%= f.tab_button "questions", link_to_function("Questions", "switch_tab('page_questions');"), question_fields %>
+	<%= f.tab_button "multisite", link_to_function("Multi-School Visits", "switch_tab('page_multisite');"), multisite_fields %>
+	<%= f.tab_button "comments", link_to_function("Comments", "switch_tab('page_comments');"), comment_fields %>
+	
 </div>
 
 <div id="errors">
@@ -53,7 +87,7 @@ end
 	<li id="errorLi">
 	<h3 id="errorMsgLbl">There was a problem with your submission.</h3>
 	<p id="errorMsg">
-	Errors have been <strong>highlighted</strong> below.
+	Errors have been <strong>highlighted</strong> within each <strong>section</strong> as indicated. 
 	</p>
 	</li>
 	</ul>

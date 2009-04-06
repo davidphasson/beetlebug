@@ -38,153 +38,216 @@
 
 <!-- Monday -->
 
-<li id="fo1li127" class="    ">
+<%= f.group_start( [:monday_date], { :position => "left" } ) %>
 	<%= f.label :monday_date, "Monday Visit Date", :class => "desc" %>
-	<%= f.date_select :monday_date %>
-</li>
+	<%= f.date_picker :monday_date %>
+	<%= f.error_message_on :monday_date, :prepend_text => 'This date ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li133" class="leftHalf    ">
+<%= f.group_start( [:monday_school], { :position => "right" } ) %>
 	<%= f.label :monday_school, "Monday School Name", :class => "desc" %>
 	<%= f.text_field :monday_school, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :monday_school, :prepend_text => 'School name ' %>		
+<%= f.group_end() %>
 
-<li id="fo1li131" class="rightHalf    ">
+<%= f.group_start( [:monday_contact_first, :monday_contact_last], { :position => "left" } ) %>
 	<label class="desc">Monday School Contact's Name</label>
 	<span>
 		<%= f.text_field :monday_contact_first, :class => "field text", :size => 8 %>
 		<%= f.label :monday_contact_first, "First" %>
+		<%= f.error_message_on :monday_contact_first, :prepend_text => 'First name ' %>				
 	</span>
 	<span>
 		<%= f.text_field :monday_contact_last, :class => "field text", :size => 14 %>
 		<%= f.label :monday_contact_last, "Last" %>
+		<%= f.error_message_on :monday_contact_last, :prepend_text => 'Last name ' %>		
 	</span>
-</li>
+<%= f.group_end() %>
 
 
-<li id="fo1li151" class="leftHalf    ">
+<%= f.group_start( [:monday_contact_title], { :position => "right" } ) %>
 	<%= f.label :monday_contact_title, "Monday School Contact's Title", :class => "desc" %>
 	<%= f.text_field :monday_contact_title, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :monday_contact_title, :prepend_text => 'Contact title ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li138" class="rightHalf    ">
-		<%= f.label :monday_contact_email, "Monday School Contact's E-mail", :class => "desc" %>
-		<%= f.text_field :monday_contact_email, :class => "field text medium" %>
-</li>
-
+<%= f.group_start( [:monday_contact_email], { :position => "full" } ) %>
+	<%= f.label :monday_contact_email, "Monday School Contact's E-mail", :class => "desc" %>
+	<%= f.text_field :monday_contact_email, :class => "field text medium" %>
+	<%= f.error_message_on :monday_contact_email, :prepend_text => 'E-mail address ' %>			
+<%= f.group_end() %>
 
 <!-- Tuesday -->
 
-<li id="fo1li127" class="    ">
+<%= f.group_start( [:tuesday_date], { :position => "left" } ) %>
 	<%= f.label :tuesday_date, "Tuesday Visit Date", :class => "desc" %>
-	<%= f.date_select :tuesday_date %>
-</li>
+	<%= f.date_picker :tuesday_date %>
+	<%= f.error_message_on :tuesday_date, :prepend_text => 'This date ' %>		
+<%= f.group_end() %>
 
-
-<li id="fo1li133" class="leftHalf    ">
+<%= f.group_start( [:tuesday_school], { :position => "right" } ) %>
 	<%= f.label :tuesday_school, "Tuesday School Name", :class => "desc" %>
 	<%= f.text_field :tuesday_school, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :tuesday_school, :prepend_text => 'School name ' %>		
+<%= f.group_end() %>
 
-<li id="fo1li131" class="rightHalf    ">
+<%= f.group_start( [:tuesday_contact_first, :tuesday_contact_last], { :position => "left" } ) %>
 	<label class="desc">Tuesday School Contact's Name</label>
 	<span>
 		<%= f.text_field :tuesday_contact_first, :class => "field text", :size => 8 %>
 		<%= f.label :tuesday_contact_first, "First" %>
+		<%= f.error_message_on :tuesday_contact_first, :prepend_text => 'First name ' %>				
 	</span>
 	<span>
 		<%= f.text_field :tuesday_contact_last, :class => "field text", :size => 14 %>
 		<%= f.label :tuesday_contact_last, "Last" %>
+		<%= f.error_message_on :tuesday_contact_last, :prepend_text => 'Last name ' %>		
 	</span>
-</li>
+<%= f.group_end() %>
 
 
-<li id="fo1li151" class="leftHalf    ">
+<%= f.group_start( [:tuesday_contact_title], { :position => "right" } ) %>
 	<%= f.label :tuesday_contact_title, "Tuesday School Contact's Title", :class => "desc" %>
 	<%= f.text_field :tuesday_contact_title, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :tuesday_contact_title, :prepend_text => 'Contact title ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li138" class="rightHalf    ">
-		<%= f.label :tuesday_contact_email, "Tuesday School Contact's E-mail", :class => "desc" %>
-		<%= f.text_field :tuesday_contact_email, :class => "field text medium" %>
-</li>
-
+<%= f.group_start( [:tuesday_contact_email], { :position => "full" } ) %>
+	<%= f.label :tuesday_contact_email, "Tuesday School Contact's E-mail", :class => "desc" %>
+	<%= f.text_field :tuesday_contact_email, :class => "field text medium" %>
+	<%= f.error_message_on :tuesday_contact_email, :prepend_text => 'E-mail address ' %>			
+<%= f.group_end() %>
 
 <!-- Wednesday -->
 
-<li id="fo1li127" class="    ">
+<%= f.group_start( [:wednesday_date], { :position => "left" } ) %>
 	<%= f.label :wednesday_date, "Wednesday Visit Date", :class => "desc" %>
-	<%= f.date_select :wednesday_date %>
-</li>
+	<%= f.date_picker :wednesday_date %>
+	<%= f.error_message_on :wednesday_date, :prepend_text => 'This date ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li133" class="leftHalf    ">
+<%= f.group_start( [:wednesday_school], { :position => "right" } ) %>
 	<%= f.label :wednesday_school, "Wednesday School Name", :class => "desc" %>
 	<%= f.text_field :wednesday_school, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :wednesday_school, :prepend_text => 'School name ' %>		
+<%= f.group_end() %>
 
-<li id="fo1li131" class="rightHalf    ">
+<%= f.group_start( [:wednesday_contact_first, :wednesday_contact_last], { :position => "left" } ) %>
 	<label class="desc">Wednesday School Contact's Name</label>
 	<span>
 		<%= f.text_field :wednesday_contact_first, :class => "field text", :size => 8 %>
 		<%= f.label :wednesday_contact_first, "First" %>
+		<%= f.error_message_on :wednesday_contact_first, :prepend_text => 'First name ' %>				
 	</span>
 	<span>
 		<%= f.text_field :wednesday_contact_last, :class => "field text", :size => 14 %>
 		<%= f.label :wednesday_contact_last, "Last" %>
+		<%= f.error_message_on :wednesday_contact_last, :prepend_text => 'Last name ' %>		
 	</span>
-</li>
+<%= f.group_end() %>
 
 
-<li id="fo1li151" class="leftHalf    ">
+<%= f.group_start( [:wednesday_contact_title], { :position => "right" } ) %>
 	<%= f.label :wednesday_contact_title, "Wednesday School Contact's Title", :class => "desc" %>
 	<%= f.text_field :wednesday_contact_title, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :wednesday_contact_title, :prepend_text => 'Contact title ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li138" class="rightHalf    ">
-		<%= f.label :wednesday_contact_email, "Wednesday School Contact's E-mail", :class => "desc" %>
-		<%= f.text_field :wednesday_contact_email, :class => "field text medium" %>
-</li>
-
+<%= f.group_start( [:wednesday_contact_email], { :position => "full" } ) %>
+	<%= f.label :wednesday_contact_email, "Wednesday School Contact's E-mail", :class => "desc" %>
+	<%= f.text_field :wednesday_contact_email, :class => "field text medium" %>
+	<%= f.error_message_on :wednesday_contact_email, :prepend_text => 'E-mail address ' %>			
+<%= f.group_end() %>
 
 <!-- Thursday -->
 
-<li id="fo1li127" class="    ">
+<%= f.group_start( [:thursday_date], { :position => "left" } ) %>
 	<%= f.label :thursday_date, "Thursday Visit Date", :class => "desc" %>
-	<%= f.date_select :thursday_date %>
-</li>
+	<%= f.date_picker :thursday_date %>
+	<%= f.error_message_on :thursday_date, :prepend_text => 'This date ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li133" class="leftHalf    ">
+<%= f.group_start( [:thursday_school], { :position => "right" } ) %>
 	<%= f.label :thursday_school, "Thursday School Name", :class => "desc" %>
 	<%= f.text_field :thursday_school, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :thursday_school, :prepend_text => 'School name ' %>		
+<%= f.group_end() %>
 
-<li id="fo1li131" class="rightHalf    ">
+<%= f.group_start( [:thursday_contact_first, :thursday_contact_last], { :position => "left" } ) %>
 	<label class="desc">Thursday School Contact's Name</label>
 	<span>
 		<%= f.text_field :thursday_contact_first, :class => "field text", :size => 8 %>
 		<%= f.label :thursday_contact_first, "First" %>
+		<%= f.error_message_on :thursday_contact_first, :prepend_text => 'First name ' %>				
 	</span>
 	<span>
 		<%= f.text_field :thursday_contact_last, :class => "field text", :size => 14 %>
 		<%= f.label :thursday_contact_last, "Last" %>
+		<%= f.error_message_on :thursday_contact_last, :prepend_text => 'Last name ' %>		
 	</span>
-</li>
+<%= f.group_end() %>
 
 
-<li id="fo1li151" class="leftHalf    ">
+<%= f.group_start( [:thursday_contact_title], { :position => "right" } ) %>
 	<%= f.label :thursday_contact_title, "Thursday School Contact's Title", :class => "desc" %>
 	<%= f.text_field :thursday_contact_title, :class => "field text medium" %>
-</li>
+	<%= f.error_message_on :thursday_contact_title, :prepend_text => 'Contact title ' %>		
+<%= f.group_end() %>
 
 
-<li id="fo1li138" class="rightHalf    ">
-		<%= f.label :thursday_contact_email, "Thursday School Contact's E-mail", :class => "desc" %>
-		<%= f.text_field :thursday_contact_email, :class => "field text medium" %>
-</li>
+<%= f.group_start( [:thursday_contact_email], { :position => "full" } ) %>
+	<%= f.label :thursday_contact_email, "Thursday School Contact's E-mail", :class => "desc" %>
+	<%= f.text_field :thursday_contact_email, :class => "field text medium" %>
+	<%= f.error_message_on :thursday_contact_email, :prepend_text => 'E-mail address ' %>			
+<%= f.group_end() %>
+
+<!-- Friday -->
+
+<%= f.group_start( [:friday_date], { :position => "left" } ) %>
+	<%= f.label :friday_date, "Friday Visit Date", :class => "desc" %>
+	<%= f.date_picker :friday_date %>
+	<%= f.error_message_on :friday_date, :prepend_text => 'This date ' %>		
+<%= f.group_end() %>
+
+
+<%= f.group_start( [:friday_school], { :position => "right" } ) %>
+	<%= f.label :friday_school, "Friday School Name", :class => "desc" %>
+	<%= f.text_field :friday_school, :class => "field text medium" %>
+	<%= f.error_message_on :friday_school, :prepend_text => 'School name ' %>		
+<%= f.group_end() %>
+
+<%= f.group_start( [:friday_contact_first, :friday_contact_last], { :position => "left" } ) %>
+	<label class="desc">Friday School Contact's Name</label>
+	<span>
+		<%= f.text_field :friday_contact_first, :class => "field text", :size => 8 %>
+		<%= f.label :friday_contact_first, "First" %>
+		<%= f.error_message_on :friday_contact_first, :prepend_text => 'First name ' %>				
+	</span>
+	<span>
+		<%= f.text_field :friday_contact_last, :class => "field text", :size => 14 %>
+		<%= f.label :friday_contact_last, "Last" %>
+		<%= f.error_message_on :friday_contact_last, :prepend_text => 'Last name ' %>		
+	</span>
+<%= f.group_end() %>
+
+
+<%= f.group_start( [:friday_contact_title], { :position => "right" } ) %>
+	<%= f.label :friday_contact_title, "Friday School Contact's Title", :class => "desc" %>
+	<%= f.text_field :friday_contact_title, :class => "field text medium" %>
+	<%= f.error_message_on :friday_contact_title, :prepend_text => 'Contact title ' %>		
+<%= f.group_end() %>
+
+
+<%= f.group_start( [:friday_contact_email], { :position => "full" } ) %>
+	<%= f.label :friday_contact_email, "Friday School Contact's E-mail", :class => "desc" %>
+	<%= f.text_field :friday_contact_email, :class => "field text medium" %>
+	<%= f.error_message_on :friday_contact_email, :prepend_text => 'E-mail address ' %>			
+<%= f.group_end() %>
 
 </ul>

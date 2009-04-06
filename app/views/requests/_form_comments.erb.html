@@ -1,7 +1,7 @@
 <!-- Comments / Big questions -->
 
 <ul>
-		<li id="fo1li92" class="section     ">
+	<li id="fo1li92" class="section     ">
 		<h3 id="title92">Almost Done!...</h3>
 		<div id="instruct92">We receive lots of requests for visits from Mr. Mike!  <br />
 			We'll pay close attention to your responses to ALL of the questions below.  <br />
@@ -9,39 +9,55 @@
 		</div>
 	</li>
 
-	<li id="fo1li93" class="    ">
+	<%= f.group_start( [:essay_visit_reason], { :position => "full" } ) %>
 		<%= f.label :essay_visit_reason, "Why is your school requesting a visit from Mr. Mike?" %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
-	</li>
+		<div><%= f.text_area :essay_visit_reason, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_visit_reason, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
 
-	<li id="fo1li94" class="    ">
-		<%= f.label :essay_visit_reason, "What do you hope to get out of it?" %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
-	</li>
+	<%= f.group_start( [:essay_hope_receive], { :position => "full" } ) %>
+		<%= f.label :essay_hope_receive, "What do you hope to get out of it?" %>
+		<div><%= f.text_area :essay_hope_receive, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_hope_receive, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
 
-	<li id="fo1li95" class="    ">
-		<%= f.label :essay_visit_reason, "What is your school's approach to writing?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
-	</li>
+	<%= f.group_start( [:essay_writing_approach], { :position => "full" } ) %>
+		<%= f.label :essay_writing_approach, "What is your school's approach to writing?", :class => 'field textarea small' %>
+		<div><%= f.text_area :essay_writing_approach, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_writing_approach, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
 
-	<li id="fo1li122" class="    ">
-		<%= f.label :essay_visit_reason, "How you feel about hosting Mr. Mike?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
-	</li>
+	<%= f.group_start( [:essay_feel_about_mike], { :position => "full" } ) %>
+		<%= f.label :essay_feel_about_mike, "How you feel about hosting Mr. Mike?", :class => 'field textarea small' %>
+		<div><%= f.text_area :essay_feel_about_mike, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_feel_about_mike, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
 
-	<li id="fo1li121" class="    ">
-		<%= f.label :essay_visit_reason, "What are your plans for preparation?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
-	</li>
+	<%= f.group_start( [:essay_prep_plans], { :position => "full" } ) %>
+		<%= f.label :essay_prep_plans, "What are your plans for preparation?", :class => 'field textarea small' %>
+		<div><%= f.text_area :essay_prep_plans, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_prep_plans, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
 
-	<li id="fo1li120" class="    ">
-		<%= f.label :essay_visit_reason, "How will your PTA/O be involved?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
-	</li>
+	<%= f.group_start( [:essay_pta_involvement], { :position => "full" } ) %>
+		<%= f.label :essay_pta_involvement, "How will your PTA/O be involved?", :class => 'field textarea small' %>
+		<div><%= f.text_area :essay_pta_involvement, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_pta_involvement, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
 
-	<li id="fo1li119" class="    ">
-		<%= f.label :essay_visit_reason, "Is there anything else you'd like us to know?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 50, :rows => 4 %></div>
+	<%= f.group_start( [:essay_other], { :position => "full" } ) %>
+		<%= f.label :essay_other, "Is there anything else you'd like us to know?", :class => 'field textarea small' %>
+		<div><%= f.text_area :essay_other, :cols => 46, :rows => 5 %></div>
+		<%= f.error_message_on :essay_other, :prepend_text => 'This question ' %>				
+	<%= f.group_end() %>
+	
+	<li id="fo1li92" class="section     ">
+		<h3 id="title92">Thats It!...</h3>
+		<div id="instruct92">Thanks for taking the time to fill our our detailed application.
+			You might want to <b>double check</b> your application for mistakes.
+			Simply click on each section up above or use the "Previous/Next" buttons on the bottom to verify your submission.
+			Once you're ready, return to the "Comments" page to submit your form. 
+		</div>
 	</li>
 	
 </ul>

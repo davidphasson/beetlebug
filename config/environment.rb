@@ -40,9 +40,11 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
   
   # Strip out the errorfield tags
-  ActionView::Base.field_error_proc = Proc.new { |html_tag, instance|
-  # "<span class=\"fieldWithErrors\">#{html_tag}</span>" 
-    "#{html_tag}"
-  }
+
   
 end
+
+ActionView::Base.field_error_proc = Proc.new { |html_tag, instance|
+# "<span class=\"fieldWithErrors\">#{html_tag}</span>" 
+  "#{html_tag}"
+}

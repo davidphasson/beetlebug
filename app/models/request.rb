@@ -16,7 +16,9 @@ class Request < ActiveRecord::Base
   validates_confirmation_of :contact1_email
   validates_confirmation_of :contact2_email
   
-  
+  validates_format_of :monday_contact_email, :tuesday_contact_email, :wednesday_contact_email, :thursday_contact_email, 
+                      :friday_contact_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
+    
 
   
   validates_presence_of :school_mail_address1, :school_mail_city, :school_mail_state, :school_mail_zipcode
@@ -32,12 +34,50 @@ class Request < ActiveRecord::Base
   
   validates_presence_of :school_county, :school_district
   
+  validates_presence_of :book_fair_too_soon, :read_school_info, :dates_okay, :students_will_show, :will_prep, :had_writing_program,
+                        :message => "must be answered"
   
+  ### Times ###
+  validates_presence_of :assembly_time1
+  # Must have a second if there is a third
+  validates_presence_of :assembly_time2, :if => Proc.new { |r| !r.assembly_time3.nil? },
+      :message => "must be specified if Assembly #3 is specified"
+  validates_presence_of :school_prone_weather_delays, :lunch_with_mike, :inclement_lunchroom
+  # Explanation fields must be filled out if a question is true
+  validates_presence_of :weather_delay_plan, :if => Proc.new { |r| r.school_prone_weather_delays? == true },
+      :message => "must be answered if previous question is true"
+  validates_presence_of :inclement_plan, :if => Proc.new { |r| r.inclement_lunchroom? == true },
+      :message => "must be answered if previous question is true"
+  validates_presence_of :lunch_start, :lunch_end, :lunch_room, :if => Proc.new { |r| r.lunch_with_mike? == true },
+      :message => "must be specified for lunch with Mr. Mike"
+  # Time specifications:
+  validates_each :assembly_time2 do |record, attr, value|
+    next if value.nil?
+    # Leave this up to other validation
+    next if record.assembly_time1.nil?
+    if value < ( record.assembly_time1 + 1.hour + 15.minutes )
+      record.errors.add attr, "must allow for at least one hour assembly and 15 minute break"
+    end
+  end
+  validates_each :assembly_time3 do |record, attr, value|
+    next if value.nil?
+    # Leave this up to other validation
+    next if record.assembly_time2.nil?
+    if value < ( record.assembly_time2 + 1.hour + 15.minutes )
+      record.errors.add attr, "must allow for at least one hour assembly and 15 minute break"
+    end
+  end
+  
+  # Questions
   validates_acceptance_of :book_fair_too_soon, :accept => "no"
   validates_acceptance_of :read_school_info, :accept => "yes"
   validates_acceptance_of :dates_okay, :accept => "yes"
   validates_acceptance_of :students_will_show, :accept => "yes"
   validates_acceptance_of :will_prep, :accept => "yes"
+  
+  # All comment fields but "essay_other" need to be answered
+  validates_presence_of :essay_visit_reason, :essay_hope_receive, :essay_writing_approach, :essay_feel_about_mike, :essay_prep_plans, 
+  					            :essay_pta_involvement, :message => "must be answered"
   
   validates_each :preferred_date1, :preferred_date2, :preferred_date3, :preferred_date4,
                   :alternate_date1, :alternate_date2, :alternate_date3, :alternate_date4,
