@@ -17,7 +17,7 @@
 
 <%= f.group_start( [:winter_break_start], { :position => "left" } ) %>
 	<%= f.label :winter_break_start, "When is your Winter Break? <br />School is out on:", :class => "desc" %>
-	<% f.date_picker :winter_break_start %>
+	<%= f.date_picker :winter_break_start %>
 	<p class="instruct" id="instruct142"><small>Mr. Mike cannot visit during the week just before you leave for Winter Break.</small></p>
 	<%= f.error_message_on :winter_break_start, :prepend_text => 'This question ' %>	
 </li>
@@ -25,7 +25,7 @@
 
 <%= f.group_start( [:winter_break_end], { :position => "right" } ) %>
 	<%= f.label :winter_break_end, "When is your Winter Break? <br />School is back in session on:", :class => "desc" %>
-	<% f.date_picker :winter_break_end %>
+	<%= f.date_picker :winter_break_end %>
 	<p class="instruct" id="instruct141"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
 	<%= f.error_message_on :winter_break_end, :prepend_text => 'This question ' %>	
 </li>
@@ -33,7 +33,7 @@
 
 <%= f.group_start( [:spring_break_start], { :position => "left" } ) %>
 	<%= f.label :spring_break_start, "When is your Spring Break? <br />School is out on:", :class => "desc" %>
-	<% f.date_picker :spring_break_start %>
+	<%= f.date_picker :spring_break_start %>
 	<p class="instruct" id="instruct143"><small>Mr. Mike cannot visit during the week just before you leave for Spring Break.</small></p>
 	<%= f.error_message_on :spring_break_start, :prepend_text => 'This question ' %>	
 </li>
@@ -41,21 +41,21 @@
 
 <%= f.group_start( [:spring_break_end], { :position => "right" } ) %>
 	<%= f.label :spring_break_end, "When is your Spring Break? <br />School is back in session on:", :class => "desc" %>
-	<% f.date_picker :spring_break_end %>
+	<%= f.date_picker :spring_break_end %>
 	<p class="instruct" id="instruct144"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
 	<%= f.error_message_on :spring_break_end, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:first_school_date], { :position => "left" } ) %>
 	<%= f.label :first_school_date, "When is your first day of school?", :class => "desc" %>
-	<% f.date_picker :first_school_date %>
+	<%= f.date_picker :first_school_date %>
 	<p class="instruct" id="instruct145"><small>The first week of school is no bueno?</small></p>
 	<%= f.error_message_on :first_school_date, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:last_school_date], { :position => "right" } ) %>
 	<%= f.label :last_school_date, "When is your last day of school?", :class => "desc" %>
-	<% f.date_picker :last_school_date %>
+	<%= f.date_picker :last_school_date %>
 	<p class="instruct" id="instruct145"><small>The last 3 weeks of the school year are not a good time for Mr. Mike's visit.</small></p>
 	<%= f.error_message_on :last_school_date, :prepend_text => 'This question ' %>
 </li>
@@ -64,7 +64,7 @@
 
 <%= f.group_start( [:preferred_date1], { :position => "left" } ) %>
 	<%= f.label :preferred_date1, 'Preferred Date #1', :class => "desc" %>
-	<% my_date(f, :preferred_date1) %>
+	<%= f.date_picker :preferred_date1 %>
 
 	<p class="instruct" id="instruct64"><small>We try to work with your Preferred Dates, however your school
 		has a better chance of getting a visit if you also indicate Additional Dates. 
@@ -74,19 +74,19 @@
 
 <%= f.group_start( [:preferred_date2], { :position => "right" } ) %>
 	<%= f.label :preferred_date2, 'Preferred Date #2', :class => "desc" %>
-	<% my_date(f, :preferred_date2) %>
+	<%= f.date_picker  :preferred_date2 %>
 	<%= f.error_message_on :preferred_date2, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:preferred_date3], { :position => "left" } ) %>
 	<%= f.label :preferred_date3, 'Preferred Date #3', :class => "desc" %>
-	<% my_date(f, :preferred_date3) %>
+	<%= f.date_picker :preferred_date3 %>
 	<%= f.error_message_on :preferred_date3, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:preferred_date4], { :position => "right" } ) %>
 	<%= f.label :preferred_date4, 'Preferred Date #4', :class => "desc" %>
-	<% my_date(f, :preferred_date4) %>
+	<%= f.date_picker :preferred_date4 %>
 	<%= f.error_message_on :preferred_date4, :prepend_text => 'This question ' %>	
 </li>
 
@@ -94,25 +94,25 @@
 
 <%= f.group_start( [:alternate_date1], { :position => "left" } ) %>
 	<%= f.label :alternate_date1, 'Alternate Date #1', :class => "desc" %>
-	<% my_date(f, :alternate_date1) %>
+	<%= f.date_picker :alternate_date1 %>
 	<%= f.error_message_on :alternate_date1, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:alternate_date2], { :position => "right" } ) %>
 	<%= f.label :alternate_date2, 'Alternate Date #2', :class => "desc" %>
-	<% my_date(f, :alternate_date2) %>
+	<%= f.date_picker :alternate_date2 %>
 	<%= f.error_message_on :alternate_date2, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:alternate_date3], { :position => "left" } ) %>
 	<%= f.label :alternate_date3, 'Alternate Date #3', :class => "desc" %>
-	<% my_date(f, :alternate_date3) %>
+	<%= f.date_picker :alternate_date3 %>
 	<%= f.error_message_on :alternate_date3, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:alternate_date4], { :position => "right" } ) %>
 	<%= f.label :alternate_date4, 'Alternate Date #4', :class => "desc" %>
-	<% my_date(f, :alternate_date4) %>
+	<%= f.date_picker :alternate_date4 %>
 	<%= f.error_message_on :alternate_date4, :prepend_text => 'This question ' %>	
 </li>
 
@@ -126,25 +126,25 @@
 <div id="backup_dates" style="display: none;">
 	<%= f.group_start( [:backup_date1], { :position => "left" } ) %>
 	<%= f.label :backup_date1, 'Backup Date #1', :class => "desc" %>
-	<% my_date(f, :backup_date1) %>
+	<%= f.date_picker :backup_date1 %>
 	<%= f.error_message_on :backup_date1, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:backup_date2], { :position => "right" } ) %>
 	<%= f.label :backup_date2, 'Backup Date #2', :class => "desc" %>
-	<% my_date(f, :backup_date2) %>
+	<%= f.date_picker :backup_date2 %>
 	<%= f.error_message_on :backup_date2, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:backup_date3], { :position => "left" } ) %>
 	<%= f.label :backup_date3, 'Backup Date #3', :class => "desc" %>
-	<% my_date(f, :backup_date3) %>
+	<%= f.date_picker :backup_date3 %>
 	<%= f.error_message_on :backup_date3, :prepend_text => 'This question ' %>	
 </li>
 
 <%= f.group_start( [:backup_date4], { :position => "right" } ) %>
 	<%= f.label :backup_date4, 'Backup Date #4', :class => "desc" %>
-	<% my_date(f, :backup_date4) %>
+	<%= f.date_picker :backup_date4 %>
 	<%= f.error_message_on :backup_date4, :prepend_text => 'This question ' %>	
 </li>
 

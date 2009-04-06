@@ -57,7 +57,7 @@
 
 <%= f.group_start( [:assembly_time3], { :position => "full" } ) %>
 	<%= f.label :assembly_time3, 'Assembly #3 <small>(Only for very large schools)</small>', :class => "desc" %>
-	<%= f.time_select :assembly_time3, :minute_step => 15, :include_blank => true %>
+	<%= f.time_select :assembly_time3, :minute_step => 15, :include_blank => true  %>
 	<p class="instruct" id="instruct71"><small>Assembly #3 option is available only for very large schools 
 		that can't fit all students into 2 assemblies OR for schools that have a very small assembly area. 
 		Sorry, Mr. Mike is not available for more than 3 assemblies.</small></p>
@@ -121,9 +121,9 @@
 <%= f.group_start( [:school_prone_weather_delays], { :position => "full" } ) %>
 	<%= f.label :school_prone_weather_delays, "Is your school prone to schedule changes due to fog or other 
 		weather during the time of Mr. Mike's visit?", :class => "desc" %>
-	<%= f.radio_button :school_prone_weather_delays, "true" %>
+	<%= f.radio_button :school_prone_weather_delays, true %>
 		<label class="choice">Yes</label>
-	<%= f.radio_button :school_prone_weather_delays, "false" %>
+	<%= f.radio_button :school_prone_weather_delays, false %>
 		<label class="choice">No</label>
 	<p class="instruct" id="instruct103"><small>If Mr. Mike will be visiting during a time of year when school 
 		buses are often delayed - let us know!  <br />
@@ -166,7 +166,7 @@
 
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
-	<%= f.time_select :lunch_start, :minute_step => 15, :include_blank => true  %>	
+	<%= f.time_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
 	<p class="instruct" id="instruct78"><small>Allow a minimum 15 min.  break after the end of the
 		assembly.</small></p>
 	<%= f.error_message_on :lunch_start, :prepend_text => 'This question ' %>	
@@ -175,7 +175,7 @@
 
 <%= f.group_start( [:lunch_end], { :position => "right" } ) %>
 	<%= f.label :lunch_end, 'What time will it end?', :class => "desc" %>
-	<%= f.time_select :lunch_end, :minute_step => 15, :include_blank => true  %>		
+	<%= f.time_select :lunch_end, :minute_step => 15, :include_blank => true, :ignore_date => true   %>		
 	<p class="instruct" id="instruct77"><small>About 45 minutes is good.</small></p>
 	<%= f.error_message_on :lunch_end, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>

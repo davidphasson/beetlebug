@@ -60,17 +60,17 @@ class CreateRequests < ActiveRecord::Migration
       t.date :backup_date4
       t.text :date_comments
       # Times Page
-      t.time :assembly_time1
-      t.time :assembly_time2
-      t.time :assembly_time3
+      t.datetime :assembly_time1
+      t.datetime :assembly_time2
+      t.datetime :assembly_time3
       t.string :assembly_location
       t.boolean :inclement_lunchroom
       t.text :inclement_plan
       t.boolean :school_prone_weather_delays
       t.text :weather_delay_plan
       t.boolean :lunch_with_mike
-      t.time :lunch_start
-      t.time :lunch_end
+      t.datetime :lunch_start
+      t.datetime :lunch_end
       t.string :lunch_room
       t.boolean :had_writing_program
       # Schools coordinating with other schools

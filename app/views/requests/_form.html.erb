@@ -35,38 +35,6 @@ multisite_fields = [:monday_date, :tuesday_date, :wednesday_date,
 comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_approach, :essay_feel_about_mike, :essay_prep_plans, 
 					:essay_pta_involvement, :essay_other]
 
-# pre: f => form_for variable, field => ruby symbol corresponding to 
-def my_date(f, field)
-%>
-	<span>
-		<input id="<%= field.to_s %>-1" name="request[<%= field.to_s %>(2i)]" 
-			type="text" class="field text" value="<%= @request.send(field).nil? ? "" : @request.send(field).month %>" size="2" maxlength="2" tabindex="59" /> 
-		<label for="<%= field.to_s %>-1">MM</label>
-	</span>
-	<span>
-		<input id="<%= field.to_s %>-2" name="request[<%= field.to_s %>(3i)]" 
-			type="text" class="field text" value="<%= @request.send(field).nil? ? "" : @request.send(field).day %>" size="2" maxlength="2" tabindex="60" /> 
-		<label for="<%= field.to_s %>-2">DD</label>
-	</span>
-	<span>
-		<input id="<%= field.to_s %>" name="request[<%= field.to_s %>(1i)]" 
-			type="text" class="field text" value="<%= @request.send(field).nil? ? "" : @request.send(field).year %>" size="4" maxlength="4" tabindex="61" />
-		<label for="<%= field.to_s %>">YYYY</label>
-	</span>
-	<span id="cal_<%= field.to_s %>">
-		<img id="pick_<%= field.to_s %>" class="datepicker" src="/images/icons/calendar.png" alt="Pick a date." />
-	</span>
-	<script type="text/javascript">
-	Calendar.setup({
-	inputField : "<%= field.to_s %>",
-	displayArea  : "cal_<%= field.to_s %>",
-	button : "pick_<%= field.to_s %>",
-	ifFormat : "%B %e, %Y",
-	onSelect : selectDate
-	});
-	</script>
-<%	
-end
 %>
 
 <div id="navbar" style="background-color: #eee; padding: 5px;">

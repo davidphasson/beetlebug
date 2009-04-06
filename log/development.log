@@ -37537,3 +37537,853 @@ ActiveRecord::MultiparameterAssignmentErrors (2 error(s) on assignment of multip
 Rendered rescues/_trace (30.2ms)
 Rendered rescues/_request_and_response (1.5ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 21:48:09) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.0ms)
+Rendered requests/_form_contact (17.9ms)
+Rendered requests/_form_dates (10.0ms)
+Rendered requests/_form_times (17.0ms)
+Rendered requests/_form_questions (6.7ms)
+Rendered requests/_form_multisite (18.6ms)
+Rendered requests/_form_comments (4.7ms)
+Rendered requests/_form (155.2ms)
+Completed in 190ms (View: 175, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:10) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:48:45) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "essay_prep_plans"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "monday_date(3i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "tuesday_contact_first"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.5ms)
+Rendered requests/_form_contact (19.0ms)
+Rendered requests/_form_dates (10.3ms)
+Rendered requests/_form_times (15.9ms)
+Rendered requests/_form_questions (6.9ms)
+Rendered requests/_form_multisite (18.9ms)
+Rendered requests/_form_comments (5.1ms)
+Rendered requests/_form (160.0ms)
+Completed in 290ms (View: 176, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:48:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:49:10) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "essay_prep_plans"=>"", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.5ms)
+Rendered requests/_form_contact (18.9ms)
+Rendered requests/_form_dates (10.7ms)
+Rendered requests/_form_times (16.0ms)
+Rendered requests/_form_questions (6.9ms)
+Rendered requests/_form_multisite (17.6ms)
+Rendered requests/_form_comments (5.0ms)
+Rendered requests/_form (158.5ms)
+Completed in 234ms (View: 175, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:49:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:50:00) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "essay_prep_plans"=>"", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.5ms)
+Rendered requests/_form_contact (18.5ms)
+Rendered requests/_form_dates (10.1ms)
+Rendered requests/_form_times (71.8ms)
+Rendered requests/_form_questions (6.9ms)
+Rendered requests/_form_multisite (17.5ms)
+Rendered requests/_form_comments (5.5ms)
+Rendered requests/_form (155.2ms)
+Completed in 231ms (View: 171, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:50:25) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "essay_prep_plans"=>"To not prepare", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.5ms)
+Rendered requests/_form_contact (18.7ms)
+Rendered requests/_form_dates (10.1ms)
+Rendered requests/_form_times (15.7ms)
+Rendered requests/_form_questions (6.7ms)
+Rendered requests/_form_multisite (18.2ms)
+Rendered requests/_form_comments (5.1ms)
+Rendered requests/_form (99.4ms)
+Completed in 286ms (View: 171, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:26) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:50:41) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"I hope the kids learn good", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"Because it seemed like a good idea at the time", "essay_prep_plans"=>"To not prepare", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.7ms)
+Rendered requests/_form_contact (76.0ms)
+Rendered requests/_form_dates (10.5ms)
+Rendered requests/_form_times (16.1ms)
+Rendered requests/_form_questions (7.3ms)
+Rendered requests/_form_multisite (17.8ms)
+Rendered requests/_form_comments (5.7ms)
+Rendered requests/_form (159.6ms)
+Completed in 233ms (View: 174, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:50:42) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:51:04) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"I hope the kids learn good", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"Our lady of good times school", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"true", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"200", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "author_hosted"=>"1", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"Because it seemed like a good idea at the time", "essay_prep_plans"=>"To not prepare", "contact1_last"=>"", "assembly_time3(5i)"=>"", "contact1_phone"=>"", "backup_date3(2i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.8ms)
+Rendered requests/_form_contact (18.7ms)
+Rendered requests/_form_dates (10.1ms)
+Rendered requests/_form_times (15.2ms)
+Rendered requests/_form_questions (62.8ms)
+Rendered requests/_form_multisite (17.3ms)
+Rendered requests/_form_comments (4.8ms)
+Rendered requests/_form (153.6ms)
+Completed in 223ms (View: 167, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:51:23) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"I hope the kids learn good", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"Our lady of good times school", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"false", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"200", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"Because it seemed like a good idea at the time", "essay_prep_plans"=>"To not prepare", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.5ms)
+Rendered requests/_form_contact (19.1ms)
+Rendered requests/_form_dates (10.4ms)
+Rendered requests/_form_times (15.8ms)
+Rendered requests/_form_questions (6.9ms)
+Rendered requests/_form_multisite (17.5ms)
+Rendered requests/_form_comments (4.8ms)
+Rendered requests/_form (99.7ms)
+Completed in 228ms (View: 114, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:24) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:51:59) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"I hope the kids learn good", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"Our lady of good times school", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"false", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"200", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"Because it seemed like a good idea at the time", "essay_prep_plans"=>"To not prepare", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (8.2ms)
+Rendered requests/_form_contact (18.7ms)
+Rendered requests/_form_dates (67.0ms)
+Rendered requests/_form_times (16.3ms)
+Rendered requests/_form_questions (6.9ms)
+Rendered requests/_form_multisite (17.5ms)
+Rendered requests/_form_comments (5.3ms)
+Rendered requests/_form (157.6ms)
+Completed in 227ms (View: 171, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:51:59) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:52:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:52:08) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"I hope the kids learn good", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"Our lady of good times school", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"false", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"200", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"Because it seemed like a good idea at the time", "essay_prep_plans"=>"To not prepare", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.4ms)
+Rendered requests/_form_contact (19.2ms)
+Rendered requests/_form_dates (11.3ms)
+Rendered requests/_form_times (17.0ms)
+Rendered requests/_form_questions (7.1ms)
+Rendered requests/_form_multisite (76.0ms)
+Rendered requests/_form_comments (5.4ms)
+Rendered requests/_form (161.7ms)
+Completed in 233ms (View: 176, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:52:09) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:53:22) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"09", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"I hope the kids learn good", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"It's varied", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"Our lady of good times school", "tuesday_contact_email"=>"", "inclement_lunchroom"=>"false", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "lunch_start(2i)"=>"", "school_prone_weather_delays"=>"false", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "lunch_end(2i)"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"I feel okay", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"200", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"30", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"They just will, okay", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"Because it seemed like a good idea at the time", "essay_prep_plans"=>"To not prepare", "backup_date3(2i)"=>"", "contact1_last"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "monday_date(3i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "lunch_start(1i)"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "lunch_end(1i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "lunch_start(3i)"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "lunch_end(3i)"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+
+ActiveRecord::MultiparameterAssignmentErrors (1 error(s) on assignment of multiparameter attributes):
+  app/controllers/requests_controller.rb:19:in `new'
+  app/controllers/requests_controller.rb:19:in `create'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 21:56:19) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.3ms)
+Rendered requests/_form_contact (17.8ms)
+Rendered requests/_form_dates (10.4ms)
+Rendered requests/_form_times (14.6ms)
+Rendered requests/_form_questions (6.6ms)
+Rendered requests/_form_multisite (71.8ms)
+Rendered requests/_form_comments (4.9ms)
+Rendered requests/_form (150.6ms)
+Completed in 189ms (View: 172, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:56:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 21:56:20) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 21:56:49) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"09", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"ZXc", "contact1_email"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"asdfa", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"asdf", "contact2_phone"=>"", "backup_date4(2i)"=>"", "alternate_date2(3i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "num_students"=>"", "thursday_date(2i)"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"15", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"asdf", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"ZX", "essay_prep_plans"=>"asdf", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "monday_date(3i)"=>"", "contact2_email_confirmation"=>"", "contact2_email"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "tuesday_contact_first"=>"", "preferred_date3(3i)"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "contact1_email_confirmation"=>"", "essay_other"=>"asdf", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "backup_date4(3i)"=>"", "thursday_date(1i)"=>"", "lunch_end(5i)"=>""}}
+
+ActiveRecord::MultiparameterAssignmentErrors (1 error(s) on assignment of multiparameter attributes):
+  app/controllers/requests_controller.rb:19:in `new'
+  app/controllers/requests_controller.rb:19:in `create'
+
+Rendered rescues/_trace (88.4ms)
+Rendered rescues/_request_and_response (1.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 22:00:47) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.2ms)
+Rendered requests/_form_contact (18.2ms)
+Rendered requests/_form_dates (10.2ms)
+
+ActionView::TemplateError (undefined method `select_time' for #<ErrorFormBuilder:0x24ab29c>) on line #19 of app/views/requests/_form_times.erb.html:
+16: 
+17: <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
+18: 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc" %>
+19: 	<%= f.select_time :assembly_time1, :minute_step => 15, :include_blank => true, :ignore_date => true %>
+20: 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
+21: 		in between if there are 2 or more assemblies. <br />
+22: 		<br />
+
+    app/views/requests/_form_times.erb.html:19
+    app/views/requests/_form.html.erb:127
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+
+Rendered rescues/_trace (50.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRequests (20090325135128)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "school" varchar(255), "assembly_type" integer, "starting_grade" integer, "ending_grade" integer, "num_students" integer, "author_hosted" boolean, "mike_hosted" boolean, "mike_hosted_year" varchar(255), "contact1_first" varchar(255), "contact1_last" varchar(255), "contact1_position" varchar(255), "contact1_phone" varchar(255), "contact1_altphone" varchar(255), "contact1_fax" varchar(255), "contact1_email" varchar(255), "contact2_first" varchar(255), "contact2_last" varchar(255), "contact2_position" varchar(255), "contact2_phone" varchar(255), "contact2_altphone" varchar(255), "contact2_email" varchar(255), "school_principal" varchar(255), "school_mail_address1" varchar(255), "school_mail_address2" varchar(255), "school_mail_city" varchar(255), "school_mail_state" varchar(255), "school_mail_country" varchar(255), "school_mail_zipcode" varchar(255), "school_phys_address1" varchar(255), "school_phys_address2" varchar(255), "school_phys_city" varchar(255), "school_phys_state" varchar(255), "school_phys_zipcode" varchar(255), "school_phys_country" varchar(255), "school_county" varchar(255), "school_district" varchar(255), "winter_break_start" date, "winter_break_end" date, "spring_break_start" date, "spring_break_end" date, "last_school_date" date, "first_school_date" date, "preferred_date1" date, "preferred_date2" date, "preferred_date3" date, "preferred_date4" date, "alternate_date1" date, "alternate_date2" date, "alternate_date3" date, "alternate_date4" date, "backup_date1" date, "backup_date2" date, "backup_date3" date, "backup_date4" date, "date_comments" text, "assembly_time1" datetime, "assembly_time2" datetime, "assembly_time3" datetime, "assembly_location" varchar(255), "inclement_lunchroom" boolean, "inclement_plan" text, "school_prone_weather_delays" boolean, "weather_delay_plan" text, "lunch_with_mike" boolean, "lunch_start" datetime, "lunch_end" datetime, "lunch_room" varchar(255), "had_writing_program" boolean, "monday_date" date, "monday_school" varchar(255), "monday_contact_first" varchar(255), "monday_contact_last" varchar(255), "monday_contact_title" varchar(255), "monday_contact_email" varchar(255), "tuesday_date" date, "tuesday_school" varchar(255), "tuesday_contact_first" varchar(255), "tuesday_contact_last" varchar(255), "tuesday_contact_title" varchar(255), "tuesday_contact_email" varchar(255), "wednesday_date" date, "wednesday_school" varchar(255), "wednesday_contact_first" varchar(255), "wednesday_contact_last" varchar(255), "wednesday_contact_title" varchar(255), "wednesday_contact_email" varchar(255), "thursday_date" date, "thursday_school" varchar(255), "thursday_contact_first" varchar(255), "thursday_contact_last" varchar(255), "thursday_contact_title" varchar(255), "thursday_contact_email" varchar(255), "friday_date" date, "friday_school" varchar(255), "friday_contact_first" varchar(255), "friday_contact_last" varchar(255), "friday_contact_title" varchar(255), "friday_contact_email" varchar(255), "essay_visit_reason" text, "essay_hope_receive" text, "essay_writing_approach" text, "essay_feel_about_mike" text, "essay_prep_plans" text, "essay_pta_involvement" text, "essay_other" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090325135128')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("requests")[0m
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 22:17:24) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.3ms)
+Rendered requests/_form_contact (18.2ms)
+Rendered requests/_form_dates (10.0ms)
+
+ActionView::TemplateError (undefined method `select_time' for #<ErrorFormBuilder:0x231bb48>) on line #19 of app/views/requests/_form_times.erb.html:
+16: 
+17: <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
+18: 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc" %>
+19: 	<%= f.select_time :assembly_time1, :minute_step => 15, :include_blank => true, :ignore_date => true %>
+20: 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
+21: 		in between if there are 2 or more assemblies. <br />
+22: 		<br />
+
+    app/views/requests/_form_times.erb.html:19
+    app/views/requests/_form.html.erb:127
+    app/views/requests/new.html.erb:10
+    app/views/requests/new.html.erb:1
+
+Rendered rescues/_trace (50.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 22:18:27) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.3ms)
+Rendered requests/_form_contact (18.3ms)
+Rendered requests/_form_dates (71.3ms)
+Rendered requests/_form_times (15.4ms)
+Rendered requests/_form_questions (7.3ms)
+Rendered requests/_form_multisite (18.4ms)
+Rendered requests/_form_comments (4.9ms)
+Rendered requests/_form (160.8ms)
+Completed in 196ms (View: 181, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:18:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:18:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:18:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:18:28) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 22:18:39) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"09", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"15", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "essay_prep_plans"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "monday_date(3i)"=>"", "contact2_email_confirmation"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "tuesday_contact_first"=>"", "preferred_date3(3i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+
+ActiveRecord::MultiparameterAssignmentErrors (1 error(s) on assignment of multiparameter attributes):
+  app/controllers/requests_controller.rb:19:in `new'
+  app/controllers/requests_controller.rb:19:in `create'
+
+Rendered rescues/_trace (30.1ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (2.4ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateRequests (20090325135128)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "requests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "school" varchar(255), "assembly_type" integer, "starting_grade" integer, "ending_grade" integer, "num_students" integer, "author_hosted" boolean, "mike_hosted" boolean, "mike_hosted_year" varchar(255), "contact1_first" varchar(255), "contact1_last" varchar(255), "contact1_position" varchar(255), "contact1_phone" varchar(255), "contact1_altphone" varchar(255), "contact1_fax" varchar(255), "contact1_email" varchar(255), "contact2_first" varchar(255), "contact2_last" varchar(255), "contact2_position" varchar(255), "contact2_phone" varchar(255), "contact2_altphone" varchar(255), "contact2_email" varchar(255), "school_principal" varchar(255), "school_mail_address1" varchar(255), "school_mail_address2" varchar(255), "school_mail_city" varchar(255), "school_mail_state" varchar(255), "school_mail_country" varchar(255), "school_mail_zipcode" varchar(255), "school_phys_address1" varchar(255), "school_phys_address2" varchar(255), "school_phys_city" varchar(255), "school_phys_state" varchar(255), "school_phys_zipcode" varchar(255), "school_phys_country" varchar(255), "school_county" varchar(255), "school_district" varchar(255), "winter_break_start" date, "winter_break_end" date, "spring_break_start" date, "spring_break_end" date, "last_school_date" date, "first_school_date" date, "preferred_date1" date, "preferred_date2" date, "preferred_date3" date, "preferred_date4" date, "alternate_date1" date, "alternate_date2" date, "alternate_date3" date, "alternate_date4" date, "backup_date1" date, "backup_date2" date, "backup_date3" date, "backup_date4" date, "date_comments" text, "assembly_time1" datetime, "assembly_time2" datetime, "assembly_time3" datetime, "assembly_location" varchar(255), "inclement_lunchroom" boolean, "inclement_plan" text, "school_prone_weather_delays" boolean, "weather_delay_plan" text, "lunch_with_mike" boolean, "lunch_start" datetime, "lunch_end" datetime, "lunch_room" varchar(255), "had_writing_program" boolean, "monday_date" date, "monday_school" varchar(255), "monday_contact_first" varchar(255), "monday_contact_last" varchar(255), "monday_contact_title" varchar(255), "monday_contact_email" varchar(255), "tuesday_date" date, "tuesday_school" varchar(255), "tuesday_contact_first" varchar(255), "tuesday_contact_last" varchar(255), "tuesday_contact_title" varchar(255), "tuesday_contact_email" varchar(255), "wednesday_date" date, "wednesday_school" varchar(255), "wednesday_contact_first" varchar(255), "wednesday_contact_last" varchar(255), "wednesday_contact_title" varchar(255), "wednesday_contact_email" varchar(255), "thursday_date" date, "thursday_school" varchar(255), "thursday_contact_first" varchar(255), "thursday_contact_last" varchar(255), "thursday_contact_title" varchar(255), "thursday_contact_email" varchar(255), "friday_date" date, "friday_school" varchar(255), "friday_contact_first" varchar(255), "friday_contact_last" varchar(255), "friday_contact_title" varchar(255), "friday_contact_email" varchar(255), "essay_visit_reason" text, "essay_hope_receive" text, "essay_writing_approach" text, "essay_feel_about_mike" text, "essay_prep_plans" text, "essay_pta_involvement" text, "essay_other" text, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090325135128')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mPRAGMA index_list("requests")[0m
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 22:19:45) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"09", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "preferred_date1(2i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "friday_date(1i)"=>"", "school_phys_city"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"", "contact2_phone"=>"", "backup_date4(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "friday_school"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"15", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "contact1_first"=>"", "date_comments"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "essay_visit_reason"=>"", "essay_prep_plans"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "monday_date(3i)"=>"", "contact2_email_confirmation"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "tuesday_contact_first"=>"", "preferred_date3(3i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "backup_date4(1i)"=>"", "monday_contact_title"=>"", "starting_grade"=>"K", "assembly_location"=>"", "alternate_date2(2i)"=>"", "contact1_altphone"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "lunch_end(5i)"=>""}}
+
+ActiveRecord::MultiparameterAssignmentErrors (1 error(s) on assignment of multiparameter attributes):
+  app/controllers/requests_controller.rb:19:in `new'
+  app/controllers/requests_controller.rb:19:in `create'
+
+Rendered rescues/_trace (32.4ms)
+Rendered rescues/_request_and_response (2.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 22:20:02) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.3ms)
+Rendered requests/_form_contact (17.9ms)
+Rendered requests/_form_dates (9.8ms)
+Rendered requests/_form_times (14.6ms)
+Rendered requests/_form_questions (6.6ms)
+Rendered requests/_form_multisite (19.1ms)
+Rendered requests/_form_comments (5.0ms)
+Rendered requests/_form (104.1ms)
+Completed in 209ms (View: 192, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:20:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:20:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:20:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:20:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#new (for 127.0.0.1 at 2009-04-05 22:22:17) [GET]
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.5ms)
+Rendered requests/_form_contact (17.7ms)
+Rendered requests/_form_dates (9.7ms)
+Rendered requests/_form_times (15.4ms)
+Rendered requests/_form_questions (6.8ms)
+Rendered requests/_form_multisite (17.6ms)
+Rendered requests/_form_comments (4.7ms)
+Rendered requests/_form (145.0ms)
+Completed in 182ms (View: 166, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing RequestsController#create (for 127.0.0.1 at 2009-04-05 22:22:33) [POST]
+  Parameters: {"phys_addr"=>"0", "commit"=>"Submit", "back_dates"=>"0", "authenticity_token"=>"+EhsLrvxmrxmvp8loCZ0nH89UaeZiOsoPuJCsNFSwhE=", "request"=>{"tuesday_contact_last"=>"", "winter_break_end(1i)"=>"", "wednesday_date(1i)"=>"", "friday_contact_email"=>"", "monday_contact_email"=>"", "ending_grade"=>"K", "contact1_fax"=>"", "weather_delay_plan"=>"", "alternate_date3(1i)"=>"", "assembly_time1(4i)"=>"", "school_phys_address1"=>"", "lunch_room"=>"", "backup_date1(1i)"=>"", "preferred_date2(1i)"=>"", "thursday_date(3i)"=>"", "alternate_date4(2i)"=>"", "contact1_position"=>"", "assembly_time2(5i)"=>"", "school_principal"=>"", "spring_break_end(3i)"=>"", "preferred_date1(2i)"=>"", "winter_break_end(3i)"=>"", "wednesday_date(3i)"=>"", "tuesday_contact_title"=>"", "tuesday_date(2i)"=>"", "school_phys_address2"=>"", "essay_hope_receive"=>"", "contact1_email"=>"", "assembly_time3(2i)"=>"", "backup_date1(3i)"=>"", "preferred_date2(3i)"=>"", "contact2_altphone"=>"", "spring_break_start(2i)"=>"", "alternate_date3(3i)"=>"", "essay_writing_approach"=>"", "assembly_time3(4i)"=>"", "school_phys_state"=>"", "backup_date3(1i)"=>"", "preferred_date4(1i)"=>"", "monday_date(2i)"=>"", "wednesday_contact_first"=>"", "thursday_contact_email"=>"", "monday_school"=>"", "thursday_contact_title"=>"", "school"=>"", "tuesday_contact_email"=>"", "backup_date2(2i)"=>"", "preferred_date3(2i)"=>"", "backup_date3(3i)"=>"", "preferred_date4(3i)"=>"", "contact2_position"=>"", "tuesday_school"=>"", "friday_date(1i)"=>"", "school_phys_city"=>"", "winter_break_start(1i)"=>"", "contact2_first"=>"", "school_mail_zipcode"=>"", "alternate_date2(1i)"=>"", "monday_contact_last"=>"", "lunch_start(4i)"=>"", "wednesday_school"=>"", "alternate_date1(2i)"=>"", "friday_date(3i)"=>"", "essay_feel_about_mike"=>"", "contact2_phone"=>"", "winter_break_start(3i)"=>"", "backup_date4(2i)"=>"", "last_school_date(2i)"=>"", "assembly_time1(1i)"=>"", "alternate_date2(3i)"=>"", "assembly_time2(2i)"=>"", "school_mail_address1"=>"", "thursday_school"=>"", "first_school_date(1i)"=>"", "lunch_end(4i)"=>"", "school_district"=>"", "school_mail_city"=>"", "school_mail_address2"=>"", "school_county"=>"", "assembly_time1(3i)"=>"", "thursday_date(2i)"=>"", "num_students"=>"", "alternate_date4(1i)"=>"", "contact2_last"=>"", "assembly_time2(4i)"=>"", "wednesday_contact_last"=>"", "first_school_date(3i)"=>"", "friday_school"=>"", "spring_break_end(2i)"=>"", "preferred_date1(1i)"=>"", "school_phys_zipcode"=>"", "winter_break_end(2i)"=>"", "wednesday_date(2i)"=>"", "tuesday_date(1i)"=>"", "assembly_time1(5i)"=>"", "assembly_time3(1i)"=>"", "backup_date1(2i)"=>"", "preferred_date2(2i)"=>"", "spring_break_start(1i)"=>"", "school_mail_country"=>"USA", "alternate_date3(2i)"=>"", "alternate_date4(3i)"=>"", "friday_contact_first"=>"", "essay_pta_involvement"=>"", "monday_contact_first"=>"", "preferred_date1(3i)"=>"", "tuesday_date(3i)"=>"", "friday_contact_last"=>"", "wednesday_contact_title"=>"", "assembly_time3(3i)"=>"", "school_mail_state"=>"", "monday_date(1i)"=>"", "spring_break_start(3i)"=>"", "contact1_first"=>"", "date_comments"=>"", "essay_prep_plans"=>"", "essay_visit_reason"=>"", "backup_date2(1i)"=>"", "preferred_date3(1i)"=>"", "monday_date(3i)"=>"", "contact1_phone"=>"", "assembly_time3(5i)"=>"", "contact1_last"=>"", "backup_date3(2i)"=>"", "preferred_date4(2i)"=>"", "contact2_email_confirmation"=>"", "contact2_email"=>"", "thursday_contact_first"=>"", "wednesday_contact_email"=>"", "tuesday_contact_first"=>"", "school_phys_country"=>"USA", "backup_date2(3i)"=>"", "preferred_date3(3i)"=>"", "friday_date(2i)"=>"", "thursday_contact_last"=>"", "alternate_date1(1i)"=>"", "friday_contact_title"=>"", "monday_contact_title"=>"", "winter_break_start(2i)"=>"", "backup_date4(1i)"=>"", "last_school_date(1i)"=>"", "starting_grade"=>"K", "assembly_location"=>"", "contact1_altphone"=>"", "alternate_date2(2i)"=>"", "inclement_plan"=>"", "assembly_time2(1i)"=>"", "contact1_email_confirmation"=>"", "essay_other"=>"", "lunch_start(5i)"=>"", "alternate_date1(3i)"=>"", "mike_hosted"=>"", "thursday_date(1i)"=>"", "backup_date4(3i)"=>"", "last_school_date(3i)"=>"", "assembly_time1(2i)"=>"", "assembly_time2(3i)"=>"", "first_school_date(2i)"=>"", "spring_break_end(1i)"=>"", "lunch_end(5i)"=>""}}
+Rendering template within layouts/requests
+Rendering requests/new
+Rendered requests/_form_general (7.4ms)
+Rendered requests/_form_contact (19.9ms)
+Rendered requests/_form_dates (11.8ms)
+Rendered requests/_form_times (15.6ms)
+Rendered requests/_form_questions (6.9ms)
+Rendered requests/_form_multisite (17.4ms)
+Rendered requests/_form_comments (5.3ms)
+Rendered requests/_form (101.9ms)
+Completed in 233ms (View: 118, DB: 0) | 200 OK [http://localhost/requests]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/global.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/top.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/wflogo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-04-05 22:22:34) [GET]
+
+ActionController::RoutingError (No route matches "/images/fieldbg.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
