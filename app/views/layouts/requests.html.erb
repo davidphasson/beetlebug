@@ -10,17 +10,51 @@
 	<%= javascript_include_tag "dynamic.1226508100" %>
 
    	<%= stylesheet_link_tag "global" %>
+   	<%= stylesheet_link_tag "beetlebug" %>
     <%= javascript_include_tag :defaults %>
 	<%= javascript_include_tag "functions" %>
 
+	<style>
+	body{background: url('http://amandahammond.com/beetlebug/wp-content/uploads/2009/02/bbb-website-background-blue-polkadots.jpg');}
+	</style>
 
 </head>
 
-<body id="public" >
-<img id="top" src="/images/top.png" alt="" />
-<div id="container">
+<!-- <body id="public" >
+<div id="container"> -->
+<div id="base">  
+<div id="page">
+	
 
-	<h1 id="logo"><a>Wufoo</a></h1>
+	<div id="header">
+		<div id="logo">
+	        <h1><a href="http://amandahammond.com/beetlebug" title="Illustrated Children&#8217;s Books">
+				<img src="http://amandahammond.com/beetlebug/wp-content/uploads/2009/02/logo4.png" 
+					style="margin-top:0px;" alt="Beetle Bug Books" /></a>
+			</h1>
+	    </div>
+
+		<div id="nav1">
+			<ul>
+				<!-- add current_page_item class for the current page -->
+				<li class="page_item page-item-2113">
+					<a href="http://amandahammond.com/beetlebug" title="Home"><span>Home</span></a></li>
+				<li class="page_item page-item-5">
+					<a href="http://amandahammond.com/beetlebug/kids/" title="Kids"><span>Kids</span></a></li>
+				<li class="page_item page-item-8">
+					<a href="http://amandahammond.com/beetlebug/books/" title="Books"><span>Books</span></a></li>
+				<li class="page_item page-item-13">
+					<a href="http://amandahammond.com/beetlebug/schools/" title="Schools"><span>Schools</span></a></li>
+				<li class="page_item page-item-15">
+					<a href="http://amandahammond.com/beetlebug/about-mr-mike/" title="Mr. Mike"><span>Mr. Mike</span></a></li>
+				<li class="page_item page-item-12">
+					<a href="http://amandahammond.com/beetlebug/contact/" title="Contact"><span>Contact</span></a></li>
+			</ul>
+		</div>
+		<!--/nav1-->
+	</div>
+	<!--/header -->
+
 
     <% if false && flash %>
     <div id="flash">
@@ -33,8 +67,10 @@
     <% end %>
     
     <!-- <div id="body"> -->
+	<div id="formbox" style="background: white; width: 750px; margin: auto" align="left">
         <%= yield %>
     <!-- </div> -->
+	</div>
     
     <div id="footer">
 

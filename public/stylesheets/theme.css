@@ -1,27 +1,6 @@
+/* Wufoo theme.css */
 
 
-/* Wufoo - - - Custom Theme - - - */
-
-/* Logo */
-h1 a {
-	background-image:url('/images/wflogo.png'); 
-	min-height:0;
-	height:40px;
-}
-* html h1 a {/* IE6 png Support */
-	background-image: none;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="/images/wflogo.png", sizingMethod="crop");
-}
-
-/* Backgrounds */
-body{
-	background-image:none;
-	background-color:#90ad4b;
-}
-h1{
-	background-image:none;
-	background-color:#c9d787;
-}
 #container, body.embed{
 	background-color:#FFFFFF;
 }
@@ -155,50 +134,7 @@ h1{
 	color:#444444;
 }
 
-/* Likert Backgrounds */
 
-.likert table{
-	background-color:#FFFFFF;
-}
-.likert thead td, .likert thead th{
-	background-color:#e6e6e6;
-}
-.likert tbody tr.alt td, .likert tbody tr.alt th{
-	background-color:#f5f5f5;
-}
-
-/* Likert Borders */
-
-.likert table, .likert th, .likert td{
-	border-color:#dedede;
-}
-.likert td{
-	border-left:1px solid #cccccc;
-}
-
-/* Likert Typography */
-
-.likert caption, .likert thead td, .likert tbody th{
-	color:#444444;
-	font-family:inherit;
-}
-.likert label{
-	color:#565656;
-	font-family:inherit;
-}
-.likert caption, .likert tbody th{
-	font-size:95%;
-}
-
-/* Likert Hover */
-
-.likert tbody tr:hover td, .likert tbody tr:hover th, .likert tbody tr:hover label{
-	background-color:#ffcc5c;
-	color:#000000;
-}
-.likert tbody tr:hover td{
-	border-left:1px solid #cca34a;
-}
 
 /* Big Number */
 

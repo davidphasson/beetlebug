@@ -1,6 +1,4 @@
 <%
-# HTML for indicating in a label that a field is required
-req_f = '<span class="req">*</span>'
 
 # Fields on each tab
 general_fields = [:school, :num_students, :assembly_type, :starting_grade, :ending_grade, :mike_hosted, :author_hosted]
@@ -44,8 +42,7 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<%= f.tab_button "times", link_to_function("Times", "switch_tab('page_times');"), time_fields %>
 	<%= f.tab_button "questions", link_to_function("Questions", "switch_tab('page_questions');"), question_fields %>
 	<%= f.tab_button "multisite", link_to_function("Multi-School Visits", "switch_tab('page_multisite');"), multisite_fields %>
-	<%= f.tab_button "comments", link_to_function("Comments", "switch_tab('page_comments');"), comment_fields %>
-	
+	<%= f.tab_button "comments", link_to_function("Comments", "switch_tab('page_comments');"), comment_fields %>	
 </div>
 
 <div id="errors">
@@ -63,12 +60,12 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 </div>
 
 <!-- <div id="mpform_container" style="postion: relative;"> -->
-<div id="mpform_container" style="postion: relative;">
+<div id="mpform_container" style="postion: relative;" align="left">
 
 <!-- <div id="page_general" style="position: absolute; top: 0px; left: 0px;"> -->	
 	<div id="page_general" class="form_tab">	
 
-		<%= render :partial => 'form_general', :locals => { :f => f, :req_f => req_f } %>
+		<%= render :partial => 'form_general', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Next", "switch_tab('page_contact');" %>
 		</p>
