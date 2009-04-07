@@ -32,6 +32,9 @@ class Request < ActiveRecord::Base
   validates_presence_of :contact1_first, :contact1_last, :contact1_position, :contact1_phone, :contact1_email
   validates_presence_of :contact2_first, :contact2_last, :contact2_position, :contact2_phone, :contact2_email
   
+  validates_presence_of :school_phys_address1, :school_phys_city, :school_phys_state, :school_phys_zipcode,
+    :unless => Proc.new { |r| r.school_phys_address_same == true }
+    
   # Need break start/end
   validates_presence_of :winter_break_start, :winter_break_end, :spring_break_start, :spring_break_end
   
@@ -51,7 +54,7 @@ class Request < ActiveRecord::Base
   ### Times ###
   validates_presence_of :assembly_time1
   # Must have a second if there is a third
-  validates_presence_of :assembly_time2, :if => Proc.new { |r| !r.assembly_time3.nil? },
+  validates_presence_of :assembly_time2, :if => Proc.new{ |r| !r.assembly_time3.nil? },
       :message => "must be specified if Assembly #3 is specified"
   validates_inclusion_of :school_prone_weather_delays, :lunch_with_mike, :inclement_lunchroom, :in => [true, false],
       :message => "must be answered"

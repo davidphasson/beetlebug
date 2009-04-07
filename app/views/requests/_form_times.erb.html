@@ -165,7 +165,7 @@
 	<%= f.error_message_on :lunch_with_mike, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>
 
-<div id="mike_lunch" style="<% @request.lunch_with_mike? ? "" : "display: none" %>">
+<div id="mike_lunch" style="display: none;">
 
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
@@ -195,5 +195,13 @@
 <%= f.group_end() %>
 
 </div>
+
+<script>
+  <% if @request.lunch_with_mike == true %>
+	$('fo1li52').show();
+  <% else %>
+	$('folli52').hide();
+  <% end %>
+</script>
 
 </ul>

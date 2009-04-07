@@ -38,7 +38,7 @@
 <%= f.group_start( [:contact1_phone], { :position => "left" } ) %>
 	<%= f.label :contact1_phone, "Your Phone Number at School", :class => "desc" %>
 	<div><%= f.text_field :contact1_phone, :class => "field text", :size => 12 %>
-	<p class="instruct" id="instruct32"><small>e.g. (123)-456-7890x122 <br/>Don't forget to include your extension, if applicable!</small></p>
+	<p class="instruct" id="instruct32"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact1_phone, :prepend_text => 'Number ' %>	
 <%= f.group_end() %>
 
@@ -46,7 +46,7 @@
 <%= f.group_start( [:contact1_altphone], { :position => "right" } ) %>
 	<%= f.label :contact1_altphone, "Alternate Phone Number", :class => "desc" %>
 	<div><%= f.text_field :contact1_altphone, :class => "field text", :size => 12 %>
-	<p class="instruct" id="instruct33"><small>e.g. (123)-456-7890x122 <br/>Don't forget to include your extension, if applicable!</small></p>
+	<p class="instruct" id="instruct33"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact1_altphone, :prepend_text => 'Number ' %>
 <%= f.group_end() %>
 
@@ -54,7 +54,7 @@
 <%= f.group_start( [:contact1_fax], { :position => "full" } ) %>
 	<%= f.label :contact1_fax, "School Fax Number", :class => "desc" %>
 	<div><%= f.text_field :contact1_fax, :class => "field text", :size => 12 %></div>
-	<p class="instruct" id="instruct34"><small>e.g. (123)-456-7890</small></p>
+	<p class="instruct" id="instruct34"><small>(555)111-2222 </small></p>
 	<%= f.error_message_on :contact1_fax, :prepend_text => 'Number ' %>	
 <%= f.group_end() %>
 
@@ -124,7 +124,7 @@
 <%= f.group_start( [:contact2_phone], { :position => "left" } ) %>
 	<%= f.label :contact2_phone, "Their Phone Number at School", :class => "desc" %>
 	<div><%= f.text_field :contact2_phone, :class => "field text", :size => 12 %>
-	<p class="instruct" id="instruct41"><small>(xxx)-xxx-xxxx<br/>Don't forget to include your extension, if applicable!</small></p>
+	<p class="instruct" id="instruct41"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact2_phone, :prepend_text => 'Number ' %>	
 <%= f.group_end() %>
 
@@ -132,7 +132,7 @@
 <%= f.group_start( [:contact2_altphone], { :position => "right" } ) %>
 	<%= f.label :contact2_altphone, "Alternate Phone Number", :class => "desc" %>
 	<div><%= f.text_field :contact2_altphone, :class => "field text", :size => 12 %>
-	<p class="instruct" id="instruct42"><small>(xxx)-xxx-xxxx<br/>Don't forget to include your extension, if applicable!</small></p>
+	<p class="instruct" id="instruct42"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact2_altphone, :prepend_text => 'Number ' %>	
 <%= f.group_end() %>
 
@@ -212,12 +212,12 @@
 <%= f.group_end() %>
 
 <li id="a123" class="    ">
-	<%= check_box nil, "phys_addr", :onclick => "$('fo1li52').toggle();" %>
-	<%= f.label "phys_addr", "Our physical address is different than the mailing address" %>
+	<%= f.check_box :school_phys_address_same, :onclick => "$('fo1li52').toggle();" %>
+	<%= f.label :school_phys_address_same, "Our physical address is the same as our mailing address" %>
 </li>
 
 <%= f.group_start( [:school_phys_address1, :school_phys_address2, :school_phys_city, :school_phys_state,
-					:school_phys_zipcode, :school_phys_country], { :position => "full", :style => "display:none", :id => "fo1li52" } ) %>
+					:school_phys_zipcode, :school_phys_country], { :position => "full", :id => "fo1li52" } ) %>
 	<label class="desc" id="title52">Physical Address <small>(different from mailing address)</small></label>
 	<div class="block">
 		<span class="full">
@@ -253,6 +253,14 @@
 	</div>
 	<p class="instruct" id="instruct52"><small>How we find your school on a GPS and map!</small></p>
 <%= f.group_end() %>
+
+<script>
+  <% if @request.school_phys_address_same == true %>
+	$('fo1li52').hide();
+  <% else %>
+	$('folli52').show();
+  <% end %>
+</script>
 
 <li class="break    "></li>
 
