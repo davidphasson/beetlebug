@@ -187,3 +187,51 @@ li{
 	background: url(/images/blue/btn-rounded-dk.png) no-repeat left;
 }
 
+/* Other stuff */
+
+div.mpform_container {
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #333;
+	border-right: #333 solid 1px;
+	border-left: #333 solid 1px;
+}
+
+div.form_tab {
+	background-color: #f6f6f6;
+	border-bottom: 1px solid #333;
+	border-right: #333 solid 1px;
+	border-left: #333 solid 1px;
+}
+
+span.tab {
+	padding: 2px 2px 4px 4px;
+	background-color: #aaaaaa;
+	border: 1px solid #333;
+	border-bottom: 0px;
+}
+
+span.errortab {
+	color: #cc0000;
+}
+
+span.currtab {
+	background-color: #f6f6f6;
+}
+
+span.tab a {
+	color: #333;
+	text-decoration: none;
+}
+
+span.errortab a {
+	color: #cc0000;
+}
+
+span.currtab a {
+	color: #333;
+}
+
+span.tab a:hover {
+	text-decoration: underline;
+}
+	

@@ -5,7 +5,16 @@ function switch_tab(tabname)
 	for ( var i in tabs )
 	{
 		tab = tabs[i];
-		(tabname == tab.id) ? tab.show() : tab.hide();
+		if(tabname == tab.id)
+		{
+			tab.show()
+			$("tab_" + tab.id).className = "tab currtab"
+		}
+		else
+		{
+			tab.hide();
+			$("tab_" + tab.id).className = "tab"
+		}
 	}
 	scroll(0,0);
 }

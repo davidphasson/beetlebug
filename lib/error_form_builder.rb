@@ -99,9 +99,22 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
     end
     
     # text = link_to_function page.humanize, "switch_tab('page_#{page}');"
-    text +=  '<span class="req">*</span>' if have_errors
-    text += " |\n"
-    return text
+    if options[:current] == true
+      classname = "tab currtab"
+    else
+      classname = "tab"
+    end
+
+    
+    newtext = "<span class=\"#{classname}\" id=\"#{"tab_page_" + page}\">"
+    if have_errors
+      newtext += "<span class=\"errortab\">" + text + "</span>"
+    else
+      newtext += text
+    end
+    # text +=  '<span class="req">*</span>' if have_errors
+    newtext += "</span>\n"
+    return newtext
     
   end
   
