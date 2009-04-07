@@ -165,7 +165,7 @@
 	<%= f.error_message_on :lunch_with_mike, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>
 
-<div id="mike_lunch" style="display: none;">
+<div id="mike_lunch" style="<% @request.lunch_with_mike? ? "" : "display: none" %>">
 
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
@@ -173,7 +173,7 @@
 	<%= select_time @request.lunch_start, { :prefix => "lunch_start", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct78"><small>Allow a minimum 15 min.  break after the end of the
 		assembly.</small></p>
-	<%= f.error_message_on :lunch_start, :prepend_text => 'This question ' %>	
+	<%= f.error_message_on :lunch_start, :prepend_text => 'Time ' %>	
 <%= f.group_end() %>
 
 
@@ -182,7 +182,7 @@
 	<% # f.time_select :lunch_end, :minute_step => 15, :include_blank => true, :ignore_date => true   %>
 	<%= select_time @request.lunch_end, { :prefix => "lunch_end", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>			
 	<p class="instruct" id="instruct77"><small>About 45 minutes is good.</small></p>
-	<%= f.error_message_on :lunch_end, :prepend_text => 'This question ' %>									
+	<%= f.error_message_on :lunch_end, :prepend_text => 'Time ' %>									
 <%= f.group_end() %>
 
 
@@ -191,7 +191,7 @@
 	<%= f.text_field :lunch_room, :class => "field text medium" %>
 	<p class="instruct" id="instruct79"><small>Choose a quiet place like a library or other room away from 
 		all the hustle and bustle.</small></p>
-	<%= f.error_message_on :lunch_room, :prepend_text => 'This question ' %>										
+	<%= f.error_message_on :lunch_room, :prepend_text => 'Room ' %>										
 <%= f.group_end() %>
 
 </div>

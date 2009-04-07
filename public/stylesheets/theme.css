@@ -22,8 +22,16 @@
 	border-bottom:1px dotted #CCCCCC;
 }
 .wufoo .section{
+	margin-top: 12px;
+	margin-bottom: 12px;
 	border-top:1px dotted #CCCCCC;
 }
+
+/* <dph> */
+.wufoo .break{
+	border-top:1px dotted #CCCCCC;
+}
+	
 .wufoo input.text, .wufoo textarea.textarea{
 	border:;
 }
@@ -219,9 +227,10 @@ div.fieldWithErrors label.desc {
 	color: red;
 }
 
-div.formError {
-	color: red;
-	font-size: 0.9em;
+.wufoo div.formError {
+	color: #333;
+	font-weight: bold;
+	font-size: 0.8em;
 }
 
 .fieldWithErrors {
