@@ -119,13 +119,13 @@
 <!-- Backup dates -->
 
 <li id="a124" class="    ">
-	<%= check_box params[:back_dates], "back_dates", :onclick => "$('backup_dates').toggle();" %>
-	<%= f.label "back_dates", "I want to specify additional backup dates" %>
+	<%= f.check_box :backup_dates, :onclick => "$('backup_dates_div').toggle();" %>
+	<%= f.label :backup_dates, "I want to specify additional backup dates" %>
 </li>
 
 
 
-<div id="backup_dates" style="display: none;">
+<div id="backup_dates_div" style="display: none;">
 	<%= f.group_start( [:backup_date1], { :position => "left" } ) %>
 	<%= f.label :backup_date1, 'Backup Date #1', :class => "desc" %>
 	<%= f.date_picker :backup_date1 %>
@@ -154,9 +154,11 @@
 
 <!-- Display backup dates -->
 <script>
-	<% if params[:back_dates] == true %>
-	$('backup_dates').show();
-	<% end %>
+  <% if @request.backup_dates? %>
+	$('backup_dates_div').show();
+  <% else %>
+	$('backup_dates_div').hide();
+  <% end %>
 </script>
 
 <%= f.group_start( [:date_comments], { :position => "full" } ) %>

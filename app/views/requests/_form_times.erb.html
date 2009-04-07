@@ -157,15 +157,15 @@
 <%= f.group_start( [:lunch_with_mike], { :position => "full" } ) %>
 	<%= f.label :lunch_with_mike, "Are you requesting 'Lunch With Mr. Mike' for a group of about 25 STUDENTS?",
 		:class => "desc" %>
-	<%= f.radio_button :lunch_with_mike, true , :onclick => "$('mike_lunch').show();" %>
+	<%= f.radio_button :lunch_with_mike, true , :onclick => "$('mike_lunch_div').show();" %>
 		<label class="choice">Yes</label>
-	<%= f.radio_button :lunch_with_mike, false, :onclick => "$('mike_lunch').hide();"  %>
+	<%= f.radio_button :lunch_with_mike, false, :onclick => "$('mike_lunch_div').hide();"  %>
 		<label class="choice">No</label>
 	<p class="instruct" id="instruct74"><small>Please Note: This event is for STUDENTS </small></p>
 	<%= f.error_message_on :lunch_with_mike, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>
 
-<div id="mike_lunch" style="display: none;">
+<div id="mike_lunch_div" style="display: none;">
 
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
@@ -198,9 +198,9 @@
 
 <script>
   <% if @request.lunch_with_mike == true %>
-	$('fo1li52').show();
+	$('mike_lunch_div').show();
   <% else %>
-	$('folli52').hide();
+	$('mike_lunch_div').hide();
   <% end %>
 </script>
 

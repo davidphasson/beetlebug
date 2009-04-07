@@ -55,6 +55,7 @@ class CreateRequests < ActiveRecord::Migration
       t.date :alternate_date2
       t.date :alternate_date3
       t.date :alternate_date4
+      t.boolean :backup_dates
       t.date :backup_date1
       t.date :backup_date2
       t.date :backup_date3

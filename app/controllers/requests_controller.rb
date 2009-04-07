@@ -10,6 +10,8 @@ class RequestsController < ApplicationController
 
   def new 
     @request = Request.new
+    # This needs to go somewhere else
+    @request.school_phys_address_same = true
   end 
 
   def edit
