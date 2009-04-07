@@ -256,18 +256,18 @@
 
 <li class="break    "></li>
 
-<li id="fo1li106" class="    ">
+<%= f.group_start( [:school_county], { :position => "full" } ) %>
 	<%= f.label :school_county, "What state COUNTY (not countRy) is your school in?", :class => "desc" %>
 	<div><%= f.text_field :school_county, :class => "field text large" %></div>
 	<p class="instruct" id="instruct106"><small>This helps us keep requests organized!</small></p>
 	<%= f.error_message_on :school_county, :prepend_text => 'This question ' %>	
-</li>
+<%= f.group_end() %>
 
-<li id="fo1li59" class="    ">
+<%= f.group_start( [:school_district], { :position => "full" } ) %>
 	<%= f.label :school_district, "What is the name of your school district?", :class => "desc" %>
 	<div><%= f.text_field :school_district, :class => "field text large" %></div>
 	<p class="instruct" id="instruct59"><small>This helps us keep requests organized!</small></p>
 	<%= f.error_message_on :school_district, :prepend_text => 'This question ' %>
-</li>
+<%= f.group_end() %>
 
 </ul>

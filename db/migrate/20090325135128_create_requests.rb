@@ -31,6 +31,7 @@ class CreateRequests < ActiveRecord::Migration
       t.string :school_mail_state
       t.string :school_mail_country
       t.string :school_mail_zipcode
+      t.boolean :school_phys_address_same
       t.string :school_phys_address1
       t.string :school_phys_address2
       t.string :school_phys_city

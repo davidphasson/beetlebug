@@ -13,10 +13,15 @@ class Request < ActiveRecord::Base
     
   
   # E-mail validations
-  validates_format_of :contact1_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
-  validates_format_of :contact2_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
-  validates_confirmation_of :contact1_email
-  validates_confirmation_of :contact2_email
+  validates_format_of :contact1_email, :contact2_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i
+  validates_confirmation_of :contact1_email, :contact2_email
+  
+  # Phone validations, (123) 555-1212, 1-(123)-555-1212, 123-555-1212, 123 555 1212 x123, etc.
+  validates_format_of :contact1_phone, :contact2_phone, :contact1_altphone, :contact2_altphone,
+      :with => /^1?[\ \-]?\(?[0-9]{3}\)?[\ \-]?[0-9]{3}[\-\ ][0-9]{4}\ ?(x[0-9]+)?$/i, :allow_blank => true;
+  # Fax number: same as phone, don't allow extension
+  validates_format_of :contact1_fax,
+          :with => /^1?[\ \-]?\(?[0-9]{3}\)?[\ \-]?[0-9]{3}[\-\ ][0-9]{4}?$/i, :allow_blank => true;
   
   validates_format_of :monday_contact_email, :tuesday_contact_email, :wednesday_contact_email, :thursday_contact_email, 
                       :friday_contact_email, :with => /^[-a-z0-9_+\.]+\@([-a-z0-9]+\.)+[a-z0-9]{2,4}$/i, :allow_blank => true;

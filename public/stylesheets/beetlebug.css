@@ -234,4 +234,13 @@ span.currtab a {
 span.tab a:hover {
 	text-decoration: underline;
 }
+
+form span.req {
+	display: inline;
+	float: none;
+	color: #333 !important;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
 	
