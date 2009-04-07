@@ -1,6 +1,7 @@
 // Operates on tabs with class "form_tab" - hides all but "tabname"
 function switch_tab(tabname)
 {
+	window.scroll(0,0);
 	tabs = $$('.form_tab');	
 	for ( var i in tabs )
 	{
@@ -16,5 +17,4 @@ function switch_tab(tabname)
 			$("tab_" + tab.id).className = "tab"
 		}
 	}
-	scroll(0,0);
 }
