@@ -73,7 +73,8 @@ class RequestsController < ApplicationController
       if @request.save
         flash[:notice] = 'Request was successfully created.'
         Mailman.deliver_request_notification(@request)
-        redirect_to(@request)
+        # redirect_to(@request)
+        redirect_to "http://www.amandahammond.com/beetlebug/"
       else
         flash.now[:warning] = 'There was a problem creating the request.'
         render :action => "new"
