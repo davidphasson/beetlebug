@@ -1,0 +1,189 @@
+/*=== Layout ===*/
+#page{
+	margin: 0 auto;
+	width: 940px
+}
+/*=== Header ===*/
+#header{
+	height: 120px;
+	position:relative;
+	font-family: "Trebuchet MS",Arialcol,Helvetica
+}
+#header .spacer{
+	float: right
+}
+
+h2{
+	color: #262625;
+	font-size: 1.8em;
+	letter-spacing: -1px;
+	margin: 0 0 .8em
+}
+h2 a{
+	color: #262625
+}
+h3{
+	color: #262625;
+	font-size: 1.6em;
+	margin: 0 0 1em
+}
+h4{
+	color: #444444;
+	font-size: 1em;
+	margin: 0 0 1em
+}
+h5{
+	color: #FFFFFF;
+	font-size: 1.6em;
+	margin: 0 0 1em;
+	text-align:center;
+}
+
+
+
+/*- Logo -*/
+#header h1{
+	float: left;
+	width: 414px
+}
+#header h1 a{
+	display: block;
+	height: 100px;
+}
+#header h1 a:hover{
+	text-decoration: none
+}
+
+li{
+	list-style: none
+}
+
+
+/*=== Navigation ===*/
+/*- Nav1 -*/
+#nav1{
+	font-size:16px;
+	font-weight:bold;
+	height:30px;
+	letter-spacing:-1px;
+	margin:43px 0 0;
+	position:absolute;
+	right:0;
+	text-transform:uppercase;
+}
+#nav1 li{
+	float: left;
+	line-height: 30px;
+	margin: 0 4px 0 0;
+}
+#nav1 li a{
+	background: url(images/blue/btn-rounded.gif) no-repeat left;
+	color: #3f3f3f;
+	display: block;
+	float: left;
+	padding: 0 0 0 13px;
+	text-decoration: none
+}
+#nav1 li a span{
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 0 13px 0 0
+}
+#nav1 li a:hover,
+#nav1 li.active a, #nav1 li.current_page_item a{
+	background: url(images/blue/btn-rounded.gif) no-repeat left;
+	color: #ffffff;
+	cursor: pointer;
+	text-decoration: none
+}
+#nav1 li.active a span,
+#nav1 li.current_page_item a span,
+#nav1 li a:hover span{
+	background: url(images/blue/btn-rounded.gif) no-repeat right;
+}
+/*- Nav2 -*/
+.nav2 li, .widget li {
+	background: url(images/blue/hl-dot.gif) repeat-x bottom;
+	padding: .5em 0
+}
+.nav2 li a, .widget li a{
+	color: #555555;
+	background: url(images/blue/ico-next.gif) no-repeat left;
+	padding: 0 0 0 20px;
+}
+.widget li ul li a {
+	padding-bottom: -30px;
+}
+.nav2 li a:hover, .widget li a:hover{
+	color: #a4b92e;
+	text-decoration: none
+}
+
+
+/* From BLUE */
+
+
+/*=== Navigation ===*/
+/*- Nav1 -*/
+#nav1 li a{
+	background: url(/images/blue/btn-not-rounded-lt.png) no-repeat left;
+	color: #3f3f3f;
+}
+#nav1 li a:hover,
+#nav1 li.active a, #nav1 li.current_page_item a{
+	background: url(/images/blue/btn-not-rounded-dk.png) no-repeat left;
+	color: #ffffff;
+}
+#nav1 li.active a span,
+#nav1 li.current_page_item a span,
+#nav1 li a:hover span{
+	background: url(/images/blue/btn-not-rounded-dk.png) no-repeat left;
+}
+/*
+
+#nav1 li a{
+	background: url(images/btn-rounded.gif) no-repeat left;
+	color: #3f3f3f;
+	display: block;
+	float: left;
+	padding: 0 0 0 13px;
+	text-decoration: none
+}
+#nav1 li a span{
+	display: block;
+	float: left;
+	height: 30px;
+	padding: 0 13px 0 0
+}
+#nav1 li a:hover,
+#nav1 li.active a, #nav1 li.current_page_item a{
+	background: url(images/btn-rounded.gif) no-repeat left;
+	color: #ffffff;
+	cursor: pointer;
+	text-decoration: none
+}
+#nav1 li.active a span,
+#nav1 li.current_page_item a span,
+#nav1 li a:hover span{
+	background: url(images/btn-rounded.gif) no-repeat right;
+}
+*/
+
+
+/*- Nav1Home -*/
+#nav1Home li a{
+	background: url(/images/blue/btn-rounded-lt.png) no-repeat left;
+	color: #3f3f3f;
+}
+#nav1Home li a:hover,
+#nav1Home li.active a, #nav1Home li.current_page_item a{
+	background: url(/images/blue/btn-rounded-dk.png) no-repeat left;
+	color: #ffffff;
+}
+#nav1Home li.active a span,
+#nav1Home li.current_page_item a span,
+#nav1Home li a:hover span{
+	background: url(/images/blue/btn-rounded-dk.png) no-repeat left;
+}
+
