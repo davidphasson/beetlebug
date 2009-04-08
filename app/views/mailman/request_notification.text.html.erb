@@ -67,8 +67,8 @@
 				<br/>
 				<em><%=h @request.contact1_position %></em><br/>
 				<%=h @request.contact1_phone %><br/>
-				<%=h "#{@request.contact1_altphone} alt <br/>" unless @request.contact1_altphone.blank? %>
-				<%=h "#{@request.contact1_fax} fax <br/>" unless @request.contact1_fax.blank? %>	
+				<%= h("#{@request.contact1_altphone}") + " alt <br/>" unless @request.contact1_altphone.blank? %>
+				<%= h("#{@request.contact1_fax}") + " fax <br/>" unless @request.contact1_fax.blank? %>
 			</td>
 		</tr>
 		<tr>
@@ -81,7 +81,7 @@
 				<br/>
 				<em><%= @request.contact2_position %></em><br/>
 				<%=h @request.contact2_phone %><br/>
-				<%=h "#{@request.contact2_altphone} alt <br/>" unless @request.contact2_altphone.blank? %>
+				<%= h("#{@request.contact2_altphone}") + " alt <br/>" unless @request.contact2_altphone.blank? %>
 			</td>
 		</tr>
 		<tr>
@@ -244,7 +244,7 @@
 				<%=h "#{@request.monday_contact_first} #{@request.monday_contact_last}" %>
 				(<%= link_to h(@request.monday_contact_email), "mailto:#{@request.monday_contact_email}" %>)
 			</td>
-			<td><%=h @request.monday_contact_position %></td>
+			<td><%=h @request.monday_contact_title %></td>
 		</tr>
 		<% end %>
 		<% if @request.tuesday_date %>
@@ -255,7 +255,7 @@
 				<%=h "#{@request.tuesday_contact_first} #{@request.tuesday_contact_last}" %>
 				(<%= link_to h(@request.tuesday_contact_email), "mailto:#{@request.tuesday_contact_email}" %>)
 			</td>
-			<td><%=h @request.tuesday_contact_position %></td>
+			<td><%=h @request.tuesday_contact_title %></td>
 		</tr>
 		<% end %>
 		<% if @request.wednesday_date %>
@@ -266,7 +266,7 @@
 				<%=h "#{@request.wednesday_contact_first} #{@request.wednesday_contact_last}" %>
 				(<%= link_to h(@request.wednesday_contact_email), "mailto:#{@request.wednesday_contact_email}" %>)
 			</td>
-			<td><%=h @request.wednesday_contact_position %></td>
+			<td><%=h @request.wednesday_contact_title %></td>
 		</tr>
 		<% end %>
 		<% if @request.thursday_date %>
@@ -277,7 +277,7 @@
 				<%=h "#{@request.thursday_contact_first} #{@request.thursday_contact_last}" %>
 				(<%= link_to h(@request.thursday_contact_email), "mailto:#{@request.thursday_contact_email}" %>)
 			</td>
-			<td><%=h @request.thursday_contact_position %></td>
+			<td><%=h @request.thursday_contact_title %></td>
 		</tr>
 		<% end %>
 		<% if @request.friday_date %>
@@ -288,7 +288,7 @@
 				<%=h "#{@request.friday_contact_first} #{@request.friday_contact_last}" %>
 				(<%= link_to h(@request.friday_contact_email), "mailto:#{@request.friday_contact_email}" %>)
 			</td>
-			<td><%=h @request.friday_contact_position %></td>
+			<td><%=h @request.friday_contact_title %></td>
 		</tr>
 		<% end %>
 	</table>
