@@ -16,7 +16,9 @@ class RequestsController < ApplicationController
 
   # This is mostly for e-mail testing
   def email
-    Mailman.deliver_request_notification(@request)    
+    Mailman.deliver_request_notification(@request)  
+    Mailman.deliver_request_received(@request)     
+    render :action => "show"
   end
 
   def edit
@@ -80,6 +82,7 @@ class RequestsController < ApplicationController
       if @request.save
         flash[:notice] = 'Request was successfully created.'
         Mailman.deliver_request_notification(@request)
+        Mailman.deliver_request_received(@request)     
         # redirect_to(@request)
         redirect_to "http://www.amandahammond.com/beetlebug/"
       else
