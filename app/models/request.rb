@@ -69,6 +69,8 @@ class Request < ActiveRecord::Base
       :message => "must be specified for lunch with Mr. Mike"
   # Time specifications:
   validates_each :assembly_time2 do |record, attr, value|
+    logger.error("\n\nIn A2 validation: a2 - #{value.hour}:#{value.min}\n")
+    logger.error("\n\nIn A2 validation: a1 - #{record.assembly_time1.hour}:#{record.assembly_time1.min}\n")
     next if value.nil?
     # Leave this up to other validation
     next if record.assembly_time1.nil?
@@ -82,6 +84,21 @@ class Request < ActiveRecord::Base
     next if record.assembly_time2.nil?
     if value < ( record.assembly_time2 + 1.hour + 15.minutes )
       record.errors.add attr, "must allow for at least one hour assembly and 15 minute break"
+    end
+  end
+  validates_each :assembly_time1 do |record, attr, value|
+    next if value.nil?
+    # Must be later than 9:30
+    if (value.hour < 9) || (value.hour == 9 && value.min < 30 )
+      record.errors.add attr, "must be no earlier than 9:30am"
+    end
+  end
+  # Other field - this might need some working to flag the error on the main field.
+  # validates_presence_of :assembly_location_other, if => Proc.new { |r| r.assembly_location == "Other" }
+  validates_presence_of :assembly_location
+  validates_each :assembly_location_other do |record, attr, value|
+    if value.blank? && record.assembly_location == "Other"
+      record.errors.add :assembly_location, "needs to include other location if \"Other\" specified"
     end
   end
   

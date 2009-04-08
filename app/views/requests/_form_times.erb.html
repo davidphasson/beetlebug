@@ -15,7 +15,7 @@
 </li>
 
 <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
-	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc" %>
+	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc", :required_field => true %>
 	<% #f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
 	<%= select_time @request.assembly_time1, { :prefix => "assembly_time1", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
@@ -69,7 +69,7 @@
 
 
 <%= f.group_start( [:assembly_location], { :position => "full" } ) %>
-	<%= f.label :assembly_location, 'The indoors only assembly(ies) will be in the', :class => "desc" %>
+	<%= f.label :assembly_location, 'The indoors only assembly(ies) will be in the', :class => "desc", :required_field => true %>
 	<%= f.radio_button :assembly_location, "Auditorium" %>
 		<label class="choice">Auditorium</label>
 	<%= f.radio_button :assembly_location, "Multi-Purpose Room" %>
@@ -77,7 +77,7 @@
 	<%= f.radio_button :assembly_location, "Other", 
 		:onmouseup => "document.getElementById('request_assembly_location').focus();" %>
 		<label class="choice">Other</label>
-	<%= f.text_field :assembly_location, :class => "field text", 
+	<%= f.text_field :assembly_location_other, :class => "field text", 
 		:onclick => "document.getElementById('request_assembly_location_other').checked = 'checked';" %>
 		<p class="instruct" id="instruct80"><small>The last 20 minutes or so of the assembly hour is a book 
 			signing, so most students won't be seated at that time;   If the custodian needs to set up the 
