@@ -19,14 +19,22 @@
 	<%= f.label :assembly_type, "Assembly Type", :class => "desc", :required_field => true %>
 	
 	<div class="col">
-	<%= f.radio_button :assembly_type, 1  %>
+	<span>
+	<%= f.radio_button :assembly_type, 1, :class => "field radio"  %>
 		<label class="choice"> Public School requesting FREE assembly(ies) for ALL students.  </label>
+	</span>
+	<span>
 	<%= f.radio_button :assembly_type, 2, :class => "field radio"  %>
 		<label class="choice"> Public School requesting FEE-based assembly(ies) for select groups/grades.  </label>	
+	</span>
+	<span>
 	<%= f.radio_button :assembly_type, 3, :class => "field radio"  %>
-		<label class="choice"> Private School requesting FEE-based assembly(ies) for ALL students.  </label>	
+		<label class="choice"> Private School requesting FEE-based assembly(ies) for ALL students.  </label>
+	</span>
+	<span>	
 	<%= f.radio_button :assembly_type, 4, :class => "field radio"  %>
 		<label class="choice"> Private School requesting FEE-based assembly(ies) for select groups/grades.  </label>
+	</span>
 
 	</div>
 
@@ -40,7 +48,7 @@
 <%= f.group_start( [:starting_grade], { :position => "left" } ) %>
 	<%= f.label :starting_grade, "Starting grade at your school", :class => "desc", :required_field => true  %>
 	<div>
-		<%= f.select :starting_grade, GRADES %>
+		<%= f.select :starting_grade, GRADES, { :class => "field select small" }  %>
 	</div>
 	<p class="instruct" id="instruct13"><small>Note: Pre-K is not encouraged to attend.</small></p>
 	<%= f.error_message_on :ending_grade, :prepend_text => 'This field ' %>
@@ -51,7 +59,7 @@
 <%= f.group_start( [:ending_grade], { :position => "right" } ) %>	
 	<%= f.label :ending_grade, "Ending grade at your school", :class => "desc", :required_field => true  %>
 	<div>
-		<%= f.select :ending_grade, GRADES %>
+		<%= f.select :ending_grade, GRADES, { :class => "field select small" } %>
 	</div>
 	<p class="instruct" id="instruct14"><small>This should be the total range of grades at your school.</small></p>
 	<%= f.error_message_on :ending_grade, :prepend_text => 'This field ' %>
@@ -61,7 +69,7 @@
 
 <%= f.group_start( [:num_students], { :position => "full" } ) %>	
 		<%= f.label :num_students, "Total number of students at your school", :class => "desc", :required_field => true  %>
-			<div><%= f.text_field :num_students, :class => "field text", :size => 8 %></div>
+		<span><%= f.text_field :num_students, :class => "field text", :size => 8 %></span>
 		<p class="instruct" id="instruct15"><small>This is your total enrollment for ALL grades.  
 			If a portion of your school is 'off session', then you can just indicate the number of students 
 			that will be present/'in session' for Mr. Mike's visit.</small></p>
@@ -73,12 +81,18 @@
 <%= f.group_start( [:author_hosted], { :position => "full" } ) %>	
 	<%= f.label :author_hosted, "Has your school ever hosted an author?", :class => "desc", :required_field => true  %>
 	<div class="col">	
-	<%= f.radio_button :author_hosted, "yes" %>
-		<label class="choice">Yes</label>
-	<%= f.radio_button :author_hosted, "no" %>
-		<label class="choice">No</label>
-	<%= f.radio_button :author_hosted, "unsure" %>
-		<label class="choice">I don't know</label>
+		<span>
+		<%= f.radio_button :author_hosted, "yes", :class => "field radio"  %>
+			<label class="choice">Yes</label>
+		</span>
+		<span>
+		<%= f.radio_button :author_hosted, "no", :class => "field radio"  %>
+			<label class="choice">No</label>
+		</span>
+		<span>
+		<%= f.radio_button :author_hosted, "unsure", :class => "field radio"  %>
+			<label class="choice">I don't know</label>
+		</span>
 	</div>
 	<p class="instruct" id="instruct23"><small>It's good for us to know if author visits are something your school 
 		is used to - or only does once in while - or maybe this is the first time!</small></p>
@@ -88,15 +102,22 @@
 <%= f.group_start( [:mike_hosted, :mike_hosted_year], { :position => "full" } ) %>	
 	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc", :required_field => true  %>
 	<div class="col">	
-	<%= f.radio_button :mike_hosted, "no" %>
-		<label class="choice">No</label>
-	<%= f.radio_button :mike_hosted, "unsure" %>
-		<label class="choice">I don't know</label>
-	<%= f.radio_button :mike_hosted, "yes",
-		:onmouseup => "document.getElementById('request_mike_hosted').focus();" %>
-		<label class="choice">Yes, the year of the visit was:</label>
-	<%= f.text_field :mike_hosted_year, :class => "field text", :size => 8,
-		:onclick => "document.getElementById('request_mike_hosted_yes').checked = 'checked';" %>
+		<span>
+		<%= f.radio_button :mike_hosted, "no", :class => "field radio"  %>
+			<label class="choice">No</label>
+		</span>
+		<span>
+		<%= f.radio_button :mike_hosted, "unsure", :class => "field radio"  %>
+			<label class="choice">I don't know</label>
+		</span>
+		<span>
+		<%= f.radio_button :mike_hosted, "yes", :class => "field radio",
+			:onmouseup => "document.getElementById('request_mike_hosted').focus();" %>
+			<label class="choice">Yes, the year of the visit was:</label>
+			
+		<%= f.text_field :mike_hosted_year, :class => "field text other", :size => 8,
+			:onclick => "document.getElementById('request_mike_hosted_yes').checked = 'checked';" %>
+		</span>
 	</div>
 	<p class="instruct" id="instruct105"><small>If Mr. Mike has been to your school before, we usually have about 
 		a 3 year wait between visits.  <br /><br />

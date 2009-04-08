@@ -69,8 +69,6 @@ class Request < ActiveRecord::Base
       :message => "must be specified for lunch with Mr. Mike"
   # Time specifications:
   validates_each :assembly_time2 do |record, attr, value|
-    logger.error("\n\nIn A2 validation: a2 - #{value.hour}:#{value.min}\n")
-    logger.error("\n\nIn A2 validation: a1 - #{record.assembly_time1.hour}:#{record.assembly_time1.min}\n")
     next if value.nil?
     # Leave this up to other validation
     next if record.assembly_time1.nil?

@@ -12,12 +12,16 @@
 	<%= f.group_start( [:book_fair_too_soon], { :position => "full" } ) %>
 	<label class="desc" id="title83" for="Field83">
 		<%= f.label :book_fair_too_soon, "Are you having a book fair within one month BEFORE or DURING Mr. Mike’s visit?
-		 <small>(Mr. Mike can visit before a book fair, but NOT within 1 month after.)</small>", :class => "desc" %>
+		 <small>(Mr. Mike can visit before a book fair, but NOT within 1 month after.)</small>", :class => "desc", :required_field => true %>
 		<div class="col">
-			<%= f.radio_button :book_fair_too_soon, "yes" %>
+			<span>
+			<%= f.radio_button :book_fair_too_soon, "yes", :class => "field radio" %>
 			<label class="choice">Yes</label>	
-			<%= f.radio_button :book_fair_too_soon, "no" %>
+			</span>
+			<span>
+			<%= f.radio_button :book_fair_too_soon, "no", :class => "field radio" %>
 			<label class="choice">No</label>
+			</span>
 		</div>
 		<p class="instruct" id="instruct83"><small>This is important because book sales during Mr. Mike's visit are
 			affected if you have just recently had a book fair. This is especially important if you are requesting
@@ -29,12 +33,16 @@
 	<%= f.group_start( [:read_school_info], { :position => "full" } ) %>
 		<%= f.label :read_school_info, 'Have you read all the info. in the 
 			<a href="/schools/" target="_blank">Schools</a> section?<br />
-			<small>(If \'no\' then please read all the info. before submitting.)</small>', :class => "desc" %>
+			<small>(If \'no\' then please read all the info. before submitting.)</small>', :class => "desc", :required_field => true %>
 			<div class="col">
-				<%= f.radio_button :read_school_info, "yes" %>
+				<span>
+				<%= f.radio_button :read_school_info, "yes", :class => "field radio" %>
 				<label class="choice">Yes</label>	
-				<%= f.radio_button :read_school_info, "no" %>
+				</span>
+				<span>
+				<%= f.radio_button :read_school_info, "no", :class => "field radio" %>
 				<label class="choice">No</label>
+				</span>
 			</div>
 			<p class="instruct" id="instruct84"><small>This is important because we want to ensure that you are fully
 				informed before you make a request. Sometimes people come straight to this form and don't bother 
@@ -50,12 +58,16 @@
 			Or, if you are the Principal, V.P., or Assistant Principal, have you provided the 
 			'Secondary Contact Person' information for the person who will be organizing the event?<br />
 			<small>(If 'no' then please wait on submitting this form until you've cleared the dates and 
-			provided the 'Secondary Contact Person' information.)</small>", :class => "desc" %>
+			provided the 'Secondary Contact Person' information.)</small>", :class => "desc", :required_field => true %>
 			<div class="col">
-				<%= f.radio_button :dates_okay, "yes" %>
+				<span>
+				<%= f.radio_button :dates_okay, "yes", :class => "field radio" %>
 				<label class="choice">Yes</label>	
-				<%= f.radio_button :dates_okay, "no" %>
+				</span>
+				<span>
+				<%= f.radio_button :dates_okay, "no", :class => "field radio" %>
 				<label class="choice">No</label>
+				</span>
 			</div>
 			<p class="instruct" id="instruct86"><small>This is important because there have been times when
 				administrators were not informed of a request.<br />
@@ -70,12 +82,16 @@
 		<%= f.label :students_will_show, "Have you confirmed that ALL GRADE LEVELS and ALL CLASSES will attend and that 
 			your school IS IN SESSION two weeks BEFORE AND the week AFTER Mr. Mike's visit? 
 			<small>(If 'no' then change the dates to when ALL students will be there and when your school will be
-			 in session 2 weeks before and 1 week after Mr. Mike's visit.)</small>", :class => "desc" %>
+			 in session 2 weeks before and 1 week after Mr. Mike's visit.)</small>", :class => "desc", :required_field => true %>
 			<div class="col">
-				<%= f.radio_button :students_will_show, "yes" %>
+				<span>
+				<%= f.radio_button :students_will_show, "yes", :class => "field radio" %>
 				<label class="choice">Yes</label>	
-				<%= f.radio_button :students_will_show, "no" %>
+				</span>
+				<span>
+				<%= f.radio_button :students_will_show, "no", :class => "field radio" %>
 				<label class="choice">No</label>
+				</span>
 			</div>
 			<p class="instruct" id="instruct87"><small>This is important because Mr. Mike has arrived at schools 
 				ready to meet everyone only to be told that entire grade levels were out on a field trip or that 
@@ -88,12 +104,16 @@
 			to put on a great event and be ready for Mr. Mike when he arrives? Cross your heart!<br />
 			<small>(If 'no' then please wait on submitting a request until you have checked in with your PTA/O 
 			and feel comfortable with your school's ability to prepare for a visiting author.)</small>", 
-			:class => "desc" %>
+			:class => "desc", :required_field => true %>
 			<div class="col">
-				<%= f.radio_button :will_prep, "yes" %>
-				<label class="choice">Yes</label>	
-				<%= f.radio_button :will_prep, "no" %>
-				<label class="choice">No</label>
+				<span>
+					<%= f.radio_button :will_prep, "yes", :class => "field radio" %>
+					<label class="choice">Yes</label>	
+				</span>
+				<span>
+					<%= f.radio_button :will_prep, "no", :class => "field radio" %>
+					<label class="choice">No</label>
+				</span>
 			</div>	
 			<p class="instruct" id="instruct88"><small>This is important because Mr. Mike travels long distances to 
 				visit schools and wants/needs! to feel appreciated - just like everybody else!!! Your absolute 
@@ -104,12 +124,16 @@
 
 	<%= f.group_start( [:had_writing_program], { :position => "full" } ) %>
 		<%= f.label :had_writing_program, "Have your students ever participated in a school-wide writing program 
-			such as poetry writing, publishing their own books, etc.?", :class => "desc" %>
+			such as poetry writing, publishing their own books, etc.?", :class => "desc", :required_field => true %>
 			<div class="col">
-				<%= f.radio_button :had_writing_program, true %>
+				<span>
+				<%= f.radio_button :had_writing_program, true, :class => "field radio" %>
 				<label class="choice">Yes</label>	
-				<%= f.radio_button :had_writing_program, false %>
+				</span>
+				<span>
+				<%= f.radio_button :had_writing_program, false, :class => "field radio" %>
 				<label class="choice">No</label>
+				</span>
 			</div>
 			<p class="instruct" id="instruct108"><small>It's helpful for us to know what your school's experience 
 				with writing has been!</small></p>

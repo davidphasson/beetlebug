@@ -10,44 +10,44 @@
 	</li>
 
 	<%= f.group_start( [:essay_visit_reason], { :position => "full" } ) %>
-		<%= f.label :essay_visit_reason, "Why is your school requesting a visit from Mr. Mike?" %>
-		<div><%= f.text_area :essay_visit_reason, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_visit_reason, "Why is your school requesting a visit from Mr. Mike?", :class => 'desc', :required_field => true   %>
+		<div><%= f.text_area :essay_visit_reason, :cols => 46, :rows => 5, :class => 'field'  %></div>
 		<%= f.error_message_on :essay_visit_reason, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 
 	<%= f.group_start( [:essay_hope_receive], { :position => "full" } ) %>
-		<%= f.label :essay_hope_receive, "What do you hope to get out of it?" %>
-		<div><%= f.text_area :essay_hope_receive, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_hope_receive, "What do you hope to get out of it?", :class => 'desc', :required_field => true   %>
+		<div><%= f.text_area :essay_hope_receive, :cols => 46, :rows => 5, :class => 'field'  %></div>
 		<%= f.error_message_on :essay_hope_receive, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 
 	<%= f.group_start( [:essay_writing_approach], { :position => "full" } ) %>
-		<%= f.label :essay_writing_approach, "What is your school's approach to writing?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_writing_approach, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_writing_approach, "What is your school's approach to writing?", :class => 'desc', :required_field => true  %>
+		<div><%= f.text_area :essay_writing_approach, :cols => 46, :rows => 5, :class => 'field'  %></div>
 		<%= f.error_message_on :essay_writing_approach, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 
 	<%= f.group_start( [:essay_feel_about_mike], { :position => "full" } ) %>
-		<%= f.label :essay_feel_about_mike, "How you feel about hosting Mr. Mike?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_feel_about_mike, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_feel_about_mike, "How you feel about hosting Mr. Mike?", :class => 'desc', :required_field => true %>
+		<div><%= f.text_area :essay_feel_about_mike, :cols => 46, :rows => 5, :class => 'field'  %></div>
 		<%= f.error_message_on :essay_feel_about_mike, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 
 	<%= f.group_start( [:essay_prep_plans], { :position => "full" } ) %>
-		<%= f.label :essay_prep_plans, "What are your plans for preparation?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_prep_plans, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_prep_plans, "What are your plans for preparation?", :class => 'desc', :required_field => true  %>
+		<div><%= f.text_area :essay_prep_plans, :cols => 46, :rows => 5, :class => 'field'  %></div>
 		<%= f.error_message_on :essay_prep_plans, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 
 	<%= f.group_start( [:essay_pta_involvement], { :position => "full" } ) %>
-		<%= f.label :essay_pta_involvement, "How will your PTA/O be involved?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_pta_involvement, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_pta_involvement, "How will your PTA/O be involved?", :class => 'desc', :required_field => true %>
+		<div><%= f.text_area :essay_pta_involvement, :cols => 46, :rows => 5, :class => 'field'  %></div>
 		<%= f.error_message_on :essay_pta_involvement, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 
 	<%= f.group_start( [:essay_other], { :position => "full" } ) %>
-		<%= f.label :essay_other, "Is there anything else you'd like us to know?", :class => 'field textarea small' %>
-		<div><%= f.text_area :essay_other, :cols => 46, :rows => 5 %></div>
+		<%= f.label :essay_other, "Is there anything else you'd like us to know?", :class => 'desc' %>
+		<div><%= f.text_area :essay_other, :cols => 46, :rows => 5, :class => 'field' %></div>
 		<%= f.error_message_on :essay_other, :prepend_text => 'This question ' %>				
 	<%= f.group_end() %>
 	

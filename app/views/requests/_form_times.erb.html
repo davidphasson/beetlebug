@@ -17,7 +17,7 @@
 <%= f.group_start( [:assembly_time1], { :position => "full" } ) %>
 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc", :required_field => true %>
 	<% #f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
-	<%= select_time @request.assembly_time1, { :prefix => "assembly_time1", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
+	<%= select_time @request.assembly_time1, { :prefix => "assembly_time1", :minute_step => 5, :time_separator => " : ", :include_blank => true, :class => "field" } %>
 	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
 		in between if there are 2 or more assemblies. <br />
 		<br />
@@ -70,15 +70,23 @@
 
 <%= f.group_start( [:assembly_location, :assembly_location_other], { :position => "full" } ) %>
 	<%= f.label :assembly_location, 'The indoors only assembly(ies) will be in the', :class => "desc", :required_field => true %>
-	<%= f.radio_button :assembly_location, "Auditorium" %>
-		<label class="choice">Auditorium</label>
-	<%= f.radio_button :assembly_location, "Multi-Purpose Room" %>
-		<label class="choice">Multi-Purpose Room</label>
-	<%= f.radio_button :assembly_location, "Other", 
-		:onmouseup => "document.getElementById('request_assembly_location').focus();" %>
-		<label class="choice">Other</label>
-	<%= f.text_field :assembly_location_other, :class => "field text", 
-		:onclick => "document.getElementById('request_assembly_location_other').checked = 'checked';" %>
+	<div class="col">
+		<span>
+		<%= f.radio_button :assembly_location, "Auditorium", :class => "field radio"   %>
+			<label class="choice">Auditorium</label>
+		</span>
+		<span>
+		<%= f.radio_button :assembly_location, "Multi-Purpose Room", :class => "field radio"   %>
+			<label class="choice">Multi-Purpose Room</label>
+		</span>
+		<span>
+		<%= f.radio_button :assembly_location, "Other", :class => "field radio",  
+			:onmouseup => "document.getElementById('request_assembly_location').focus();" %>
+			<label class="choice">Other</label>
+		<%= f.text_field :assembly_location_other, :class => "field text other", 
+			:onclick => "document.getElementById('request_assembly_location_other').checked = 'checked';" %>
+		</span>
+	</div>
 		<p class="instruct" id="instruct80"><small>The last 20 minutes or so of the assembly hour is a book 
 			signing, so most students won't be seated at that time;   If the custodian needs to set up the 
 			room for something - it shouldn't be a problem - we'll all be right up front at the table. </small></p>
@@ -101,11 +109,17 @@
 
 <%= f.group_start( [:inclement_lunchroom], { :position => "full" } ) %>
 	<%= f.label :inclement_lunchroom, 'Is the room Mr. Mike will be in also used for lunch or other 
-		activities during inclement weather?', :class => "desc" %>
-	<%= f.radio_button :inclement_lunchroom, true %>
-		<label class="choice">Yes</label>
-	<%= f.radio_button :inclement_lunchroom, false %>
-		<label class="choice">No</label>
+		activities during inclement weather?', :class => "desc", :required_field => true %>
+	<div>
+		<span>
+		<%= f.radio_button :inclement_lunchroom, true, :class => "field radio" %>
+			<label class="choice">Yes</label>
+		</span>
+		<span>
+		<%= f.radio_button :inclement_lunchroom, false, :class => "field radio" %>
+			<label class="choice">No</label>
+		</span>
+	</div>
 		<p class="instruct" id="instruct98"><small>Mr. Mike's 'stuff' is all set up at the front of the room.
 			In most cases, lunch tables can be brought down without having to move anything.</small></p>
 	<%= f.error_message_on :inclement_lunchroom, :prepend_text => 'This question ' %>						
@@ -113,7 +127,7 @@
 
 
 <%= f.group_start( [:inclement_plan], { :position => "full" } ) %>
-	<%= f.label :inclement_plan, "If yes, what's your plan for inclement weather?" %>
+	<%= f.label :inclement_plan, "If yes, what's your plan for inclement weather?", :class => "desc", :required_field => true %>
 	<div><%= f.text_area :inclement_plan, :cols => 50, :rows => 10, :class => "field textarea small" %></div>
 	<p class="instruct" id="instruct101"><small>Usually, we can make minor schedule adjustments and still 
 		be able to have the assemblies.  In extreme situations, the book signing table will be set up in the 
@@ -123,11 +137,17 @@
 
 <%= f.group_start( [:school_prone_weather_delays], { :position => "full" } ) %>
 	<%= f.label :school_prone_weather_delays, "Is your school prone to schedule changes due to fog or other 
-		weather during the time of Mr. Mike's visit?", :class => "desc" %>
-	<%= f.radio_button :school_prone_weather_delays, true %>
-		<label class="choice">Yes</label>
-	<%= f.radio_button :school_prone_weather_delays, false %>
-		<label class="choice">No</label>
+		weather during the time of Mr. Mike's visit?", :class => "desc", :required_field => true %>
+	<div>
+		<span>
+		<%= f.radio_button :school_prone_weather_delays, true, :class => "field radio"  %>
+			<label class="choice">Yes</label>
+		</span>
+		<span>
+		<%= f.radio_button :school_prone_weather_delays, false, :class => "field radio"  %>
+			<label class="choice">No</label>
+		</span>
+	</div>
 	<p class="instruct" id="instruct103"><small>If Mr. Mike will be visiting during a time of year when school 
 		buses are often delayed - let us know!  <br />
 		It's better to figure this out now than later.</small></p>
@@ -136,7 +156,7 @@
 
 
 <%= f.group_start( [:weather_delay_plan], { :position => "full" } ) %>
-	<%= f.label :weather_delay_plan, "If yes, what's your plan in the event of delays?" %>
+	<%= f.label :weather_delay_plan, "If yes, what's your plan in the event of delays?", :class => "desc", :required_field => true %>
 	<div><%= f.text_area :weather_delay_plan, :cols => 50, :rows => 10, :class => "field textarea small" %></div>
 	<p class="instruct" id="instruct102"><small>In these situations where there just aren't any students at 
 		the school until a delayed time, we can set up the book signing table in the library and Mr. Mike 
@@ -156,11 +176,17 @@
 
 <%= f.group_start( [:lunch_with_mike], { :position => "full" } ) %>
 	<%= f.label :lunch_with_mike, "Are you requesting 'Lunch With Mr. Mike' for a group of about 25 STUDENTS?",
-		:class => "desc" %>
-	<%= f.radio_button :lunch_with_mike, true , :onclick => "$('mike_lunch_div').show();" %>
-		<label class="choice">Yes</label>
-	<%= f.radio_button :lunch_with_mike, false, :onclick => "$('mike_lunch_div').hide();"  %>
-		<label class="choice">No</label>
+		:class => "desc", :required_field => true %>
+	<div class="col">
+		<span>
+		<%= f.radio_button :lunch_with_mike, true , :onclick => "$('mike_lunch_div').show();"  %>
+			<label class="choice">Yes</label>
+		</span>
+		<span>
+		<%= f.radio_button :lunch_with_mike, false, :onclick => "$('mike_lunch_div').hide();"  %>
+			<label class="choice">No</label>
+		</span>
+	</div>
 	<p class="instruct" id="instruct74"><small>Please Note: This event is for STUDENTS </small></p>
 	<%= f.error_message_on :lunch_with_mike, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>
@@ -180,7 +206,9 @@
 <%= f.group_start( [:lunch_end], { :position => "right" } ) %>
 	<%= f.label :lunch_end, 'What time will it end?', :class => "desc" %>
 	<% # f.time_select :lunch_end, :minute_step => 15, :include_blank => true, :ignore_date => true   %>
-	<%= select_time @request.lunch_end, { :prefix => "lunch_end", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>			
+	<span>
+		<%= select_time @request.lunch_end, { :prefix => "lunch_end", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
+	</span>			
 	<p class="instruct" id="instruct77"><small>About 45 minutes is good.</small></p>
 	<%= f.error_message_on :lunch_end, :prepend_text => 'Time ' %>									
 <%= f.group_end() %>
@@ -188,7 +216,7 @@
 
 <%= f.group_start( [:lunch_room], { :position => "full" } ) %>
 	<%= f.label :lunch_room, 'What room in your school will the lunch be held?', :class => "desc" %>
-	<%= f.text_field :lunch_room, :class => "field text medium" %>
+	<span><%= f.text_field :lunch_room, :class => "field text medium" %></span>
 	<p class="instruct" id="instruct79"><small>Choose a quiet place like a library or other room away from 
 		all the hustle and bustle.</small></p>
 	<%= f.error_message_on :lunch_room, :prepend_text => 'Room ' %>										
