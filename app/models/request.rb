@@ -7,7 +7,7 @@ class Request < ActiveRecord::Base
   validates_inclusion_of :mike_hosted, :author_hosted, :in => ["yes", "no", "unsure"]
   # Make sure it's a valid year.  No years before 1950
   validates_inclusion_of :mike_hosted_year, :in => (1950..(Date.today.year)).to_a, :allow_blank => true,
-    :message => "is an invalid date"
+    :message => "doesn't seem likely"
   
 
     

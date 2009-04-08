@@ -85,7 +85,7 @@
 	<%= f.error_message_on :author_hosted, :prepend_text => 'This question ' %>	
 <%= f.group_end() %>
 
-<%= f.group_start( [:mike_hosted], { :position => "full" } ) %>	
+<%= f.group_start( [:mike_hosted, :mike_hosted_year], { :position => "full" } ) %>	
 	<%= f.label :mike_hosted, "Has Mr. Mike visited your school before?", :class => "desc", :required_field => true  %>
 	<div class="col">	
 	<%= f.radio_button :mike_hosted, "no" %>
@@ -102,6 +102,7 @@
 		a 3 year wait between visits.  <br /><br />
 		If you're not sure, leave the year blank and we'll check to see the last time he was there.</small></p>
 	<%= f.error_message_on :mike_hosted, :prepend_text => 'This field ' %>
+	<%= f.error_message_on :mike_hosted_year, :prepend_text => 'This year ' %>	
 <%= f.group_end() %>
 
 </ul>

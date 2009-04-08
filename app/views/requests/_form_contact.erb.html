@@ -36,7 +36,7 @@
 <%= f.group_end() %>
 
 <%= f.group_start( [:contact1_phone], { :position => "left" } ) %>
-	<%= f.label :contact1_phone, "Your Phone Number at School", :class => "desc" %>
+	<%= f.label :contact1_phone, "Your Phone Number at School", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact1_phone, :class => "field text", :size => 12 %>
 	<p class="instruct" id="instruct32"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact1_phone, :prepend_text => 'Number ' %>	
@@ -60,7 +60,7 @@
 
 
 <%= f.group_start( [:contact1_email], { :position => "left" } ) %>
-	<%= f.label :contact1_email, "Your E-mail", :class => "desc" %>
+	<%= f.label :contact1_email, "Your E-mail", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact1_email, :class => "field text medium" %></div>
 	<p class="instruct" id="instruct35"><small>This is how we get back to you! Make sure it's exactly right!  <br />
 	NOTE: Do not input websites or anything other than an email addy! </small></p>
@@ -70,7 +70,7 @@
 
 
 <%= f.group_start( [:contact1_email_confirmation], { :position => "right" } ) %>
-	<%= f.label :contact1_email_confirmation, "Confirm E-mail", :class => "desc" %>
+	<%= f.label :contact1_email_confirmation, "Confirm E-mail", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact1_email_confirmation, :class => "field text medium" %></div>
 	<p class="instruct" id="instruct36"><small>Enter it twice for verification!</small></p>	
 	<%= f.error_message_on :contact1_email_confirmation, :prepend_text => 'E-mail ' %>	
@@ -113,7 +113,7 @@
 
 
 <%= f.group_start( [:contact2_position], { :position => "right" } ) %>
-	<%= f.label :contact2_position, "Their Position", :class => "desc" %>
+	<%= f.label :contact2_position, "Their Position", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact2_position, :class => "field text medium" %></div>
 	<p class="instruct" id="instruct40"><small>Are you a librarian, teacher, PTA/O person, Principal,
 		A.P/V.P., 	etc...?</small></p>
@@ -122,7 +122,7 @@
 
 
 <%= f.group_start( [:contact2_phone], { :position => "left" } ) %>
-	<%= f.label :contact2_phone, "Their Phone Number at School", :class => "desc" %>
+	<%= f.label :contact2_phone, "Their Phone Number at School", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact2_phone, :class => "field text", :size => 12 %>
 	<p class="instruct" id="instruct41"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact2_phone, :prepend_text => 'Number ' %>	
@@ -139,7 +139,7 @@
 
 
 <%= f.group_start( [:contact2_email], { :position => "left" } ) %>
-	<%= f.label :contact2_email, "E-mail", :class => "desc" %>
+	<%= f.label :contact2_email, "E-mail", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact2_email, :class => "field text medium" %></div>
 	<p class="instruct" id="instruct43"><small>This is how we get back to you! Make sure it's exactly right!  <br />
 	NOTE: Do not input websites or anything other than an email addy! </small></p>
@@ -149,7 +149,7 @@
 
 
 <%= f.group_start( [:contact2_email_confirmation], { :position => "right" } ) %>
-	<%= f.label :contact2_email_confirmation, "Confirm E-mail", :class => "desc" %>
+	<%= f.label :contact2_email_confirmation, "Confirm E-mail", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :contact2_email_confirmation, :class => "field text medium" %></div>
 	<p class="instruct" id="instruct44"><small>Enter it twice for verification!</small></p>	
 	<%= f.error_message_on :contact2_email_confirmation, :prepend_text => 'E-mail ' %>	
@@ -157,7 +157,7 @@
 
 
 <%= f.group_start( [:school_principal], { :position => "full" } ) %>
-	<%= f.label :school_principal, "School Principal's Name", :class => "desc" %>
+	<%= f.label :school_principal, "School Principal's Name", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :school_principal, :class => "field text medium" %></div>
 	<%= f.error_message_on :school_principal, :prepend_text => 'This question ' %>	
 <%= f.group_end() %>
@@ -224,32 +224,32 @@
 		<span class="full">
 			<%= f.text_field :school_phys_address1, :class => "field text addr" %>
 			<%= f.label :school_phys_address1, "Street Address" %>
-			<%= f.error_message_on :school_phys_address1, :prepend_text => 'This question ' %>			
+			<%= f.error_message_on :school_phys_address1, :prepend_text => 'Address ' %>			
 		</span>
 		<span class="full">
 			<%= f.text_field :school_phys_address2, :class => "field text addr" %>
 			<%= f.label :school_phys_address2, "Street Address Continued" %>
-			<%= f.error_message_on :school_phys_address2, :prepend_text => 'This question ' %>			
+			<%= f.error_message_on :school_phys_address2, :prepend_text => 'Address ' %>			
 		</span>
 		<span class="full">
 			<%= f.text_field :school_phys_city, :class => "field text addr", :size => 25 %>
 			<%= f.label :school_phys_city, "City" %>
-			<%= f.error_message_on :school_phys_city, :prepend_text => 'This question ' %>			
+			<%= f.error_message_on :school_phys_city, :prepend_text => 'City ' %>			
 		</span>
 		<span class="full">
 			<%= f.text_field :school_phys_state, :class => "field text addr", :size => 25 %>
 			<%= f.label :school_phys_state, "State / Province / Region" %>
-			<%= f.error_message_on :school_phys_state, :prepend_text => 'This question ' %>			
+			<%= f.error_message_on :school_phys_state, :prepend_text => 'State ' %>			
 		</span>
 		<span class="full">
 			<%= f.text_field :school_phys_zipcode, :class => "field text addr", :size => 15 %>
 			<%= f.label :school_phys_zipcode, "Postal / Zip Code" %>
-			<%= f.error_message_on :school_phys_zipcode, :prepend_text => 'This question ' %>			
+			<%= f.error_message_on :school_phys_zipcode, :prepend_text => 'Zipcode ' %>			
 		</span>
 		<span class="full">
 			<%= f.select :school_phys_country, COUNTRIES %>
 			<%= f.label :school_phys_country, "Country" %>
-			<%= f.error_message_on :school_phys_country, :prepend_text => 'This question ' %>			
+			<%= f.error_message_on :school_phys_country, :prepend_text => 'Country ' %>			
 		</span>
 	</div>
 	<p class="instruct" id="instruct52"><small>How we find your school on a GPS and map!</small></p>
@@ -267,14 +267,14 @@
 <li class="break    "></li>
 
 <%= f.group_start( [:school_county], { :position => "full" } ) %>
-	<%= f.label :school_county, "What state COUNTY (not countRy) is your school in?", :class => "desc" %>
+	<%= f.label :school_county, "What state COUNTY (not countRy) is your school in?", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :school_county, :class => "field text large" %></div>
 	<p class="instruct" id="instruct106"><small>This helps us keep requests organized!</small></p>
 	<%= f.error_message_on :school_county, :prepend_text => 'This question ' %>	
 <%= f.group_end() %>
 
 <%= f.group_start( [:school_district], { :position => "full" } ) %>
-	<%= f.label :school_district, "What is the name of your school district?", :class => "desc" %>
+	<%= f.label :school_district, "What is the name of your school district?", :class => "desc", :required_field => true  %>
 	<div><%= f.text_field :school_district, :class => "field text large" %></div>
 	<p class="instruct" id="instruct59"><small>This helps us keep requests organized!</small></p>
 	<%= f.error_message_on :school_district, :prepend_text => 'This question ' %>

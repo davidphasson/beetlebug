@@ -68,7 +68,7 @@
 <%= f.group_end() %>
 
 
-<%= f.group_start( [:assembly_location], { :position => "full" } ) %>
+<%= f.group_start( [:assembly_location, :assembly_location_other], { :position => "full" } ) %>
 	<%= f.label :assembly_location, 'The indoors only assembly(ies) will be in the', :class => "desc", :required_field => true %>
 	<%= f.radio_button :assembly_location, "Auditorium" %>
 		<label class="choice">Auditorium</label>
