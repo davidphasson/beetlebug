@@ -9,13 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090325135128) do
+ActiveRecord::Schema.define(:version => 20090408031447) do
 
   create_table "requests", :force => true do |t|
     t.string   "school"
     t.integer  "assembly_type"
-    t.integer  "starting_grade"
-    t.integer  "ending_grade"
     t.integer  "num_students"
     t.string   "author_hosted"
     t.string   "mike_hosted"
@@ -122,6 +120,8 @@ ActiveRecord::Schema.define(:version => 20090325135128) do
     t.text     "essay_other"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "starting_grade"
+    t.string   "ending_grade"
   end
 
 end

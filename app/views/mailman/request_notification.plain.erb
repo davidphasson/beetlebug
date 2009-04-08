@@ -1,0 +1,19 @@
+<%
+# E-mail template for the request to go to the administrator
+%>
+A new request has been submitted:
+
+If you cannot view HTML e-mails, please login to the request site at:
+
+http://beetlebug.funtaff.com/
+
+---
+
+You received this e-mail because you are listed as a recipient of Beetle Bug Assembly Requests.  You may review these requests at http://beetlebug.funtaff.com/.
+---
+
+Raw request: 
+
+<% @request.attributes.each do |col,value| %>
+	<%= col %>: <%= value %><br/>
+<% end %>

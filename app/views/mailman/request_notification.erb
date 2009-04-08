@@ -1,8 +1,0 @@
-<%
-# E-mail template for the request to go to the administrator
-%>
-A new request has been submitted:
-
-<% @request.attributes.each do |col,value| %>
-	<%= col %>: <%= value %><br/>
-<% end %>

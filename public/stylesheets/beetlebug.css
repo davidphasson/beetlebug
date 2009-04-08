@@ -243,4 +243,17 @@ form span.req {
 	margin: 0;
 	padding: 0;
 }
+
+/* Blocks that show info */
+div.infoblock {
+	background-color: #eee;
+	border: 1px solid #aaa;
+	padding: 10px;
+	margin: 10px;
+}
+
+.infoblock td {
+	vertical-align: top;
+	padding: 3px;
+}
 	
