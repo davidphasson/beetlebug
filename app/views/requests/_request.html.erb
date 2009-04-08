@@ -1,0 +1,13 @@
+<tr class="<%= cycle('odd', 'even') %>">
+	<td class="topic-row">
+		<%= link_to h(request.school), request %>
+	</td>
+	<td class="topic-row">
+		<%= link_to h("#{request.contact1_first} #{request.contact1_last}"), "mailto:#{request.contact1_email}" %>
+	<td class="topic-row">
+		<%= link_to h(request.school_mail_city), "" %>
+	</td>
+	<td class="topic-row">
+		<%= time_ago_in_words(request.created_at) %> ago
+	</td>
+</tr>

@@ -1,5 +1,5 @@
 class RequestsController < ApplicationController
-  before_filter :find_request, :only => %w(show edit update destroy)
+  before_filter :find_request, :only => %w(show edit update destroy email)
 
   def index
     @requests = Request.all
@@ -13,6 +13,11 @@ class RequestsController < ApplicationController
     # This needs to go somewhere else
     @request.school_phys_address_same = true
   end 
+
+  # This is mostly for e-mail testing
+  def email
+    Mailman.deliver_request_notification(@request)    
+  end
 
   def edit
   end 

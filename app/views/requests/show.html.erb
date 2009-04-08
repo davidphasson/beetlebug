@@ -1,0 +1,23 @@
+<!-- General Info -->
+<div>
+	<p>
+	  	<b>School:</b>
+		<%=h @request.school %>
+	</p>
+	<p>
+		<b>Grades:</b>
+		<%=h "#{@request.starting_grade} - #{@request.ending_grade}" %>
+	</p>
+	<p>
+		<b>Students:</b>
+		<%=h @request.num_students %>
+	</p>
+</div>
+
+<!-- Contact Info -->
+<div>
+</div>
+	
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Email', "" %> |
+<%= link_to 'Back', requests_path %>
