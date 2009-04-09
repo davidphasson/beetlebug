@@ -1,4 +1,5 @@
 class RequestsController < ApplicationController
+  before_filter :authenticate, :only => [:show, :index, :update, :destroy, :edit, :email]
   before_filter :find_request, :only => %w(show edit update destroy email)
 
   def index
@@ -112,6 +113,15 @@ class RequestsController < ApplicationController
     
     def find_request
       @request = Request.find(params[:id])
+    end
+    
+    private
+    
+    # todo: move these into app_config.yml
+    def authenticate
+      authenticate_or_request_with_http_basic do |username, password|
+        username == "admin" && password == "b33tl3"
+      end
     end
 
 
