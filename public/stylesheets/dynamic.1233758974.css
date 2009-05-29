@@ -336,7 +336,8 @@ border-top: 1px solid #7c7c7c;
 border-left: 1px solid #c3c3c3;
 border-right: 1px solid #c3c3c3;
 border-bottom: 1px solid #ddd;
-background: #fff url(/images/fieldbg.gif) repeat-x top;
+/* background: #fff url(/images/fieldbg.gif) repeat-x top; */
+background: #fff;
 }
 input.text, input.file {
 padding: 2px 0 2px 0;
