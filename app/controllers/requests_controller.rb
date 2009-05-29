@@ -85,7 +85,8 @@ class RequestsController < ApplicationController
         Mailman.deliver_request_notification(@request)
         Mailman.deliver_request_received(@request)     
         # redirect_to(@request)
-        redirect_to "http://www.beetlebugbooks.com/"
+        # redirect_to "http://www.beetlebugbooks.com/"
+        redirect_to "http://www.beetlebugbooks.com/schools/assembly-request-form/submitted/"
       else
         flash.now[:warning] = 'There was a problem creating the request.'
         render :action => "new"

@@ -1,6 +1,6 @@
 class Mailman < ActionMailer::Base
   def request_notification(request)
-    recipients ["David Hasson <dph@funtaff.net>", "Beetlebug Books <beetlebugbooks@cox.net>"]
+    recipients ["David Hasson <dph@funtaff.net>", "Beetlebug Books <beetlebugbooks@cox.net>", "David Hasson <david.hasson@loni.ucla.edu>"]
     subject "[beetlebug] New Request Submission"
     from "Beetlebug Requests <mailer@beetlebug.net>"
     body :request => request
