@@ -38,9 +38,10 @@ class Request < ActiveRecord::Base
   # Need break start/end
   validates_presence_of :winter_break_start, :winter_break_end, :spring_break_start, :spring_break_end
   
-  # Need 4 preferred and alternate dates
-  validates_presence_of :preferred_date1, :preferred_date2, :preferred_date3, :preferred_date4
-  validates_presence_of :alternate_date1, :alternate_date2, :alternate_date3, :alternate_date4
+  # Need 2 preferred and alternate dates
+  validates_presence_of :preferred_date1, :preferred_date2
+  #validates_presence_of :preferred_date1, :preferred_date2, :preferred_date3, :preferred_date4
+  #validates_presence_of :alternate_date1, :alternate_date2, :alternate_date3, :alternate_date4
   validates_presence_of :last_school_date, :first_school_date
   
   validates_presence_of :school_county, :school_district
@@ -73,7 +74,7 @@ class Request < ActiveRecord::Base
     # Leave this up to other validation
     next if record.assembly_time1.nil?
     if value < ( record.assembly_time1 + 1.hour + 15.minutes )
-      record.errors.add attr, "must allow for at least one hour assembly and 15 minute break"
+      record.errors.add attr, "must allow for at least 1 hour assembly and a 15 minute break"
     end
   end
   validates_each :assembly_time3 do |record, attr, value|
@@ -81,7 +82,7 @@ class Request < ActiveRecord::Base
     # Leave this up to other validation
     next if record.assembly_time2.nil?
     if value < ( record.assembly_time2 + 1.hour + 15.minutes )
-      record.errors.add attr, "must allow for at least one hour assembly and 15 minute break"
+      record.errors.add attr, "must allow for at least 1 hour assembly and a 15 minute break"
     end
   end
   validates_each :assembly_time1 do |record, attr, value|

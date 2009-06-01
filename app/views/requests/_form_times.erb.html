@@ -18,18 +18,21 @@
 	<%= f.label :assembly_time1, 'Assembly #1', :class => "desc", :required_field => true %>
 	<% #f.time_select :assembly_time1, :minute_step => 15, :include_blank => true %>
 	<%= select_time @request.assembly_time1, { :prefix => "assembly_time1", :minute_step => 5, :time_separator => " : ", :include_blank => true, :class => "field" } %>
-	<p class="instruct" id="instruct70"><small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
-		in between if there are 2 or more assemblies. <br />
+	<p class="instruct" id="instruct70">
+		<small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
+			in between if there are 2 or more assemblies. <br />
 		<br />
-		9:30 a.m. or later is the earliest start time for single school visits. If your school is part of a
-		multi-school tour, then assemblies CAN sometimes start as earlier.<br />
+			9:30 a.m. or later is the earliest start time for single school visits. 
+			If your school is part of a multi-school tour, then assemblies CAN 
+			start earlier, if you need them to!.<br />
 		<br />
 		<b>Examples</b><br />
-		This works: 10:00 a.m. and 11:15 a.m. because it allows 1 hour per assembly (10:00 to 11:00 and 
-		11:15 to 12:15) AND a 15 minute break (11:00 - 11:15) <br />
+			This works: 10:00 a.m. and 11:15 a.m. because it allows 1 hour per assembly 
+			(10:00 to 11:00 and 11:15 to 12:15) AND a 15 minute break (11:00 - 11:15) <br />
 		<br />
-		This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each assembly and no breaks are
-		scheduled and 9:30 a.m. is earliest start time.</small></p>
+			This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each 
+			assembly and no breaks are scheduled and 9:30 a.m. is earliest start time.
+		</small></p>
 	<%= f.error_message_on :assembly_time1, :prepend_text => 'This time ' %>	
 <%= f.group_end() %>
 
@@ -40,18 +43,20 @@
 	<% # f.time_select :assembly_time2, :minute_step => 15, :include_blank => true %>
 	<%= select_time @request.assembly_time2, { :prefix => "assembly_time2", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	<p class="instruct" id="instruct72">
-		<small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break in between if there are 2 
-		or more assemblies. <br />
+		<small>Mr. Mike needs 1 hour per assembly AND at least a 15 minute break 
+			in between if there are 2 or more assemblies. <br />
 		<br />
-		9:30 a.m. or later is the earliest start time for single school visits. If you school is part of 
-		a multi-school tour, then assemblies CAN start earlier, if you need them to!<br />
+			9:30 a.m. or later is the earliest start time for single school visits. 
+			If your school is part of a multi-school tour, then assemblies CAN 
+			start earlier, if you need them to!.<br />
 		<br />
 		<b>Examples</b><br />
-		This works: 10:00 a.m. and 11:15 a.m. because it allows 1 hour per assembly (10:00 to 11:00 and 11:15 
-		to 12:15) AND a 15 minute break (11:00 - 11:15) <br />
+			This works: 10:00 a.m. and 11:15 a.m. because it allows 1 hour per assembly 
+			(10:00 to 11:00 and 11:15 to 12:15) AND a 15 minute break (11:00 - 11:15) <br />
 		<br />
-		This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each assembly and no breaks 
-		are scheduled and 9:30 a.m. is earliest start time.</small></p>
+			This doesn't work: 9:00, 9:45, 10:45 because there isn't an hour for each 
+			assembly and no breaks are scheduled and 9:30 a.m. is earliest start time.
+		</small></p>
 	<%= f.error_message_on :assembly_time2, :prepend_text => 'This time ' %>		
 <%= f.group_end() %>
 
@@ -196,7 +201,9 @@
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
 	<% #f.datetime_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
+	<span>
 	<%= select_time @request.lunch_start, { :prefix => "lunch_start", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
+	</span>
 	<p class="instruct" id="instruct78"><small>Allow a minimum 15 min.  break after the end of the
 		assembly.</small></p>
 	<%= f.error_message_on :lunch_start, :prepend_text => 'Time ' %>	
