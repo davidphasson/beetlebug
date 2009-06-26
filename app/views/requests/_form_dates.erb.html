@@ -66,9 +66,6 @@
 	<%= f.label :preferred_date1, 'Preferred Date #1', :class => "desc" %>
 	<%= f.date_picker :preferred_date1 %>
 
-	<p class="instruct" id="instruct64"><small>We try to work with your Preferred Dates, however your school
-		has a better chance of getting a visit if you also indicate Additional Dates. 
-		If you're flexible, you can list even more dates in the text box at the end of this form.</small></p>
 	<%= f.error_message_on :preferred_date1, :prepend_text => 'This date ' %>
 </li>
 
@@ -95,6 +92,9 @@
 <%= f.group_start( [:alternate_date1], { :position => "left" } ) %>
 	<%= f.label :alternate_date1, 'Alternate Date #1', :class => "desc" %>
 	<%= f.date_picker :alternate_date1 %>
+	<p class="instruct" id="instruct64"><small>We try to work with your Preferred Dates, however your school
+		has a better chance of getting a visit if you also indicate Additional Dates. 
+		If you're flexible, you can list even more dates in the text box at the end of this form.</small></p>
 	<%= f.error_message_on :alternate_date1, :prepend_text => 'This date ' %>	
 </li>
 
