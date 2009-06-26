@@ -37,7 +37,7 @@
 
 <%= f.group_start( [:contact1_phone], { :position => "left" } ) %>
 	<%= f.label :contact1_phone, "Your Phone Number at School", :class => "desc", :required_field => true  %>
-	<div><%= f.text_field :contact1_phone, :class => "field text", :size => 12 %>
+	<div><%= f.text_field :contact1_phone, :class => "field text", :size => 12 %></div>
 	<p class="instruct" id="instruct32"><small>(555)111-2222x333 <br/>Don't forget to include your extension, if applicable!</small></p>
 	<%= f.error_message_on :contact1_phone, :prepend_text => 'Number ' %>	
 <%= f.group_end() %>
