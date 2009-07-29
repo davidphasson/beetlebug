@@ -7,9 +7,10 @@
 	  	<b>School:</b>
 		<%=h @request.school %>
 	</p>
-	<p>
+	<!-- <p>
 	  	Request <b>submitted</b> <%= time_ago_in_words(@request.created_at) %> ago
 	</p>
+	-->
 	<p>
 		<b>Grades:</b>
 		<%=h "#{@request.starting_grade} - #{@request.ending_grade}" %>
@@ -55,10 +56,11 @@
 </div>
 
 <!-- Contact Info -->
-<div class="infoblock">
+<!-- <div class="infoblock"> -->
+<div>
 	<table>
 		<tr>
-			<td>
+			<td valign="top">
 				<b>Primary Contact: </b>
 			</td>
 			<td>
@@ -72,7 +74,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td valign="top">
 				<b>Secondary Contact: </b>
 			</td>
 			<td>
@@ -85,7 +87,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>
+			<td valign="top">
 				<% if @request.school_phys_address_same? %>
 					<b>School Address:</b>
 				<% else %>

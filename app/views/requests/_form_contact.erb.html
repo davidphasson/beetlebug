@@ -9,7 +9,7 @@
 
 
 <%= f.group_start( [:contact1_first, :contact1_last], { :position => "left" } ) %>
-	<label class="desc">Primary Contact Person</label>
+	<label class="desc">Primary Contact Person <span class="req">*</span></label>
 	<span>
 		<%= f.text_field :contact1_first, :class => "field text", :size => 8 %>
 		<%= f.label :contact1_first, "First" %>
@@ -28,7 +28,7 @@
 
 
 <%= f.group_start( [:contact1_position], { :position => "right" } ) %>
-	<%= f.label :contact1_position, "Your Position", :class => "desc" %>
+	<%= f.label :contact1_position, "Your Position", :class => "desc", :required_field => true %>
 	<div><%= f.text_field :contact1_position, :class => "field text medium" %></div>
 	<p class="instruct" id="instruct29"><small>Are you a librarian, teacher, PTA/O person, Principal,
 		A.P/V.P., 	etc...?</small></p>
@@ -94,7 +94,7 @@
 <!-- Secondary Contact -->
 
 <%= f.group_start( [:contact2_first, :contact2_last], { :position => "left" } ) %>
-	<label class="desc">Secondary Contact Person</label>
+	<label class="desc">Secondary Contact Person <span class="req">*</span></label>
 	<span>
 		<%= f.text_field :contact2_first, :class => "field text", :size => 8 %>
 		<%= f.label :contact2_first, "First" %>
