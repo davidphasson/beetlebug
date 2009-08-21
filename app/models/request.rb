@@ -140,9 +140,9 @@ class Request < ActiveRecord::Base
         end
         # Can't be week just before spring/winter break gets out
         if value <= record.winter_break_start && value > (record.winter_break_start - 1.weeks)
-          record.errors.add attr, "is within one week of getting out for spring break"
+          record.errors.add attr, "is within one week of getting out for winter break"
         end
-        if value <= record.spring_break_start && value > (record.winter_break_start - 1.weeks)
+        if value <= record.spring_break_start && value > (record.spring_break_start - 1.weeks)
           record.errors.add attr, "is within one week of getting out for spring break"
         end
         # Can't be on the weekend
