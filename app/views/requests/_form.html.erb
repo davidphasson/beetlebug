@@ -49,6 +49,20 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<% end %>
 </div>
 
+<div id="tabs">
+  <ul>
+    <li><a href="#page_general"><span>General</span></a></li>	
+    <li><a href="#page_contact"><span>Contact</span></a></li>	
+    <li><a href="#page_dates"><span>Dates</span></a></li>	
+    <li><a href="#page_times"><span>Times</span></a></li>	
+    <li><a href="#page_questions"><span>Questions</span></a></li>	
+    <li><a href="#page_multisite"><span>Multi-School Visits</span></a></li>	
+    <li><a href="#page_comments"><span>Comments</span></a></li>	
+    <li><a href="#page_general"><span>General</span></a></li>	
+  </ul>
+</div>
+
+<!--
 <div id="navbar" style="padding: 5px;">
 	<%= f.tab_button "general", link_to_function("General", "switch_tab('page_general');"), general_fields, { :current => true } %>
 	<%= f.tab_button "contact", link_to_function("Contact", "switch_tab('page_contact');"), contact_fields %>
@@ -58,6 +72,7 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<%= f.tab_button "multisite", link_to_function("Multi-School Visits", "switch_tab('page_multisite');"), multisite_fields %>
 	<%= f.tab_button "comments", link_to_function("Comments", "switch_tab('page_comments');"), comment_fields %>	
 </div>
+-->
 
 
 
