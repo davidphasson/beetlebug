@@ -84,7 +84,10 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 
 		<%= render :partial => 'form_general', :locals => { :f => f } %>
 		<p>
+			<!--
 			<%= button_to_function "Next", "switch_tab('page_contact');" %>
+			-->
+			<%= button_to_function "Next", "next_tab();" %>
 		</p>
 	</div>
 
@@ -92,47 +95,47 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<div id="page_contact" style="display: none;" class="form_tab">	
 		<%= render :partial => 'form_contact', :locals => { :f => f } %>
 		<p>
-			<%= button_to_function "Prev", "switch_tab('page_general');" %>
-			<%= button_to_function "Next", "switch_tab('page_dates');" %>
+			<%= button_to_function "Prev", "prev_tab();" %>
+			<%= button_to_function "Next", "next_tab();" %>
 		</p>
 	</div>
 
 	<div id="page_dates" style="display: none;" class="form_tab">	
 		<%= render :partial => 'form_dates', :locals => { :f => f } %>
 		<p>
-			<%= button_to_function "Prev", "switch_tab('page_contact');" %>
-			<%= button_to_function "Next", "switch_tab('page_times');" %>
+			<%= button_to_function "Prev", "prev_tab();" %>
+			<%= button_to_function "Next", "next_tab();" %>
 		</p>
 	</div>
 	
 	<div id="page_times" style="display: none;" class="form_tab">	
 		<%= render :partial => 'form_times', :locals => { :f => f } %>
 		<p>
-			<%= button_to_function "Prev", "switch_tab('page_dates');" %>
-			<%= button_to_function "Next", "switch_tab('page_questions');" %>
+			<%= button_to_function "Prev", "prev_tab();" %>
+			<%= button_to_function "Next", "next_tab();" %>
 		</p>
 	</div>
 
 	<div id="page_questions" style="display: none;" class="form_tab">	
 		<%= render :partial => 'form_questions', :locals => { :f => f } %>
 		<p>
-			<%= button_to_function "Prev", "switch_tab('page_times');" %>
-			<%= button_to_function "Next", "switch_tab('page_multisite');" %>
+			<%= button_to_function "Prev", "prev_tab();" %>
+			<%= button_to_function "Next", "next_tab();" %>
 		</p>
 	</div>
 
 	<div id="page_multisite" style="display: none;" class="form_tab">	
 		<%= render :partial => 'form_multisite', :locals => { :f => f } %>
 		<p>
-			<%= button_to_function "Prev", "switch_tab('page_questions');" %>
-			<%= button_to_function "Next", "switch_tab('page_comments');" %>
+			<%= button_to_function "Prev", "prev_tab();" %>
+			<%= button_to_function "Next", "next_tab();" %>
 		</p>
 	</div>
 
 	<div id="page_comments" style="display: none;" class="form_tab">	
 		<%= render :partial => 'form_comments', :locals => { :f => f } %>
 		<p>
-			<%= button_to_function "Prev", "switch_tab('page_multisite');" %>
+			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= f.submit "Submit" %>
 		</p>
 	</div>
