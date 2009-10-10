@@ -1,9 +1,18 @@
+
+. {
+	font-family: "Trebuchet MS", Arial, Helvetica;
+	font-size: 10px;
+}
+
 /*=== Layout ===*/
+
 #page{
 	margin: 0 auto;
 	width: 940px
 }
+
 /*=== Header ===*/
+
 #header{
 	height: 120px;
 	position:relative;
@@ -15,6 +24,10 @@
 
 #tabs {
 	font-size: 0.9em;
+}
+
+h1 {
+	font-size: 1.9em;
 }
 
 h2{

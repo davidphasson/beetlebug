@@ -60,7 +60,6 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
     <li><a href="#page_comments"><span>Comments</span></a></li>	
     <li><a href="#page_general"><span>General</span></a></li>	
   </ul>
-</div>
 
 <!--
 <div id="navbar" style="padding: 5px;">
@@ -77,10 +76,10 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 
 
 <!-- <div id="mpform_container" style="postion: relative;"> -->
-<div id="mpform_container" style="postion: relative;" align="left">
 
 <!-- <div id="page_general" style="position: absolute; top: 0px; left: 0px;"> -->	
-	<div id="page_general" class="form_tab">	
+	<div id="page_general">	
+		<div id="mpform_container" style="postion: relative;" align="left">
 
 		<%= render :partial => 'form_general', :locals => { :f => f } %>
 		<p>
@@ -89,34 +88,48 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 			-->
 			<%= button_to_function "Next", "next_tab();" %>
 		</p>
+
+		</div>
 	</div>
 
 
-	<div id="page_contact" style="display: none;" class="form_tab">	
+	<div id="page_contact">	
+		<div id="mpform_container" style="postion: relative;" align="left">
+
 		<%= render :partial => 'form_contact', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= button_to_function "Next", "next_tab();" %>
 		</p>
+
+		</div>
 	</div>
 
-	<div id="page_dates" style="display: none;" class="form_tab">	
+	<div id="page_dates">	
+		<div id="mpform_container" style="postion: relative;" align="left">
+
 		<%= render :partial => 'form_dates', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= button_to_function "Next", "next_tab();" %>
 		</p>
+
+		</div>
 	</div>
 	
-	<div id="page_times" style="display: none;" class="form_tab">	
+	<div id="page_times">	
+		<div id="mpform_container" style="postion: relative;" align="left">
+
 		<%= render :partial => 'form_times', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= button_to_function "Next", "next_tab();" %>
 		</p>
+
+		</div>
 	</div>
 
-	<div id="page_questions" style="display: none;" class="form_tab">	
+	<div id="page_questions">	
 		<%= render :partial => 'form_questions', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
@@ -124,7 +137,7 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 		</p>
 	</div>
 
-	<div id="page_multisite" style="display: none;" class="form_tab">	
+	<div id="page_multisite">	
 		<%= render :partial => 'form_multisite', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
@@ -132,13 +145,15 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 		</p>
 	</div>
 
-	<div id="page_comments" style="display: none;" class="form_tab">	
+	<div id="page_comments">	
 		<%= render :partial => 'form_comments', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= f.submit "Submit" %>
 		</p>
 	</div>
+
+</div>
 
 </div>
 
