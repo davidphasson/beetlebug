@@ -33,7 +33,6 @@
 }
 	
 .wufoo input.text, .wufoo textarea.textarea{
-	border:;
 }
 .wufoo .instruct{
 	border:0 solid #e6e6e6;
@@ -108,7 +107,6 @@
 	color:#000000;
 }
 .wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label{
-	font-family:;
 	color:#000000;
 }
 
