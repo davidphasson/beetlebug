@@ -118,6 +118,8 @@
 
 <!-- Backup dates -->
 
+<!-- Temporary Disable -->
+<!--
 <li id="a124" class="    ">
 	<%= f.check_box :backup_dates, :onclick => "$('backup_dates_div').toggle();" %>
 	<%= f.label :backup_dates, "I want to specify additional backup dates" %>
@@ -160,6 +162,8 @@
 	$('backup_dates_div').hide();
   <% end %>
 </script>
+
+-->
 
 <%= f.group_start( [:date_comments], { :position => "full" } ) %>
 	<%= f.label :date_comments, "Date Comments" %>
