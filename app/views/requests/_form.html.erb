@@ -64,11 +64,10 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
+		<!-- Partial -->
 		<%= render :partial => 'form_general', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
-			<!--
-			<%= button_to_function "Next", "switch_tab('page_contact');" %>
-			-->
 			<%= button_to_function "Next", "next_tab()" %>
 		</p>
 
@@ -81,7 +80,9 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
+		<!-- Partial -->
 		<%= render :partial => 'form_contact', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
 			<%= button_to_function "Prev", "prev_tab()" %>
 			<%= button_to_function "Next", "next_tab()" %>
@@ -95,7 +96,9 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
+		<!-- Partial -->
 		<%= render :partial => 'form_dates', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
 			<%= button_to_function "Prev", "prev_tab()" %>
 			<%= button_to_function "Next", "next_tab()" %>
@@ -109,7 +112,9 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
+		<!-- Partial -->
 		<%= render :partial => 'form_times', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
 			<%= button_to_function "Prev", "prev_tab()" %>
 			<%= button_to_function "Next", "next_tab()" %>
@@ -122,11 +127,15 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<div id="page_questions">	
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
+
+		<!-- Partial -->
 		<%= render :partial => 'form_questions', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
 			<%= button_to_function "Prev", "prev_tab()" %>
 			<%= button_to_function "Next", "next_tab()" %>
 		</p>
+
 		</div>
 		</div>
 	</div>
@@ -134,11 +143,15 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<div id="page_multisite">	
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
+
+		<!-- Partial -->
 		<%= render :partial => 'form_multisite', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
 			<%= button_to_function "Prev", "prev_tab()" %>
 			<%= button_to_function "Next", "next_tab()" %>
 		</p>
+
 		</div>
 		</div>
 	</div>
@@ -146,11 +159,15 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 	<div id="page_comments">	
 	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
+
+		<!-- Partial -->
 		<%= render :partial => 'form_comments', :locals => { :f => f } %>
+		<!-- End Partial -->
 		<p>
 			<%= button_to_function "Prev", "prev_tab()" %>
 			<%= f.submit "Submit" %>
 		</p>
+
 		</div>
 		</div>
 	</div>
