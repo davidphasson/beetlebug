@@ -1,8 +1,101 @@
+/*=== Basic Sanity ===*/
 
-. {
-	font-family: "Trebuchet MS", Arial, Helvetica;
-	font-size: 10px;
+body {
+	font-family: Verdana, Helvetica, Arial;
+	font-size: 14px;
 }
+
+
+/* Lame wufoo attemps */
+/* 
+
+img a img {
+	border: medium none;
+}
+
+label.choice {
+	display: inline;
+	line-height: 1.5em;
+}
+
+label.desc {
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+span label {
+	clear: both;
+	padding-top: 6px;
+}
+
+p.instruct {
+	display: block;
+	background-color: #eee;
+	border: 1px solid #ccc;
+	padding: 3px;
+	margin: 10px;
+	float: none;
+}
+
+Sets up wierd span tags from wufoo: 
+
+div.col span {
+	display: block;
+}
+
+div.block span {
+	display: block;
+}
+
+form li.leftHalf,
+form li.rightHalf {
+	width:46% !important;
+}
+
+form li.leftHalf {
+	clear: left;
+	float: left;
+}
+
+form li.rightHalf {
+	clear: right;
+	float: right;
+}
+
+form li {
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 4px 5px 2px 9px;
+}
+
+form li span {
+	float: left;
+}
+
+input.radio {
+	display: inline;
+	height: 13px;
+	width: 13px;
+	margin: 0.6em 0 0 3px;
+}
+
+*/
+
+/* Fix tabs */
+
+ul.tablist li {
+	display: inline;
+	clear: none;
+	font-size: 0.9em;
+}
+
+ul.tablist li div,
+ul.tablist li span {
+	padding: 0 0 2px 2px;
+}
+
 
 /*=== Layout ===*/
 
@@ -18,6 +111,7 @@
 	position:relative;
 	font-family: "Trebuchet MS",Arialcol,Helvetica
 }
+
 #header .spacer{
 	float: right
 }
@@ -27,12 +121,12 @@
 }
 
 h1 {
-	font-size: 1.9em;
+	font-size: 1.5em;
 }
 
 h2{
 	color: #262625;
-	font-size: 1.8em;
+	font-size: 1.4em;
 	letter-spacing: -1px;
 	margin: 0 0 .8em
 }
@@ -41,7 +135,7 @@ h2 a{
 }
 h3{
 	color: #262625;
-	font-size: 1.6em;
+	font-size: 1.2em;
 	margin: 0 0 1em
 }
 h4{

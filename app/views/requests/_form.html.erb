@@ -50,7 +50,7 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 </div>
 
 <div id="tabs">
-  <ul>
+  <ul class="tablist">
     <li><a href="#page_general"><span>General</span></a></li>	
     <li><a href="#page_contact"><span>Contact</span></a></li>	
     <li><a href="#page_dates"><span>Dates</span></a></li>	
@@ -58,27 +58,10 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
     <li><a href="#page_questions"><span>Questions</span></a></li>	
     <li><a href="#page_multisite"><span>Multi-School Visits</span></a></li>	
     <li><a href="#page_comments"><span>Comments</span></a></li>	
-    <li><a href="#page_general"><span>General</span></a></li>	
   </ul>
 
-<!--
-<div id="navbar" style="padding: 5px;">
-	<%= f.tab_button "general", link_to_function("General", "switch_tab('page_general');"), general_fields, { :current => true } %>
-	<%= f.tab_button "contact", link_to_function("Contact", "switch_tab('page_contact');"), contact_fields %>
-	<%= f.tab_button "dates", link_to_function("Dates", "switch_tab('page_dates');"), date_fields %>
-	<%= f.tab_button "times", link_to_function("Times", "switch_tab('page_times');"), time_fields %>
-	<%= f.tab_button "questions", link_to_function("Questions", "switch_tab('page_questions');"), question_fields %>
-	<%= f.tab_button "multisite", link_to_function("Multi-School Visits", "switch_tab('page_multisite');"), multisite_fields %>
-	<%= f.tab_button "comments", link_to_function("Comments", "switch_tab('page_comments');"), comment_fields %>	
-</div>
--->
-
-
-
-<!-- <div id="mpform_container" style="postion: relative;"> -->
-
-<!-- <div id="page_general" style="position: absolute; top: 0px; left: 0px;"> -->	
 	<div id="page_general">	
+	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
 		<%= render :partial => 'form_general', :locals => { :f => f } %>
@@ -90,10 +73,12 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 		</p>
 
 		</div>
+		</div>
 	</div>
 
 
 	<div id="page_contact">	
+	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
 		<%= render :partial => 'form_contact', :locals => { :f => f } %>
@@ -103,9 +88,11 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 		</p>
 
 		</div>
+		</div>
 	</div>
 
 	<div id="page_dates">	
+	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
 		<%= render :partial => 'form_dates', :locals => { :f => f } %>
@@ -115,9 +102,11 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 		</p>
 
 		</div>
+		</div>
 	</div>
 	
 	<div id="page_times">	
+	    <div class="wufoo">
 		<div id="mpform_container" style="postion: relative;" align="left">
 
 		<%= render :partial => 'form_times', :locals => { :f => f } %>
@@ -127,30 +116,43 @@ comment_fields = [:essay_visit_reason, :essay_hope_receive, :essay_writing_appro
 		</p>
 
 		</div>
+		</div>
 	</div>
 
 	<div id="page_questions">	
+	    <div class="wufoo">
+		<div id="mpform_container" style="postion: relative;" align="left">
 		<%= render :partial => 'form_questions', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= button_to_function "Next", "next_tab();" %>
 		</p>
+		</div>
+		</div>
 	</div>
 
 	<div id="page_multisite">	
+	    <div class="wufoo">
+		<div id="mpform_container" style="postion: relative;" align="left">
 		<%= render :partial => 'form_multisite', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= button_to_function "Next", "next_tab();" %>
 		</p>
+		</div>
+		</div>
 	</div>
 
 	<div id="page_comments">	
+	    <div class="wufoo">
+		<div id="mpform_container" style="postion: relative;" align="left">
 		<%= render :partial => 'form_comments', :locals => { :f => f } %>
 		<p>
 			<%= button_to_function "Prev", "prev_tab();" %>
 			<%= f.submit "Submit" %>
 		</p>
+		</div>
+		</div>
 	</div>
 
 </div>
