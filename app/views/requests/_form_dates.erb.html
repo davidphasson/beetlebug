@@ -15,6 +15,20 @@
 </li>
 
 
+<%= f.group_start( [:first_school_date], { :position => "left" } ) %>
+	<%= f.label :first_school_date, "When is your first day of school?", :class => "desc" %>
+	<%= f.date_picker :first_school_date %>
+	<p class="instruct" id="instruct145"><small>The first week of school is not the best time for Mr. Mike to visit.</small></p>
+	<%= f.error_message_on :first_school_date, :prepend_text => 'This date ' %>	
+</li>
+
+<%= f.group_start( [:last_school_date], { :position => "right" } ) %>
+	<%= f.label :last_school_date, "When is your last day of school?", :class => "desc" %>
+	<%= f.date_picker :last_school_date %>
+	<p class="instruct" id="instruct145"><small>The last 3 weeks of the school year are not a good time for Mr. Mike's visit.</small></p>
+	<%= f.error_message_on :last_school_date, :prepend_text => 'This date ' %>
+</li>
+
 <%= f.group_start( [:winter_break_start], { :position => "left" } ) %>
 	<%= f.label :winter_break_start, "When is your Winter Break? <br />School is out on:", :class => "desc" %>
 	<%= f.date_picker :winter_break_start %>
@@ -44,20 +58,6 @@
 	<%= f.date_picker :spring_break_end %>
 	<p class="instruct" id="instruct144"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
 	<%= f.error_message_on :spring_break_end, :prepend_text => 'This date ' %>	
-</li>
-
-<%= f.group_start( [:first_school_date], { :position => "left" } ) %>
-	<%= f.label :first_school_date, "When is your first day of school?", :class => "desc" %>
-	<%= f.date_picker :first_school_date %>
-	<p class="instruct" id="instruct145"><small>The first week of school is not the best time for Mr. Mike to visit.</small></p>
-	<%= f.error_message_on :first_school_date, :prepend_text => 'This date ' %>	
-</li>
-
-<%= f.group_start( [:last_school_date], { :position => "right" } ) %>
-	<%= f.label :last_school_date, "When is your last day of school?", :class => "desc" %>
-	<%= f.date_picker :last_school_date %>
-	<p class="instruct" id="instruct145"><small>The last 3 weeks of the school year are not a good time for Mr. Mike's visit.</small></p>
-	<%= f.error_message_on :last_school_date, :prepend_text => 'This date ' %>
 </li>
 
 <!-- Preferred Dates -->
