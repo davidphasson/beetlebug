@@ -1,5 +1,9 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%
+# Setup
+  parent_root = "http://www.beetlebugbooks.com"
+%>
 <html>
 <head>
     <title>Assembly Request</title>
@@ -29,7 +33,7 @@
 							`
 
 	<style>
-	body{background: url('http://amandahammond.com/beetlebug/wp-content/uploads/2009/02/bbb-website-background-blue-polkadots.jpg');}
+	body{background: url('<%= parent_root %>/wp-content/uploads/2009/02/bbb-website-background-blue-polkadots.jpg');}
 	</style>
 
 </head>
@@ -42,8 +46,8 @@
 
 	<div id="header">
 		<div id="logo">
-	        <h1><a href="http://amandahammond.com/beetlebug" title="Illustrated Children&#8217;s Books">
-				<img src="http://amandahammond.com/beetlebug/wp-content/uploads/2009/02/logo4.png" 
+	        <h1><a href="<%= parent_root %>/" title="Illustrated Children&#8217;s Books">
+				<img src="<%= parent_root %>/wp-content/uploads/2009/02/logo4.png" 
 					style="margin-top:0px;" alt="Beetle Bug Books" /></a>
 			</h1>
 	    </div>
@@ -52,17 +56,17 @@
 			<ul>
 				<!-- add current_page_item class for the current page -->
 				<li class="page_item page-item-2113">
-					<a href="http://amandahammond.com/beetlebug" title="Home"><span>Home</span></a></li>
+					<a href="<%= parent_root %>/" title="Home"><span>Home</span></a></li>
 				<li class="page_item page-item-5">
-					<a href="http://amandahammond.com/beetlebug/kids/" title="Kids"><span>Kids</span></a></li>
+					<a href="<%= parent_root %>/kids/" title="Kids"><span>Kids</span></a></li>
 				<li class="page_item page-item-8">
-					<a href="http://amandahammond.com/beetlebug/books/" title="Books"><span>Books</span></a></li>
+					<a href="<%= parent_root %>/books/" title="Books"><span>Books</span></a></li>
 				<li class="page_item page-item-13">
-					<a href="http://amandahammond.com/beetlebug/schools/" title="Schools"><span>Schools</span></a></li>
+					<a href="<%= parent_root %>/schools/" title="Schools"><span>Schools</span></a></li>
 				<li class="page_item page-item-15">
-					<a href="http://amandahammond.com/beetlebug/about-mr-mike/" title="Mr. Mike"><span>Mr. Mike</span></a></li>
+					<a href="<%= parent_root %>/about-mr-mike/" title="Mr. Mike"><span>Mr. Mike</span></a></li>
 				<li class="page_item page-item-12">
-					<a href="http://amandahammond.com/beetlebug/contact/" title="Contact"><span>Contact</span></a></li>
+					<a href="<%= parent_root %>/contact/" title="Contact"><span>Contact</span></a></li>
 			</ul>
 		</div>
 		<!--/nav1-->
