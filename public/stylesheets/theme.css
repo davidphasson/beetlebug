@@ -43,29 +43,21 @@
 .wufoo .info h2{
 	font-size:160%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#000000;
 }
 .wufoo .info div{
 	font-size:95%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#444444;
 }
 .wufoo .section h3{
 	font-size:110%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#000000;
 }
 .wufoo .section div{
 	font-size:85%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#444444;
 }
 
@@ -83,8 +75,6 @@
 .wufoo label.desc{
 	font-size:95%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#444444;
 }
 .wufoo li div, .wufoo li span, .wufoo li div label, .wufoo li span label{
@@ -94,22 +84,16 @@
 .wufoo label.choice{
 	font-size:100%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#444444;
 }
 .wufoo input.text, .wufoo textarea.textarea, .wufoo select.select{
 	font-size:100%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#333333;
 }
 .wufoo .instruct{
 	font-size:80%;
 	font-family:inherit;
-	font-weight:;
-	font-style:;
 	color:#ffffff;
 }
 .altInstruct .instruct, .wufoo li.leftHalf .instruct, .wufoo li.rightHalf .instruct{
@@ -119,17 +103,8 @@
 	border:none;
 }
 .wufoo input.btTxt{
-	font-size:;
-	font-family:;
-	font-weight:;
-	font-style:;
-	color:;
 }
 .wufoo li.focused label.desc{
-	font-size:;
-	font-family:;
-	font-weight:;
-	font-style:;
 	color:#000000;
 }
 .wufoo li.focused div, .wufoo li.focused span, .wufoo li.focused div label, .wufoo li.focused span label{
