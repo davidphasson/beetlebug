@@ -121,6 +121,7 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
   def group_start(fields = [], options = {})
     object = @template.instance_variable_get("@#{@object_name}")
     
+    css_class = "    "
     css_class = "    "  if options[:position] == "full"
     css_class = "leftHalf     "  if options[:position] == "left"    
     css_class = "rightHalf     "  if options[:position] == "right"
@@ -141,7 +142,6 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
     
     css_class += "error" if have_errors
         
-# todo: don't return blank classes
     return "<li class=\"#{css_class}\" id=\"#{ options[:id] }\" style=\"#{ options[:style] }\">"
         
   end
