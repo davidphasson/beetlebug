@@ -121,12 +121,12 @@
 <!-- Backup dates -->
 
 <li id="a124" class="    ">
-	<%= f.check_box :backup_dates, :onclick => '$("#backup_dates_div").toggle();' %>
+	<%= f.check_box :backup_dates, :onclick => '$("#backup_dates_div").toggle("medium");' %>
 	<%= f.label :backup_dates, "I want to specify additional backup dates" %>
 </li>
 </ul>
 
-<div id="backup_dates_div" style="display: none;">
+<div id="backup_dates_div" style="display: none; overflow: hidden;">
 <ul>
 
 <%= f.group_start( [:backup_date1], { :position => "left" } ) %>

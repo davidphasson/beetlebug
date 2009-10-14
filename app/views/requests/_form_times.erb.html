@@ -184,11 +184,11 @@
 		:class => "desc", :required_field => true %>
 	<div class="col">
 		<span>
-		<%= f.radio_button :lunch_with_mike, true, :onclick => '$("#mike_lunch_div").show();'  %>
+		<%= f.radio_button :lunch_with_mike, true, :onclick => '$("#mike_lunch_div").show("medium");'  %>
 			<label class="choice">Yes</label>
 		</span>
 		<span>
-		<%= f.radio_button :lunch_with_mike, false, :onclick => '$("#mike_lunch_div").hide();'  %>
+		<%= f.radio_button :lunch_with_mike, false, :onclick => '$("#mike_lunch_div").hide("medium");'  %>
 			<label class="choice">No</label>
 		</span>
 	</div>

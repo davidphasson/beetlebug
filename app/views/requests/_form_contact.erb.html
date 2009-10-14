@@ -211,9 +211,8 @@
 	<p class="instruct" id="instruct46"><small>Where all your mail goes!  If your school is in a different location, then also complete the 'Physical Address' below!</small></p>
 <%= f.group_end() %>
 
-<!-- Temporarily Disable -->
 <li id="a123" class="    ">
-	<%= f.check_box :school_phys_address_same, :onclick => '$("#phys_address_div").toggle();' %>
+	<%= f.check_box :school_phys_address_same, :onclick => '$("#phys_address_div").toggle("medium");' %>
 	<%= f.label :school_phys_address_same, "Our physical address is the same as our mailing address" %>
 </li>
 
