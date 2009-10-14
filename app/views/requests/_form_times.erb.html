@@ -184,11 +184,11 @@
 		:class => "desc", :required_field => true %>
 	<div class="col">
 		<span>
-		<%= f.radio_button :lunch_with_mike, true , :onclick => "$('mike_lunch_div').show();"  %>
+		<%= f.radio_button :lunch_with_mike, true, :onclick => '$("#mike_lunch_div").show();'  %>
 			<label class="choice">Yes</label>
 		</span>
 		<span>
-		<%= f.radio_button :lunch_with_mike, false, :onclick => "$('mike_lunch_div').hide();"  %>
+		<%= f.radio_button :lunch_with_mike, false, :onclick => '$("#mike_lunch_div").hide();'  %>
 			<label class="choice">No</label>
 		</span>
 	</div>
@@ -196,8 +196,10 @@
 	<%= f.error_message_on :lunch_with_mike, :prepend_text => 'This question ' %>									
 <%= f.group_end() %>
 
-<div id="mike_lunch_div" style="display: none;">
+</ul>
 
+<div id="mike_lunch_div" style="display: none;"> 
+<ul>
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
 	<% #f.datetime_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
@@ -229,14 +231,14 @@
 	<%= f.error_message_on :lunch_room, :prepend_text => 'Room ' %>										
 <%= f.group_end() %>
 
-</div>
+</ul>
+</div> 
 
 <script>
   <% if @request.lunch_with_mike == true %>
-	$('mike_lunch_div').show();
+	$("#mike_lunch_div").show();
   <% else %>
-	$('mike_lunch_div').hide();
+	$("#mike_lunch_div").hide();
   <% end %>
 </script>
 
-</ul>

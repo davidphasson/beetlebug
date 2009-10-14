@@ -2,63 +2,65 @@
 
 <ul>
 
-<li id="fo1li60" class="section     ">
-	<h3 id="title60">Event Information</h3>
-	<div id="instruct60">Check your district &amp; school calendars and our blackout dates in the 
-		<a href="/schools/dates-available/" target="_blank">'School Visit Dates Available'</a>
-		section. MONDAYS and FRIDAYS ARE AVAILABLE for schools arranging multi-school visits!<br />
-		<br />
-		Please select 'Preferred Dates' and 'Additional Dates' from the 
-		<a href="/schools/dates-available/" target="_blank">'School Visit Dates Available'</a> page. <br />
-		Your school must be in session 2 weeks before and at least 1 week after Mr. Mike's visit.
-	</div>
-</li>
+  <li id="fo1li60" class="section     ">
+	  <h3 id="title60">Event Information</h3>
+	  <div id="instruct60">Check your district &amp; school calendars and our blackout dates in the 
+		  <a href="/schools/dates-available/" target="_blank">'School Visit Dates Available'</a>
+		  section. MONDAYS and FRIDAYS ARE AVAILABLE for schools arranging multi-school visits!<br />
+		  <br />
+		  Please select 'Preferred Dates' and 'Additional Dates' from the 
+		  <a href="/schools/dates-available/" target="_blank">'School Visit Dates Available'</a> page. <br />
+		  Your school must be in session 2 weeks before and at least 1 week after Mr. Mike's visit.
+	  </div>
+  </li>
 
 
-<%= f.group_start( [:first_school_date], { :position => "left" } ) %>
-	<%= f.label :first_school_date, "When is your first day of school?", :class => "desc" %>
-	<%= f.date_picker :first_school_date %>
-	<p class="instruct" id="instruct145"><small>The first week of school is not the best time for Mr. Mike to visit.</small></p>
-	<%= f.error_message_on :first_school_date, :prepend_text => 'This date ' %>	
-</li>
+  <%= f.group_start( [:first_school_date], { :position => "left" } ) %>
+	  <%= f.label :first_school_date, "When is your first day of school?", :class => "desc" %>
+	  <%= f.date_picker :first_school_date %>
+	  <p class="instruct" id="instruct145">
+	    <small>The first week of school is not the best time for Mr. Mike to visit.</small>
+	  </p>
+	  <%= f.error_message_on :first_school_date, :prepend_text => 'This date ' %>	
+  </li>
 
-<%= f.group_start( [:last_school_date], { :position => "right" } ) %>
-	<%= f.label :last_school_date, "When is your last day of school?", :class => "desc" %>
-	<%= f.date_picker :last_school_date %>
-	<p class="instruct" id="instruct145"><small>The last 3 weeks of the school year are not a good time for Mr. Mike's visit.</small></p>
-	<%= f.error_message_on :last_school_date, :prepend_text => 'This date ' %>
-</li>
+  <%= f.group_start( [:last_school_date], { :position => "right" } ) %>
+	  <%= f.label :last_school_date, "When is your last day of school?", :class => "desc" %>
+	  <%= f.date_picker :last_school_date %>
+	  <p class="instruct" id="instruct145"><small>The last 3 weeks of the school year are not a good time for Mr. Mike's visit.</small></p>
+	  <%= f.error_message_on :last_school_date, :prepend_text => 'This date ' %>
+  </li>
 
-<%= f.group_start( [:winter_break_start], { :position => "left" } ) %>
-	<%= f.label :winter_break_start, "When is your Winter Break? <br />School is out on:", :class => "desc" %>
-	<%= f.date_picker :winter_break_start %>
-	<p class="instruct" id="instruct142"><small>Mr. Mike cannot visit during the week before you leave for Winter Break.</small></p>
-	<%= f.error_message_on :winter_break_start, :prepend_text => 'This date ' %>	
-</li>
-
-
-<%= f.group_start( [:winter_break_end], { :position => "right" } ) %>
-	<%= f.label :winter_break_end, "When is your Winter Break? <br />School is back in session on:", :class => "desc" %>
-	<%= f.date_picker :winter_break_end %>
-	<p class="instruct" id="instruct141"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
-	<%= f.error_message_on :winter_break_end, :prepend_text => 'This date ' %>	
-</li>
+  <%= f.group_start( [:winter_break_start], { :position => "left" } ) %>
+	  <%= f.label :winter_break_start, "When is your Winter Break? <br />School is out on:", :class => "desc" %>
+	  <%= f.date_picker :winter_break_start %>
+	  <p class="instruct" id="instruct142"><small>Mr. Mike cannot visit during the week before you leave for Winter Break.</small></p>
+	  <%= f.error_message_on :winter_break_start, :prepend_text => 'This date ' %>	
+  </li>
 
 
-<%= f.group_start( [:spring_break_start], { :position => "left" } ) %>
-	<%= f.label :spring_break_start, "When is your Spring Break? <br />School is out on:", :class => "desc" %>
-	<%= f.date_picker :spring_break_start %>
-	<p class="instruct" id="instruct143"><small>Mr. Mike cannot visit during the week before you leave for Spring Break.</small></p>
-	<%= f.error_message_on :spring_break_start, :prepend_text => 'This date ' %>	
-</li>
+  <%= f.group_start( [:winter_break_end], { :position => "right" } ) %>
+	  <%= f.label :winter_break_end, "When is your Winter Break? <br />School is back in session on:", :class => "desc" %>
+	  <%= f.date_picker :winter_break_end %>
+	  <p class="instruct" id="instruct141"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
+	  <%= f.error_message_on :winter_break_end, :prepend_text => 'This date ' %>	
+  </li>
 
 
-<%= f.group_start( [:spring_break_end], { :position => "right" } ) %>
-	<%= f.label :spring_break_end, "When is your Spring Break? <br />School is back in session on:", :class => "desc" %>
-	<%= f.date_picker :spring_break_end %>
-	<p class="instruct" id="instruct144"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
-	<%= f.error_message_on :spring_break_end, :prepend_text => 'This date ' %>	
-</li>
+  <%= f.group_start( [:spring_break_start], { :position => "left" } ) %>
+	  <%= f.label :spring_break_start, "When is your Spring Break? <br />School is out on:", :class => "desc" %>
+	  <%= f.date_picker :spring_break_start %>
+	  <p class="instruct" id="instruct143"><small>Mr. Mike cannot visit during the week before you leave for Spring Break.</small></p>
+	  <%= f.error_message_on :spring_break_start, :prepend_text => 'This date ' %>	
+  </li>
+
+
+  <%= f.group_start( [:spring_break_end], { :position => "right" } ) %>
+	  <%= f.label :spring_break_end, "When is your Spring Break? <br />School is back in session on:", :class => "desc" %>
+	  <%= f.date_picker :spring_break_end %>
+	  <p class="instruct" id="instruct144"><small>Mr. Mike can visit at least 2 weeks after this date.</small></p>
+	  <%= f.error_message_on :spring_break_end, :prepend_text => 'This date ' %>	
+  </li>
 
 <!-- Preferred Dates -->
 
@@ -118,17 +120,16 @@
 
 <!-- Backup dates -->
 
-<!-- Temporary Disable -->
-<!--
 <li id="a124" class="    ">
-	<%= f.check_box :backup_dates, :onclick => "$('backup_dates_div').toggle();" %>
+	<%= f.check_box :backup_dates, :onclick => '$("#backup_dates_div").toggle();' %>
 	<%= f.label :backup_dates, "I want to specify additional backup dates" %>
 </li>
-
-
+</ul>
 
 <div id="backup_dates_div" style="display: none;">
-	<%= f.group_start( [:backup_date1], { :position => "left" } ) %>
+<ul>
+
+<%= f.group_start( [:backup_date1], { :position => "left" } ) %>
 	<%= f.label :backup_date1, 'Backup Date #1', :class => "desc" %>
 	<%= f.date_picker :backup_date1 %>
 	<%= f.error_message_on :backup_date1, :prepend_text => 'This date ' %>	
@@ -152,25 +153,27 @@
 	<%= f.error_message_on :backup_date4, :prepend_text => 'This date ' %>	
 </li>
 
+</ul>
 </div>
 
 <!-- Display backup dates -->
 <script>
   <% if @request.backup_dates? %>
-	$('backup_dates_div').show();
+	$("#backup_dates_div").show();
   <% else %>
-	$('backup_dates_div').hide();
+	$("#backup_dates_div").hide();
   <% end %>
 </script>
 
--->
-
-<%= f.group_start( [:date_comments], { :position => "full" } ) %>
-	<%= f.label :date_comments, "Date Comments" %>
-	<div><%= f.text_area :date_comments, :cols => 50, :rows => 10, :class => "field textarea small" %></div>
-	<p class="instruct" id="instruct116"><small>Is there anything you'd like us to know about the dates 
-		you've indicated, like special situations, special events, etc...?</small></p>
-	<%= f.error_message_on :date_comments, :prepend_text => 'This question ' %>			
-</li>
+<ul>
+  <%= f.group_start( [:date_comments], { :position => "full" } ) %>
+	  <%= f.label :date_comments, "Date Comments" %>
+	  <div><%= f.text_area :date_comments, :cols => 50, :rows => 10, :class => "field textarea small" %></div>
+	  <p class="instruct" id="instruct116">
+	    <small>Is there anything you'd like us to know about the dates 
+		  you've indicated, like special situations, special events, etc...?</small>
+	  </p>
+	  <%= f.error_message_on :date_comments, :prepend_text => 'This question ' %>			
+  </li>
 
 </ul>

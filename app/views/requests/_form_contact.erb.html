@@ -211,12 +211,16 @@
 	<p class="instruct" id="instruct46"><small>Where all your mail goes!  If your school is in a different location, then also complete the 'Physical Address' below!</small></p>
 <%= f.group_end() %>
 
+<!-- Temporarily Disable -->
 <li id="a123" class="    ">
-	<%= f.check_box :school_phys_address_same, :onclick => "$('phys_address_div').toggle();" %>
+	<%= f.check_box :school_phys_address_same, :onclick => '$("#phys_address_div").toggle();' %>
 	<%= f.label :school_phys_address_same, "Our physical address is the same as our mailing address" %>
 </li>
 
+</ul>
+
 <div id="phys_address_div">
+<ul>
 <%= f.group_start( [:school_phys_address1, :school_phys_address2, :school_phys_city, :school_phys_state,
 					:school_phys_zipcode, :school_phys_country], { :position => "full", :id => "fo1li52" } ) %>
 	<label class="desc" id="title52">Physical Address <small>(different from mailing address)</small></label>
@@ -254,16 +258,18 @@
 	</div>
 	<p class="instruct" id="instruct52"><small>How we find your school on a GPS and map!</small></p>
 <%= f.group_end() %>
+</ul>
 </div>
 
 <script>
   <% if @request.school_phys_address_same? %>
-	$('phys_address_div').hide();
+	$("#phys_address_div").hide();
   <% else %>
-	$('phys_address_div').show();
+	$("#phys_address_div").show();
   <% end %>
 </script>
 
+<ul>
 <li class="break    "></li>
 
 <%= f.group_start( [:school_county], { :position => "full" } ) %>

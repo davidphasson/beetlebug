@@ -3,7 +3,9 @@
 // Initialize jQuery UI Elements
 $(document).ready( function() {
     $("#tabs").tabs();
+
 });
+
 
 function next_tab() {
     var $tabs = $('#tabs').tabs();
