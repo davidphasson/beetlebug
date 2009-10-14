@@ -202,7 +202,6 @@
 <ul>
 <%= f.group_start( [:lunch_start], { :position => "left" } ) %>
 	<%= f.label :lunch_start, 'If YES, what time will it start?', :class => "desc" %>
-	<% #f.datetime_select :lunch_start, :minute_step => 15, :include_blank => true, :ignore_date => true   %>	
 	<span>
 	<%= select_time @request.lunch_start, { :prefix => "lunch_start", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	</span>
@@ -214,7 +213,6 @@
 
 <%= f.group_start( [:lunch_end], { :position => "right" } ) %>
 	<%= f.label :lunch_end, 'What time will it end?', :class => "desc" %>
-	<% # f.time_select :lunch_end, :minute_step => 15, :include_blank => true, :ignore_date => true   %>
 	<span>
 		<%= select_time @request.lunch_end, { :prefix => "lunch_end", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
 	</span>			
