@@ -38,7 +38,6 @@
 
 
 <%= f.group_start( [:assembly_time2], { :position => "full" } ) %>
-	<label class="desc" id="title72" for="Field72">
 	<%= f.label :assembly_time2, 'Assembly #2', :class => "desc" %>
 	<% # f.time_select :assembly_time2, :minute_step => 15, :include_blank => true %>
 	<%= select_time @request.assembly_time2, { :prefix => "assembly_time2", :minute_step => 5, :time_separator => " : ", :include_blank => true } %>
