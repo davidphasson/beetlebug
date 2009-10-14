@@ -142,10 +142,10 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
     
     css_class += "error" if have_errors
         
-    if options[:id].exists?
-      return "<li class=\"#{css_class}\" id=\"#{ options[:id] }\" style=\"#{ options[:style] }\">"
-    else
+    if options[:id].nil?
       return "<li class=\"#{css_class}\" style=\"#{ options[:style] }\">"
+    else
+      return "<li class=\"#{css_class}\" id=\"#{ options[:id] }\" style=\"#{ options[:style] }\">"
     end
         
   end
