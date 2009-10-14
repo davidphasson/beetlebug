@@ -141,6 +141,7 @@ class ErrorFormBuilder < ActionView::Helpers::FormBuilder
     
     css_class += "error" if have_errors
         
+# todo: don't return blank classes
     return "<li class=\"#{css_class}\" id=\"#{ options[:id] }\" style=\"#{ options[:style] }\">"
         
   end
