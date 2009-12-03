@@ -152,20 +152,20 @@
 				<p>
 					<b>Preferred Dates:</b>
 					<br/>
-					<%=h @request.preferred_date1.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.preferred_date2.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.preferred_date3.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.preferred_date4.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.preferred_date1.strftime("%d/%m/%Y") if @request.preferred_date1.present? %><br/>
+					<%=h @request.preferred_date2.strftime("%d/%m/%Y") if @request.preferred_date2.present?  %><br/>
+					<%=h @request.preferred_date3.strftime("%d/%m/%Y") if @request.preferred_date3.present?  %><br/>
+					<%=h @request.preferred_date4.strftime("%d/%m/%Y") if @request.preferred_date4.present?  %><br/>
 				</p>
 			</td>
 			<td width="33%">
 				<p>
 					<b>Alternate Dates:</b>
 					<br/>
-					<%=h @request.alternate_date1.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.alternate_date2.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.alternate_date3.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.alternate_date4.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.alternate_date1.strftime("%d/%m/%Y") if @request.alternate_date1.present?  %><br/>
+					<%=h @request.alternate_date2.strftime("%d/%m/%Y") if @request.alternate_date2.present?  %><br/>
+					<%=h @request.alternate_date3.strftime("%d/%m/%Y") if @request.alternate_date3.present?  %><br/>
+					<%=h @request.alternate_date4.strftime("%d/%m/%Y") if @request.alternate_date4.present?  %><br/>
 				</p>
 			</td>
 			<td width="33%">
@@ -173,10 +173,10 @@
 				<p>
 					<b>Backup Dates:</b>
 					<br/>
-					<%=h @request.backup_date1.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.backup_date2.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.backup_date3.strftime("%d/%m/%Y") %><br/>
-					<%=h @request.backup_date4.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.backup_date1.strftime("%d/%m/%Y") if @request.backup_date1.present?  %><br/>
+					<%=h @request.backup_date2.strftime("%d/%m/%Y") if @request.backup_date2.present?  %><br/>
+					<%=h @request.backup_date3.strftime("%d/%m/%Y") if @request.backup_date3.present?  %><br/>
+					<%=h @request.backup_date4.strftime("%d/%m/%Y") if @request.backup_date4.present?  %><br/>
 				</p>
 				<% end %>
 			</td>
