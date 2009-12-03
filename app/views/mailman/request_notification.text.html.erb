@@ -196,12 +196,12 @@
 <div class="infoblock">
 	<p>
 		<b>Assembly Times:</b> 
-		<%=h "#{sprintf("%02d", @request.assembly_time1.hour)}:#{sprintf("%02d", @request.assembly_time1.min)}" %>
+		<%=h "#{sprintf('%02d', @request.assembly_time1.hour)}:#{sprintf('%02d', @request.assembly_time1.min)}" %>
 		<% if @request.assembly_time2 %>
-			; <%=h "#{@request.assembly_time2.hour}:#{@request.assembly_time2.min}" %>
+			; <%=h "#{sprintf('%02d', @request.assembly_time2.hour)}:#{sprintf('%02d', @request.assembly_time2.min)}" %>
 		<% end %>
 		<% if @request.assembly_time3 %>		
-			; <%=h "#{@request.assembly_time3.hour}:#{@request.assembly_time3.min}" %>
+			; <%=h "#{sprintf('%02d', @request.assembly_time3.hour)}:#{sprintf('%02d', @request.assembly_time3.min)}" %>
 		<% end %>
 	</p>
 	<p>
@@ -226,7 +226,7 @@
 	<% end %>
 	<% if @request.lunch_with_mike? %>
 		<p>The school <b>is requesting</b> lunch with Mr. Mike<br/>
-			<b>Time:</b> <%=h "#{@request.lunch_start.hour}:#{@request.lunch_start.min} - #{@request.lunch_end.hour}:#{@request.lunch_end.min}" %><br/>
+			<b>Time:</b> <%=h "#{sprintf('%02d', @request.lunch_start.hour)}:#{sprintf('%02d', @request.lunch_start.min)} - #{sprintf('%02d', @request.lunch_end.hour)}:#{sprintf('%02d', @request.lunch_end.min)}" %><br/>
 			<b>Room:</b> <%=h @request.lunch_room %>
 		</p>
 	<% else %>
@@ -240,7 +240,7 @@
 	<table>
 		<% if @request.monday_date %>
 		<tr>
-			<td><%=h @request.monday_date %></td>
+			<td><%=h @request.monday_date.strftime("%d/%m/%Y") %></td>
 			<td><%=h @request.monday_school %></td>
 			<td>
 				<%=h "#{@request.monday_contact_first} #{@request.monday_contact_last}" %>
@@ -251,7 +251,7 @@
 		<% end %>
 		<% if @request.tuesday_date %>
 		<tr>
-			<td><%=h @request.tuesday_date %></td>
+			<td><%=h @request.tuesday_date.strftime("%d/%m/%Y") %></td>
 			<td><%=h @request.tuesday_school %></td>
 			<td>
 				<%=h "#{@request.tuesday_contact_first} #{@request.tuesday_contact_last}" %>
@@ -262,7 +262,7 @@
 		<% end %>
 		<% if @request.wednesday_date %>
 		<tr>
-			<td><%=h @request.wednesday_date %></td>
+			<td><%=h @request.wednesday_date.strftime("%d/%m/%Y") %></td>
 			<td><%=h @request.wednesday_school %></td>
 			<td>
 				<%=h "#{@request.wednesday_contact_first} #{@request.wednesday_contact_last}" %>
@@ -273,7 +273,7 @@
 		<% end %>
 		<% if @request.thursday_date %>
 		<tr>
-			<td><%=h @request.thursday_date %></td>
+			<td><%=h @request.thursday_date.strftime("%d/%m/%Y") %></td>
 			<td><%=h @request.thursday_school %></td>
 			<td>
 				<%=h "#{@request.thursday_contact_first} #{@request.thursday_contact_last}" %>
@@ -284,7 +284,7 @@
 		<% end %>
 		<% if @request.friday_date %>
 		<tr>
-			<td><%=h @request.friday_date %></td>
+			<td><%=h @request.friday_date.strftime("%d/%m/%Y") %></td>
 			<td><%=h @request.friday_school %></td>
 			<td>
 				<%=h "#{@request.friday_contact_first} #{@request.friday_contact_last}" %>
