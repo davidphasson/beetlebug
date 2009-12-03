@@ -138,13 +138,13 @@
 <!-- Dates -->
 <div class="infoblock">
 	<p>
-		<b>School Year: </b><%=h "#{@request.first_school_date} - #{@request.last_school_date}" %>
+		<b>School Year: </b><%=h "#{@request.first_school_date.strftime("%d/%m/%Y")} - #{@request.last_school_date.strftime("%d/%m/%Y")}" %>
 	</p>
 	<p>
-		<b>Winter Break: </b><%=h "#{@request.winter_break_start} - #{@request.winter_break_end}" %>
+		<b>Winter Break: </b><%=h "#{@request.winter_break_start.strftime("%d/%m/%Y")} - #{@request.winter_break_end.strftime("%d/%m/%Y")}" %>
 	</p>
 	<p>
-		<b>Spring Break: </b><%=h "#{@request.spring_break_start} - #{@request.spring_break_end}" %>
+		<b>Spring Break: </b><%=h "#{@request.spring_break_start.strftime("%d/%m/%Y")} - #{@request.spring_break_end.strftime("%d/%m/%Y")}" %>
 	</p>
 	<table width="100%">
 		<tr>
@@ -152,20 +152,20 @@
 				<p>
 					<b>Preferred Dates:</b>
 					<br/>
-					<%=h @request.preferred_date1 %><br/>
-					<%=h @request.preferred_date2 %><br/>
-					<%=h @request.preferred_date3 %><br/>
-					<%=h @request.preferred_date4 %><br/>
+					<%=h @request.preferred_date1.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.preferred_date2.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.preferred_date3.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.preferred_date4.strftime("%d/%m/%Y") %><br/>
 				</p>
 			</td>
 			<td width="33%">
 				<p>
 					<b>Alternate Dates:</b>
 					<br/>
-					<%=h @request.alternate_date1 %><br/>
-					<%=h @request.alternate_date2 %><br/>
-					<%=h @request.alternate_date3 %><br/>
-					<%=h @request.alternate_date4 %><br/>
+					<%=h @request.alternate_date1.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.alternate_date2.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.alternate_date3.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.alternate_date4.strftime("%d/%m/%Y") %><br/>
 				</p>
 			</td>
 			<td width="33%">
@@ -173,10 +173,10 @@
 				<p>
 					<b>Backup Dates:</b>
 					<br/>
-					<%=h @request.backup_date1 %><br/>
-					<%=h @request.backup_date2 %><br/>
-					<%=h @request.backup_date3 %><br/>
-					<%=h @request.backup_date4 %><br/>
+					<%=h @request.backup_date1.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.backup_date2.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.backup_date3.strftime("%d/%m/%Y") %><br/>
+					<%=h @request.backup_date4.strftime("%d/%m/%Y") %><br/>
 				</p>
 				<% end %>
 			</td>
@@ -196,7 +196,7 @@
 <div class="infoblock">
 	<p>
 		<b>Assembly Times:</b> 
-		<%=h "#{@request.assembly_time1.hour}:#{@request.assembly_time1.min}" %>
+		<%=h "#{sprintf("%02d", @request.assembly_time1.hour)}:#{sprintf("%02d", @request.assembly_time1.min)}" %>
 		<% if @request.assembly_time2 %>
 			; <%=h "#{@request.assembly_time2.hour}:#{@request.assembly_time2.min}" %>
 		<% end %>
@@ -213,7 +213,7 @@
 		<% end %>
 	</p>
 	<% if @request.inclement_lunchroom? %>
-		<p>The room that Mr. Mike is in <b>will be</b> also used for other activies during inclement weather.<br/>
+		<p>The room that Mr. Mike is in <b>WILL ALSO</b> be used for other activies during inclement weather.<br/>
 			<em>Comments:</em><br/>
 			<%=h @request.inclement_plan %>
 		</p>
