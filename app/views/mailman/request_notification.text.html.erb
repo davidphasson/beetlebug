@@ -138,13 +138,13 @@
 <!-- Dates -->
 <div class="infoblock">
 	<p>
-		<b>School Year: </b><%=h "#{@request.first_school_date.strftime("%d/%m/%Y")} - #{@request.last_school_date.strftime("%d/%m/%Y")}" %>
+		<b>School Year: </b><%=h "#{@request.first_school_date.strftime("%m/%d/%Y")} - #{@request.last_school_date.strftime("%d/%m/%Y")}" %>
 	</p>
 	<p>
-		<b>Winter Break: </b><%=h "#{@request.winter_break_start.strftime("%d/%m/%Y")} - #{@request.winter_break_end.strftime("%d/%m/%Y")}" %>
+		<b>Winter Break: </b><%=h "#{@request.winter_break_start.strftime("%m/%d/%Y")} - #{@request.winter_break_end.strftime("%d/%m/%Y")}" %>
 	</p>
 	<p>
-		<b>Spring Break: </b><%=h "#{@request.spring_break_start.strftime("%d/%m/%Y")} - #{@request.spring_break_end.strftime("%d/%m/%Y")}" %>
+		<b>Spring Break: </b><%=h "#{@request.spring_break_start.strftime("%m/%d/%Y")} - #{@request.spring_break_end.strftime("%d/%m/%Y")}" %>
 	</p>
 	<table width="100%">
 		<tr>
@@ -152,20 +152,20 @@
 				<p>
 					<b>Preferred Dates:</b>
 					<br/>
-					<%=h @request.preferred_date1.strftime("%d/%m/%Y") if @request.preferred_date1.present? %><br/>
-					<%=h @request.preferred_date2.strftime("%d/%m/%Y") if @request.preferred_date2.present?  %><br/>
-					<%=h @request.preferred_date3.strftime("%d/%m/%Y") if @request.preferred_date3.present?  %><br/>
-					<%=h @request.preferred_date4.strftime("%d/%m/%Y") if @request.preferred_date4.present?  %><br/>
+					<%=h @request.preferred_date1.strftime("%m/%d/%Y") if @request.preferred_date1.present? %><br/>
+					<%=h @request.preferred_date2.strftime("%m/%d/%Y") if @request.preferred_date2.present?  %><br/>
+					<%=h @request.preferred_date3.strftime("%m/%d/%Y") if @request.preferred_date3.present?  %><br/>
+					<%=h @request.preferred_date4.strftime("%m/%d/%Y") if @request.preferred_date4.present?  %><br/>
 				</p>
 			</td>
 			<td width="33%">
 				<p>
 					<b>Alternate Dates:</b>
 					<br/>
-					<%=h @request.alternate_date1.strftime("%d/%m/%Y") if @request.alternate_date1.present?  %><br/>
-					<%=h @request.alternate_date2.strftime("%d/%m/%Y") if @request.alternate_date2.present?  %><br/>
-					<%=h @request.alternate_date3.strftime("%d/%m/%Y") if @request.alternate_date3.present?  %><br/>
-					<%=h @request.alternate_date4.strftime("%d/%m/%Y") if @request.alternate_date4.present?  %><br/>
+					<%=h @request.alternate_date1.strftime("%m/%d/%Y") if @request.alternate_date1.present?  %><br/>
+					<%=h @request.alternate_date2.strftime("%m/%d/%Y") if @request.alternate_date2.present?  %><br/>
+					<%=h @request.alternate_date3.strftime("%m/%d/%Y") if @request.alternate_date3.present?  %><br/>
+					<%=h @request.alternate_date4.strftime("%m/%d/%Y") if @request.alternate_date4.present?  %><br/>
 				</p>
 			</td>
 			<td width="33%">
@@ -173,10 +173,10 @@
 				<p>
 					<b>Backup Dates:</b>
 					<br/>
-					<%=h @request.backup_date1.strftime("%d/%m/%Y") if @request.backup_date1.present?  %><br/>
-					<%=h @request.backup_date2.strftime("%d/%m/%Y") if @request.backup_date2.present?  %><br/>
-					<%=h @request.backup_date3.strftime("%d/%m/%Y") if @request.backup_date3.present?  %><br/>
-					<%=h @request.backup_date4.strftime("%d/%m/%Y") if @request.backup_date4.present?  %><br/>
+					<%=h @request.backup_date1.strftime("%m/%d/%Y") if @request.backup_date1.present?  %><br/>
+					<%=h @request.backup_date2.strftime("%m/%d/%Y") if @request.backup_date2.present?  %><br/>
+					<%=h @request.backup_date3.strftime("%m/%d/%Y") if @request.backup_date3.present?  %><br/>
+					<%=h @request.backup_date4.strftime("%m/%d/%Y") if @request.backup_date4.present?  %><br/>
 				</p>
 				<% end %>
 			</td>
@@ -240,7 +240,7 @@
 	<table>
 		<% if @request.monday_date %>
 		<tr>
-			<td><%=h @request.monday_date.strftime("%d/%m/%Y") %></td>
+			<td><%=h @request.monday_date.strftime("%m/%d/%Y") %></td>
 			<td><%=h @request.monday_school %></td>
 			<td>
 				<%=h "#{@request.monday_contact_first} #{@request.monday_contact_last}" %>
@@ -251,7 +251,7 @@
 		<% end %>
 		<% if @request.tuesday_date %>
 		<tr>
-			<td><%=h @request.tuesday_date.strftime("%d/%m/%Y") %></td>
+			<td><%=h @request.tuesday_date.strftime("%m/%d/%Y") %></td>
 			<td><%=h @request.tuesday_school %></td>
 			<td>
 				<%=h "#{@request.tuesday_contact_first} #{@request.tuesday_contact_last}" %>
@@ -262,7 +262,7 @@
 		<% end %>
 		<% if @request.wednesday_date %>
 		<tr>
-			<td><%=h @request.wednesday_date.strftime("%d/%m/%Y") %></td>
+			<td><%=h @request.wednesday_date.strftime("%m/%d/%Y") %></td>
 			<td><%=h @request.wednesday_school %></td>
 			<td>
 				<%=h "#{@request.wednesday_contact_first} #{@request.wednesday_contact_last}" %>
@@ -273,7 +273,7 @@
 		<% end %>
 		<% if @request.thursday_date %>
 		<tr>
-			<td><%=h @request.thursday_date.strftime("%d/%m/%Y") %></td>
+			<td><%=h @request.thursday_date.strftime("%m/%d/%Y") %></td>
 			<td><%=h @request.thursday_school %></td>
 			<td>
 				<%=h "#{@request.thursday_contact_first} #{@request.thursday_contact_last}" %>
@@ -284,7 +284,7 @@
 		<% end %>
 		<% if @request.friday_date %>
 		<tr>
-			<td><%=h @request.friday_date.strftime("%d/%m/%Y") %></td>
+			<td><%=h @request.friday_date.strftime("%m/%d/%Y") %></td>
 			<td><%=h @request.friday_school %></td>
 			<td>
 				<%=h "#{@request.friday_contact_first} #{@request.friday_contact_last}" %>
