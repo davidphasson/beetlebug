@@ -1,5 +1,4 @@
 <h3>Request Info</h3>
-<h4><%=h @request.school %></h4>
 
 <!-- General Info -->
 <div class="infoblock">
@@ -22,13 +21,13 @@
 	<p>
 		<% case @request.assembly_type
 		   when 1 %>
-			<b>Public</b> School requesting a <b>free</b> visit for <b>all</b> students.
+			<b>Public</b> School requesting a <b>FREE</b> visit for <b>ALL</b> students.
 		<% when 2 %>
-			<b>Public</b> School requesting a <b>fee-based</b> visit for <b>select</b> groups/grades.
+			<b>Public</b> School requesting a <b>FEE-BASED</b> visit for <b>SELECT</b> groups/grades.
 		<% when 3 %>
-			<b>Private</b> School requesting a <b>fee-based</b> visit for <b>all</b> students. 
+			<b>Private</b> School requesting a <b>FEE-BASED</b> visit for <b>ALL</b> students. 
 		<% when 4 %>
-			<b>Private</b> School requesting a <b>fee-based</b> visit for <b>select</b> groups/grades.
+			<b>Private</b> School requesting a <b>FEE-BASED</b> visit for <b>SELECT</b> groups/grades.
 		<% end %>
 	</p>
 	<p>
@@ -138,13 +137,13 @@
 <!-- Dates -->
 <div class="infoblock">
 	<p>
-		<b>School Year: </b><%=h "#{@request.first_school_date.strftime("%m/%d/%Y")} - #{@request.last_school_date.strftime("%d/%m/%Y")}" %>
+		<b>School Year: </b><%=h "#{@request.first_school_date.strftime("%m/%d/%Y")} - #{@request.last_school_date.strftime("%m/%d/%Y")}" %>
 	</p>
 	<p>
-		<b>Winter Break: </b><%=h "#{@request.winter_break_start.strftime("%m/%d/%Y")} - #{@request.winter_break_end.strftime("%d/%m/%Y")}" %>
+		<b>Winter Break: </b><%=h "#{@request.winter_break_start.strftime("%m/%d/%Y")} - #{@request.winter_break_end.strftime("%m/%d/%Y")}" %>
 	</p>
 	<p>
-		<b>Spring Break: </b><%=h "#{@request.spring_break_start.strftime("%m/%d/%Y")} - #{@request.spring_break_end.strftime("%d/%m/%Y")}" %>
+		<b>Spring Break: </b><%=h "#{@request.spring_break_start.strftime("%m/%d/%Y")} - #{@request.spring_break_end.strftime("%m/%d/%Y")}" %>
 	</p>
 	<table width="100%">
 		<tr>
@@ -205,7 +204,7 @@
 		<% end %>
 	</p>
 	<p>
-		<b>Assembly Room:</b>: 
+		<b>Assembly Room:</b> 
 		<% if @request.assembly_location == "Other" %>
 			Other: <%=h @request.assembly_location_other %>
 		<% else %>
