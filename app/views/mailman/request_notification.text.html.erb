@@ -33,9 +33,9 @@
 	<p>
 		<% case @request.author_hosted 
 		   when "yes" %>
-		The school <b>has</b> hosted an author before.
+		The school <b>HAS</b> hosted an author before.
 		<% when "no" %>
-		The school <b>has not</b> hosted an author before.
+		The school <b>HAS NOT</b> hosted an author before.
 		<% end %>
 	</p>
 	<p>
@@ -216,26 +216,96 @@
 			<em>Comments:</em><br/>
 			<%=h @request.inclement_plan %>
 		</p>
+	<% else %>
+		<p>The room that Mr. Mike is in <b>WILL NOT</b> be used for other activies during inclement weather.<br/>
 	<% end %>
 	<% if @request.school_prone_weather_delays? %>
-		<p>The school <b>is prone</b> to weather delays.<br/>
+		<p>The school <b>IS</b> prone to weather delays.<br/>
 			<em>Comments:</em><br/>
 			<%=h @request.weather_delay_plan %>
 		</p>
+	<% else %>
+		<p>The school <b>IS NOT</b> prone to weather delays.<br/>
 	<% end %>
 	<% if @request.lunch_with_mike? %>
-		<p>The school <b>is requesting</b> lunch with Mr. Mike<br/>
+		<p>The school <b>IS requesting</b> lunch with Mr. Mike<br/>
 			<b>Time:</b> <%=h "#{sprintf('%02d', @request.lunch_start.hour)}:#{sprintf('%02d', @request.lunch_start.min)} - #{sprintf('%02d', @request.lunch_end.hour)}:#{sprintf('%02d', @request.lunch_end.min)}" %><br/>
 			<b>Room:</b> <%=h @request.lunch_room %>
 		</p>
 	<% else %>
-		<p>The school <b>is not</b> requesting lunch with Mr. Mike</p>
+		<p>The school <b>IS NOT</b> requesting lunch with Mr. Mike</p>
+	<% end %>
+</div>
+
+<!-- Questions -->
+<div class="infoblock">
+	<h4>Questions:</h4>
+	<% if @request.book_fair_too_soon? %>
+	  <p>
+		School <b>IS</b> having a book fair within one month before/during Mr. Mike’s visit.
+      </p>
+	<% else %>
+	  <p>
+		School is <b>NOT</b> having a book fair within one month before/during Mr. Mike’s visit.
+      </p>
+	<% end %>
+
+	<% if @request.read_school_info? %>
+	  <p>
+		Submitter <b>HAS</b> read all the information in the Schools section.
+      </p>
+	<% else %>
+	  <p>
+		Submitter has <b>NOT</b> read all the information in the Schools section.
+      </p>
+	<% end %>
+
+	<% if @request.dates_okay? %>
+	  <p>
+		Dates <b>HAVE</b> been okay'd with the proper people and/or secondary contact provided.
+      </p>
+	<% else %>
+	  <p>
+		Dates have <b>NOT</b> been okay'd with the proper people and/or secondary contact provided.
+      </p>
+	<% end %>
+
+	<% if @request.students_will_show? %>
+	  <p>
+		Submitter <b>HAS</b> confirmed all grade levels and classes will attend and school is in session
+		two weeks before and the week after the visit.
+      </p>
+	<% else %>
+	  <p>
+		Submitter has<b>NOT</b> confirmed all grade levels and classes will attend and school is in session
+		two weeks before and the week after the visit.
+      </p>
+	<% end %>
+	<% if @request.will_prep? %>
+	  <p>
+		School <b>WILL</b> follow through with all preparations necessary to put on a great event and be
+		ready for Mr. Mike.
+      </p>
+	<% else %>
+	  <p>
+		School <b>WILL NOT</b> follow through with all preparations necessary to put on a great event and be
+		ready for Mr. Mike.
+      </p>
+	<% end %>
+	<% if @request.had_writing_program? %>
+	  <p>
+		Students <b>HAVE</b> participated in a school-wide writing program.
+      </p>
+	<% else %>
+	  <p>
+		Students have <b>NOT</b> participated in a school-wide writing program.
+      </p>
 	<% end %>
 </div>
 
 <!-- Multisite -->
 <div class="infoblock">
-	<h4>Multi-School Arrangements</h4>
+	<h4>Multi-School Arrangements:</h4>
 	<table>
 		<% if @request.monday_date %>
 		<tr>
