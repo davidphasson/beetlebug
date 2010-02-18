@@ -8,13 +8,13 @@ function switch_tab(tabname)
 		tab = tabs[i];
 		if(tabname == tab.id)
 		{
-			tab.show()
-			$("tab_" + tab.id).className = "tab currtab"
+			tab.show();
+			$("tab_" + tab.id).className = "tab currtab";
 		}
 		else
 		{
 			tab.hide();
-			$("tab_" + tab.id).className = "tab"
+			$("tab_" + tab.id).className = "tab";
 		}
 	}
 }

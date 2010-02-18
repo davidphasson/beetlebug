@@ -5,11 +5,11 @@ $(document).ready( function() {
   $("#tabs").tabs();
 
   $("#request_lunch_with_mike_true").click(function() {
-    $("#mike_lunch_div").show("medium");
+    $("#mike_lunch_div").show();
   });
 
   $("#request_lunch_with_mike_false").click(function() {
-    $("#mike_lunch_div").hide("medium");
+    $("#mike_lunch_div").hide();
   });
 
 });
