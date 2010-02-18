@@ -240,57 +240,25 @@
 <!-- Questions -->
 <div class="infoblock">
 	<h4>Questions:</h4>
-	<% if @request.book_fair_too_soon? %>
-	  <p>
-		School <b>IS</b> having a book fair within one month before/during Mr. Mike’s visit.
-      </p>
-	<% else %>
+	<!-- These questions can only be answered one way -->
 	  <p>
 		School is <b>NOT</b> having a book fair within one month before/during Mr. Mike’s visit.
       </p>
-	<% end %>
-
-	<% if @request.read_school_info? %>
 	  <p>
 		Submitter <b>HAS</b> read all the information in the Schools section.
       </p>
-	<% else %>
-	  <p>
-		Submitter has <b>NOT</b> read all the information in the Schools section.
-      </p>
-	<% end %>
-
-	<% if @request.dates_okay? %>
 	  <p>
 		Dates <b>HAVE</b> been okay'd with the proper people and/or secondary contact provided.
       </p>
-	<% else %>
-	  <p>
-		Dates have <b>NOT</b> been okay'd with the proper people and/or secondary contact provided.
-      </p>
-	<% end %>
-
-	<% if @request.students_will_show? %>
 	  <p>
 		Submitter <b>HAS</b> confirmed all grade levels and classes will attend and school is in session
 		two weeks before and the week after the visit.
       </p>
-	<% else %>
-	  <p>
-		Submitter has<b>NOT</b> confirmed all grade levels and classes will attend and school is in session
-		two weeks before and the week after the visit.
-      </p>
-	<% end %>
-	<% if @request.will_prep? %>
 	  <p>
 		School <b>WILL</b> follow through with all preparations necessary to put on a great event and be
 		ready for Mr. Mike.
       </p>
-	<% else %>
-	  <p>
-		School <b>WILL NOT</b> follow through with all preparations necessary to put on a great event and be
-		ready for Mr. Mike.
-      </p>
+
 	<% end %>
 	<% if @request.had_writing_program? %>
 	  <p>
