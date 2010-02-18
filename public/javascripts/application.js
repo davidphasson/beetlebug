@@ -2,7 +2,15 @@
 
 // Initialize jQuery UI Elements
 $(document).ready( function() {
-    $("#tabs").tabs();
+  $("#tabs").tabs();
+
+  $("#request_lunch_with_mike_true").click(function() {
+    $("#mike_lunch_div").show("medium");
+  });
+
+  $("#request_lunch_with_mike_false").click(function() {
+    $("#mike_lunch_div").hide("medium");
+  });
 
 });
 
